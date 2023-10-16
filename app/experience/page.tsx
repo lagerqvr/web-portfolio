@@ -1,8 +1,8 @@
 import React from "react";
 
-const About = () => {
+const Experience = () => {
     return <div className="container mx-auto px-4">
-        <h1 className="text-white">About</h1>
+        <h1 className="text-white">Experience</h1>
         <p></p>
         <div className="w-full h-screen"></div>
         <p>
@@ -11,4 +11,4 @@ const About = () => {
     </div>;
 };
 
-export default About;
+export default Experience;

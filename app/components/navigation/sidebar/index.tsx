@@ -28,18 +28,23 @@ const Sidebar = ({
 
                 <ul className="sidebar-nav text-center leading-relaxed text-xl">
                     <li>
-                        <Link href="/about">
-                            <p>about</p>
+                        <Link href="/">
+                            <p>home</p>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/contact">
-                            <p>contact</p>
+                        <Link href="/experience">
+                            <p>experience</p>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/favorites">
-                            <p>favorites</p>
+                        <Link href="/projects">
+                            <p>projects</p>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/interests">
+                            <p>interests</p>
                         </Link>
                     </li>
                     <li>
@@ -48,8 +53,8 @@ const Sidebar = ({
                         </Link>
                     </li>
                     <li>
-                        <Link href="/projects">
-                            <p>projects</p>
+                        <Link href="/contact">
+                            <p>contact</p>
                         </Link>
                     </li>
                 </ul>

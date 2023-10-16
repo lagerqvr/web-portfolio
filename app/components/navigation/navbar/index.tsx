@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = ({ toggle }: { toggle: () => void }) => {
     return (
         <>
-            <div className="w-full h-20 bg-black sticky top-0">
+            <div className="w-full h-20 sticky top-0 mt-2">
                 <div className="container mx-auto px-4 h-full">
                     <div className="flex justify-between items-center h-full">
                         <Logo />
@@ -29,18 +29,23 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                         </button>
                         <ul className="hidden md:flex gap-x-6 text-white">
                             <li>
-                                <Link href="/about">
-                                    <p>about</p>
+                                <Link href="/">
+                                    <p>home</p>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact">
-                                    <p>contact</p>
+                                <Link href="/experience">
+                                    <p>experience</p>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/favorites">
-                                    <p>favorites</p>
+                                <Link href="/projects">
+                                    <p>projects</p>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/interests">
+                                    <p>interests</p>
                                 </Link>
                             </li>
                             <li>
@@ -49,8 +54,8 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/projects">
-                                    <p>projects</p>
+                                <Link href="/contact">
+                                    <p>contact</p>
                                 </Link>
                             </li>
                         </ul>
