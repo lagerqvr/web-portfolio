@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navigation from './components/navigation'
 import { ToastContainer } from 'react-toastify';
+import { Providers } from './providers';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/navigation/footer'
 
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} flex flex-col min-h-screen bg-white dark:bg-black`}>
         <Navigation />
         <main className="flex-grow">
-          {children}
+          <Providers>{children}</Providers>
         </main>
         <ToastContainer />
         <Footer />

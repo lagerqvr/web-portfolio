@@ -27,7 +27,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                 />
                             </svg>
                         </button>
-                        <ul className="hidden md:flex gap-x-6 text-black dark:text-white">
+                        <ul className="hidden md:flex gap-x-6 text-black dark:text-white z-10">
                             <li>
                                 <Link href="/">
                                     <p>home</p>

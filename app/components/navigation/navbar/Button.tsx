@@ -1,47 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
 const Button = () => {
-    const [theme, setTheme] = useState(() => {
-        // Initial state depending on client-side availability of localStorage
-        if (typeof window !== 'undefined') {
-            return localStorage.getItem('theme') || 'light';
-        }
-        return 'light';
-    });
-
     const [mounted, setMounted] = useState(false);
-
-    // Function to toggle the theme
-    const toggleTheme = () => {
-        const nextTheme = theme === 'dark' ? 'light' : 'dark';
-        setTheme(nextTheme);
-
-        if (typeof window !== 'undefined') {
-            localStorage.setItem('theme', nextTheme);
-        }
-        document.documentElement.classList.toggle('dark', nextTheme === 'dark');
-    };
+    const { theme, setTheme } = useTheme();
 
     useEffect(() => {
-        // Apply the theme from localStorage when the component mounts, if available
-        if (typeof window !== 'undefined') {
-            const storedTheme = localStorage.getItem('theme');
-            if (storedTheme) {
-                setTheme(storedTheme);
-                document.documentElement.classList.toggle('dark', storedTheme === 'dark');
-            }
-        }
         setMounted(true);
     }, []);
 
+    const toggleTheme = () => {
+        const nextTheme = theme === 'dark' ? 'light' : 'dark';
+        console.log(nextTheme);
+        setTheme(nextTheme);
+    };
+
+    if (!mounted) return null;
+
     return (
-        <button
-            aria-label="Toggle Dark Mode"
-            type="button"
-            className="w-10 h-10 p-3 rounded focus:outline-none"
-            onClick={toggleTheme}
-        >
-            {mounted && (
+        <div>
+            <button
+                aria-label="Toggle Dark Mode"
+                type="button"
+                className="w-10 h-10 p-3 rounded focus:outline-none"
+                onClick={toggleTheme}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -65,8 +48,8 @@ const Button = () => {
                         />
                     )}
                 </svg>
-            )}
-        </button>
+            </button>
+        </div>
     );
 };
 

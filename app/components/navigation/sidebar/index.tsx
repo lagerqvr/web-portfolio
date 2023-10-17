@@ -11,7 +11,7 @@ const Sidebar = ({
     return (
         <>
             <div
-                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white dark:bg-black grid pt-[120px] left-0 z-10"
+                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white dar dark:bg-black grid pt-[120px] left-0 z-10"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: ` ${isOpen ? "0" : "-100%"}`,

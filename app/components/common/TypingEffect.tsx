@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 const TypeEffect: React.FC = () => {
     return (
-        <div className="flex flex-wrap items-baseline">
+        <div className="flex flex-col sm:flex-row items-baseline">
             <span className="mr-2 flex-shrink-0">Creating</span>
             <div className="flex-grow">
                 <Typewriter
