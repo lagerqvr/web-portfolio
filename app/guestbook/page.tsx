@@ -6,7 +6,7 @@ const Guestbook = () => {
             <h1 className="text-4xl font-bold text-black dark:text-white leading-fix pb-3">
                 Guestbook
             </h1>
-            <p className="text-gray-500 w-full md:w-[400px] text-center">Here you can leave a message for me, hope you enjoyed my site!</p>
+            <p className="text-gray-500 w-full md:w-[400px] text-center">Here you can leave a message for me!</p>
             <h3 className="text-lg text-gray-500 w-full md:w-[400px] text-center py-20">Coming soon! 🏗️</h3>
         </div>
     </div>;

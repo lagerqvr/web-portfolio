@@ -10,13 +10,13 @@ const Projects = () => {
         </div>
         <div className="flex flex-col pt-10 px-8">
             <p className="text-gray-500 mb-6">
-                Every developer inevitably creates some personal projects to expand our skillset or to solve a problem. Here you can find some of my featured projects and also my most recent creations.
+                Every developer inevitably creates some personal projects to expand their skillset or to solve a problem. Here you can find some of my featured projects and also my most recent creations.
             </p>
 
             <section className="mb-8 w-full">
                 <h2 className="text-2xl font-semibold mb-3 text-black dark:text-white">Featured projects</h2>
                 <p className="text-gray-500 mb-6">
-                    These are some my most recent and interesting projects. The source code and more info on some of these projects can be found on <a href="https://www.github.com/lagerqvr" className="text-white dark:text:black">GitHub</a>.
+                    These are some my most recent and interesting projects. The source code and more info on some of these projects can be found on <a href="https://www.github.com/lagerqvr" className="text-black dark:text-white">GitHub</a>.
                 </p>
                 <div className="flex items-start py-6">
                     <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/sitzy.png" alt="Podcast Logo" />
@@ -57,9 +57,25 @@ const Projects = () => {
             <section className="mb-8 w-full">
                 <h2 className="text-2xl font-semibold mb-3 text-black dark:text-white">Recent projects</h2>
                 <p className="text-gray-500 mb-6">
-                    These are my most recent projects. You can find more info on <a href="https://www.github.com/lagerqvr" className="text-white dark:text:black">GitHub</a>.
+                    Here are my most recent projects. You can find more info on <a href="https://www.github.com/lagerqvr" className="text-black dark:text-white">GitHub</a>.
                 </p>
-                <h3 className="text-lg text-gray-500 pt-5">Coming soon! 🏗️</h3>
+                <div className="flex flex-col">
+                    <div className="h-58 w-58 bg-blue-500 p-5 mb-3 rounded">
+                        <h3 className="text-lg font-bold">This is heading</h3>
+                        <p className="text-sm">This is a description</p>
+                        <p className="pt-5"><a>View repository</a></p>
+                    </div>
+                    <div className="h-58 w-58 bg-blue-500 p-5 mb-3 rounded">
+                        <h3 className="text-lg font-bold">This is heading</h3>
+                        <p className="text-sm">This is a description</p>
+                        <p className="pt-5"><a>View repository</a></p>
+                    </div>
+                    <div className="h-58 w-58 bg-blue-500 p-5 mb-3 rounded">
+                        <h3 className="text-lg font-bold">This is heading</h3>
+                        <p className="text-sm">This is a description</p>
+                        <p className="pt-5"><a>View repository</a></p>
+                    </div>
+                </div>
             </section>
         </div>
     </div>;
