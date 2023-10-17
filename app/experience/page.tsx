@@ -5,11 +5,11 @@ export default function Experience() {
     return (
         <div className="bg-white dark:bg-black pb-20">
             <div className="max-w-6xl mx-auto h-15">
-                <h1 className="text-4xl font-bold py-10 text-center text-black dark:text-white">
+                <h1 className="text-4xl font-bold py-5 text-center text-black dark:text-white">
                     Experience
                 </h1>
             </div>
-            <div className="bg-white dark:bg-black">
+            <div className="bg-white dark:bg-black pt-5">
                 <div className="grid grid-cols-1 bg-white dark:bg-black max-w-xl mx-auto">
                     {/* Experience card */}
                     {userData.experience.map((exp, idx) => (

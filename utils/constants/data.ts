@@ -13,11 +13,28 @@ const userData = {
         },
     ],
     about: {
-        title:
-            "",
-        description: [
-            "",
+        introduction: [
+            "I'm Rasmus Lagerqvist, currently finishing up my final year at Arcada University of Applied Sciences in Helsinki. Diving into the software development scene in 2020, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover.\n\
+            What really keeps me going? Real-world problems and crafting solutions that make a difference. After all, that's what it's all about, right?",
         ],
+        interests: [
+            "As previously mentioned, I'm driven by problem-solving, no matter the stack. Currently my strongsuit is web-development, but I'm looking into DevOps and Cybersecurity, both of which I feel I can contribute in, especially when I learn more. Thus far I've created various full-stack projects which all are purpose made\n\
+            to serve a purpose or solve a real-world problem.Dynamic and robust applications are also something I strive to create in order to better the space I'm in but also to hopefully help somebody else out.",
+        ],
+        buzzwords: [
+            "Full-Stack Development",
+            "Web Development",
+            "Cloud Technologies",
+            "AWS",
+            "React.js",
+            "C#",
+            "Python",
+            "Machine Learning",
+            "Computer Vision",
+            "Networking",
+            "Cyber Security",
+        ],
+
     },
     experience: [
         {
