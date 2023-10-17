@@ -5,8 +5,11 @@ import Link from "next/link";
 import Button from "./Button";
 
 const Logo = () => {
-    //update the size of the logo when the size of the screen changes
+    //Update the size of the logo when the size of the screen changes
     const [width, setWidth] = useState(0);
+
+    // State variable for dark mode
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const updateWidth = () => {
         const newWidth = window.innerWidth;
@@ -18,7 +21,13 @@ const Logo = () => {
         updateWidth();
     }, []);
 
-    // change between the logo and the button when the user scrolls
+    // Detect dark mode on component mount
+    useEffect(() => {
+        const mode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setIsDarkMode(mode);
+    }, []);
+
+    // Change between the logo and the button when the user scrolls
     const [showButton, setShowButton] = useState(false);
 
     const changeNavButton = () => {
@@ -37,7 +46,7 @@ const Logo = () => {
         <>
             <Link href="/" style={{ display: showButton ? "none" : "block" }}>
                 <Image
-                    src="/logo.svg"
+                    src={isDarkMode ? "/logo-light.svg" : "/logo-dark.svg"}
                     alt="Logo"
                     width={"64"}
                     height={"64"}

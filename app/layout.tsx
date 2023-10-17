@@ -2,6 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navigation from './components/navigation'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/navigation/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,10 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen bg-white dark:bg-black`}>
         <Navigation />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <ToastContainer />
+        <Footer />
       </body>
     </html>
-  )
+  );
 }

@@ -1,12 +1,14 @@
-import TypingEffect from "./components/common/TypingEffect"
+import React from 'react';
+import 'react-toastify/dist/ReactToastify.css';
+import TypingEffect from "./components/common/TypingEffect";
 
 export default function Home() {
 
   return (
-    <>
-      <div className="container mx-auto px-4 mt-12">
+    <main className="bg-white dark:bg-black">
+      <div className="container mx-auto px-4 pt-20">
         {/* Hero */}
-        <div className="min-h-screen flex items-start justify-center px-16 bg-black pt-10">
+        <div className="min-h-screen flex items-start justify-center pt-10">
           {/* Wrapper for blobs and text */}
           <div className="relative w-full max-w-2xl">
             {/* Blobs */}
@@ -18,7 +20,7 @@ export default function Home() {
 
             {/* Text container */}
             <div className="w-full flex flex-col justify-center items-center z-10">
-              <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-white leading-fix pb-3">
+              <h1 className="text-5xl font-bold text-black dark:text-white leading-fix pb-3">
                 <TypingEffect />
               </h1>
               <p className="text-gray-500">Discover what I&apos;ve created</p>
@@ -31,7 +33,7 @@ export default function Home() {
 
         </div>
       </div>
-    </>
+    </main>
 
     /*
       <main className="flex min-h-screen flex-col items-center justify-between p-24">

@@ -16,6 +16,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  /* Toastify */
+  --toastify-color-success: rgb(22 163 74) !important;
+  --toastify-color-error: rgb(220 38 38) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,8 +31,8 @@
 }
 
 body {
+  background-color: rgb(var(--foreground-rgb));
   color: rgb(var(--foreground-rgb));
-  background: black;
 }
 
 .Typewriter__cursor {
