@@ -43,17 +43,29 @@ export default function Home() {
           <div className='mt-20'>
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>About me</h1>
-              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-38 sm:h-52 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
+              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-48 sm:h-48 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
     rounded-lg shadow-lg object-cover object-center mb-3 mr-6
     [clip-path:circle(100%)] 
     [shape-outside:circle(100%)]'></Image>
               <p className='text-gray-500 dark:text-gray-400'>{data.about.introduction}</p>
+              <Link href='/experience'>
+                <div className='flex pt-3 text-black dark:text-white'>
+                  <p>See where I&apos;m at</p>
+                  <ArrowRightIcon className='w-5 h-5 ml-1 pt-1 mt-1' />
+                </div>
+              </Link>
             </div>
           </div>
           <div className='mt-10'>
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Interests</h1>
               <p className='text-gray-500 dark:text-gray-400'>{data.about.interests}</p>
+              <Link href='/interests'>
+                <div className='flex pt-3 text-black dark:text-white'>
+                  <p>More on my interests</p>
+                  <ArrowRightIcon className='w-5 h-5 ml-1 pt-1 mt-1' />
+                </div>
+              </Link>
             </div>
           </div>
           <div className='mt-10'>
