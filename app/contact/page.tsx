@@ -18,7 +18,7 @@ const Contact: FC = () => {
     return <div className="container mx-auto pt-5 bg-white dark:bg-black min-h-[calc(100vh - 64px)]">
         <div className="flex flex-col justify-center items-center z-10">
             <h1 className="text-4xl font-bold text-black dark:text-white leading-fix pb-3">
-                Get in touch.
+                Get in touch
             </h1>
             <p className="text-gray-500 w-full md:w-[400px] text-center">Have a job offer or just want to chat? Reach out and we&apos;ll go from there.</p>
         </div>
