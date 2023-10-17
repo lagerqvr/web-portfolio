@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "../navbar/Button";
 
 const Sidebar = ({
     isOpen,
@@ -10,13 +11,13 @@ const Sidebar = ({
     return (
         <>
             <div
-                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-black dark:bg-white grid pt-[120px] left-0 z-10"
+                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white dark:bg-black grid pt-[120px] left-0 z-10"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: ` ${isOpen ? "0" : "-100%"}`,
                 }}
             >
-                <button className="absolute right-0 p-5" onClick={toggle}>
+                <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle}>
                     {/* Close icon */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
@@ -26,7 +27,7 @@ const Sidebar = ({
                     </svg>
                 </button>
 
-                <ul className="sidebar-nav text-center leading-relaxed text-xl">
+                <ul className="sidebar-nav text-center leading-relaxed text-xl text-black dark:text-white">
                     <li>
                         <Link href="/">
                             <p>home</p>
@@ -58,6 +59,9 @@ const Sidebar = ({
                         </Link>
                     </li>
                 </ul>
+                <div className="absolute left-0 p-5">
+                    <Button />
+                </div>
             </div>
         </>
     );

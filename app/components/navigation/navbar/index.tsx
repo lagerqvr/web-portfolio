@@ -12,7 +12,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                         <Logo />
                         <button
                             type="button"
-                            className="inline-flex items-center md:hidden"
+                            className="inline-flex items-center md:hidden text-black dark:text-white"
                             onClick={toggle}
                         >
                             <svg
@@ -22,7 +22,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                 viewBox="0 0 24 24"
                             >
                                 <path
-                                    fill="#fff"
+                                    fill="currentColor"
                                     d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
                                 />
                             </svg>
