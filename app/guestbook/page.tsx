@@ -1,13 +1,8 @@
 import React from "react";
 
 const Guestbook = () => {
-    return <div className="container mx-auto px-4">
-        <h1 className="text-white">Guestbook</h1>
-        <p></p>
-        <div className="w-full h-screen"></div>
-        <p>
+    return <div className="container mx-auto pt-10 bg-white dark:bg-black min-h-[calc(100vh - 64px)]">
 
-        </p>
     </div>;
 };
 
