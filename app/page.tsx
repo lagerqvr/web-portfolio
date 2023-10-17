@@ -43,7 +43,7 @@ export default function Home() {
           <div className='mt-20'>
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>About me</h1>
-              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-52 h-52 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
+              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-38 sm:h-52 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
     rounded-lg shadow-lg object-cover object-center mb-3 mr-6
     [clip-path:circle(100%)] 
     [shape-outside:circle(100%)]'></Image>
@@ -59,7 +59,7 @@ export default function Home() {
           <div className='mt-10'>
             <div className='px-4'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Buzzwords</h1>
-              <ul className='text-gray-500 dark:text-gray-400'>
+              <ul className='text-gray-500 dark:text-gray-400 grid grid-cols-1 gap-2 text-left text-secondary sm:grid-cols-2'>
                 <li className="flex items-center space-x-3">
                   <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>

@@ -16,40 +16,40 @@ const Projects = () => {
             <section className="mb-8 w-full">
                 <h2 className="text-2xl font-semibold mb-3 text-black dark:text-white">Featured projects</h2>
                 <p className="text-gray-500 mb-6">
-                    These are some my most recent and most interesting projects. You can find more info on <span className="text-white dark:text:black">GitHub.</span> on some of these.
+                    These are some my most recent and interesting projects. The source code and more info on some of these projects can be found on <a href="https://www.github.com/lagerqvr" className="text-white dark:text:black">GitHub</a>.
                 </p>
-                {/* Example Podcast */}
-                <div className="flex items-start mb-4">
+                <div className="flex items-start py-6">
                     <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/sitzy.png" alt="Podcast Logo" />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white">Sitzy.app</h3>
                         <p className="text-gray-500">
-                            Sitzy.app is an API wrapper that allows you to reserve tickets over the web via the Kide.app API. Built with Javascript, Bootstrap, and Firebase, Sitzy.app serves as an alternate frontend to Kide.app&apos;s API. Due to the nature of the service, Sitzy.app&apos;s source code is not public. The app has been made available exclusively for friends and family.
+                            Sitzy.app is an API wrapper that allows users to reserve tickets over the web via the Kide.app API. Built with Javascript, Bootstrap, and Firebase, Sitzy.app serves as an alternate frontend to Kide.app&apos;s API. Due to the nature of the service, Sitzy.app&apos;s source code is not public. The app has been made available exclusively for friends and family.
                         </p>
+                        <p className="pt-5 text-black dark:text-white line-through">Read more</p>
                     </div>
                 </div>
-                <div className="flex items-start mb-4">
+                <div className="flex items-start py-6">
                     <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/arabia_lunch.png" alt="Podcast Logo" />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white">Arabia Lunch</h3>
                         <p className="text-gray-500">
                             Arabia lunch is a simple frontend for fetching student lunch menus in Arabianranta area in Helsinki. The site currently supports four lunch restaurants; Artebia 135 (Metropolia), Arcada, DIAK and UniCafe Chemicum.
 
-                            The site can be installed on both iOS and Android to function like an application.
+                            The website can be installed on both iOS and Android to function like an application.
 
                             Built with Vanilla JS and Bootstrap.
                         </p>
-                        {/* <p className="mt-5 text-black dark:text-white">Read more</p> */}
+                        <p className="pt-5 text-black dark:text-white"><a href="https://github.com/lagerqvr/arabia-lunch">Read more</a></p>
                     </div>
                 </div>
-                <div className="flex items-start mb-4">
+                <div className="flex items-start py-6">
                     <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/frunk.png" alt="Podcast Logo" />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white">Frunk</h3>
                         <p className="text-gray-500">
-                            Frunk is a simple and user-friendly student card generator that enables alumni to effortlessly create digital student ID cards. Frunk was created as part of a course at Arcada to solve the issue with some graduated friends not being able to join for a cheap lunch.
+                            Frunk is a simple and user-friendly student card generator that enables alumni to effortlessly create digital student ID cards. Frunk was created as part of a course at Arcada to solve the issue with some graduated friends not being able to join in on a cheap student lunch. The source code for Frunk is not public and the app was created purely for academic purposes.
                         </p>
-                        {/* <p className="mt-5 text-black dark:text-white">Read more</p> */}
+                        <p className="pt-5 text-black dark:text-white line-through">Read more</p>
                     </div>
                 </div>
             </section>
@@ -57,7 +57,7 @@ const Projects = () => {
             <section className="mb-8 w-full">
                 <h2 className="text-2xl font-semibold mb-3 text-black dark:text-white">Recent projects</h2>
                 <p className="text-gray-500 mb-6">
-                    These are my most recent projects. You can find more info on <span className="text-white dark:text:black">GitHub</span>.
+                    These are my most recent projects. You can find more info on <a href="https://www.github.com/lagerqvr" className="text-white dark:text:black">GitHub</a>.
                 </p>
                 <h3 className="text-lg text-gray-500 pt-5">Coming soon! 🏗️</h3>
             </section>

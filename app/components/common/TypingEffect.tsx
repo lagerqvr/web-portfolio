@@ -9,7 +9,7 @@ const TypeEffect: React.FC = () => {
             <div className="flex-grow">
                 <Typewriter
                     options={{
-                        strings: ['value', 'apps', 'websites', 'solutions', 'products', 'services', 'pipelines'],
+                        strings: ['value', 'apps', 'websites', 'solutions', 'products', 'services', 'pipelines', 'memes'],
                         autoStart: true,
                         loop: true,
                     }}
