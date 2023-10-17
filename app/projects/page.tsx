@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Projects = () => {
     return <div className="container mx-auto pt-5 bg-white dark:bg-black min-h-[calc(100vh - 64px)] w-full md:w-[800px]">
@@ -19,16 +20,16 @@ const Projects = () => {
                 </p>
                 {/* Example Podcast */}
                 <div className="flex items-start mb-4">
-                    <img className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/sitzy.png" alt="Podcast Logo" />
+                    <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/sitzy.png" alt="Podcast Logo" />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white">Sitzy.app</h3>
                         <p className="text-gray-500">
-                            Sitzy.app is an API wrapper that allows you to reserve tickets over the web via the Kide.app API. Built with Javascript, Bootstrap, and Firebase, Sitzy.app serves as an alternate frontend to Kide.app's API. Due to the nature of the service, Sitzy.app's source code is not public. The app has been made available exclusively for friends and family.
+                            Sitzy.app is an API wrapper that allows you to reserve tickets over the web via the Kide.app API. Built with Javascript, Bootstrap, and Firebase, Sitzy.app serves as an alternate frontend to Kide.app&apos;s API. Due to the nature of the service, Sitzy.app&apos;s source code is not public. The app has been made available exclusively for friends and family.
                         </p>
                     </div>
                 </div>
                 <div className="flex items-start mb-4">
-                    <img className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/arabia_lunch.png" alt="Podcast Logo" />
+                    <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/arabia_lunch.png" alt="Podcast Logo" />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white">Arabia Lunch</h3>
                         <p className="text-gray-500">
@@ -42,7 +43,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex items-start mb-4">
-                    <img className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/frunk.png" alt="Podcast Logo" />
+                    <Image width={150} height={150} className="w-20 h-20 sm:w-40 sm:h-40 rounded mr-4" src="/img/frunk.png" alt="Podcast Logo" />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white">Frunk</h3>
                         <p className="text-gray-500">
