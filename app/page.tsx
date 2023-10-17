@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import 'react-toastify/dist/ReactToastify.css';
 import TypingEffect from "./components/common/TypingEffect";
 import Link from 'next/link';
@@ -41,11 +42,11 @@ export default function Home() {
           </div>
           <div className='mt-20'>
             <div className='px-4 leading-8'>
-              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Introduction</h1>
-              <img src='/img/avatar.jpeg' className='w-52 h-52 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
+              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>About me</h1>
+              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-52 h-52 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
     rounded-lg shadow-lg object-cover object-center mb-3 mr-6
     [clip-path:circle(100%)] 
-    [shape-outside:circle(100%)]'></img>
+    [shape-outside:circle(100%)]'></Image>
               <p className='text-gray-500 dark:text-gray-400'>{data.about.introduction}</p>
             </div>
           </div>
