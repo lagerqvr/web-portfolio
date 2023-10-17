@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
               </Link>
               <div className='flex flex-col items-center'>
-                <p className='text-2xl font-bold py-10'>or</p>
+                <p className='text-2xl font-bold py-10 text-black dark:text-white'>or</p>
                 <p className="text-gray-600 dark:text-gray-400">Get to know me</p>
                 <ArrowDownIcon className="w-5 h-5 ml-1 pt-1 text-gray-600 dark:text-gray-400" />
               </div>
@@ -46,19 +46,19 @@ export default function Home() {
     rounded-lg shadow-lg object-cover object-center mb-3 mr-6
     [clip-path:circle(100%)] 
     [shape-outside:circle(100%)]'></img>
-              <p className='text-gray-400'>{data.about.introduction}</p>
+              <p className='text-gray-500 dark:text-gray-400'>{data.about.introduction}</p>
             </div>
           </div>
           <div className='mt-10'>
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Interests</h1>
-              <p className='text-gray-400'>{data.about.interests}</p>
+              <p className='text-gray-500 dark:text-gray-400'>{data.about.interests}</p>
             </div>
           </div>
           <div className='mt-10'>
             <div className='px-4'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Buzzwords</h1>
-              <ul>
+              <ul className='text-gray-500 dark:text-gray-400'>
                 <li className="flex items-center space-x-3">
                   <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
