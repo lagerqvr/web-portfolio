@@ -1,15 +1,17 @@
-"use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Button from "./Button";
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from "react";
 
 const Logo = () => {
-    //Update the size of the logo when the size of the screen changes
     const [width, setWidth] = useState(0);
+    const [hasMounted, setHasMounted] = useState(false);
+    const { resolvedTheme } = useTheme();
 
-    // State variable for dark mode
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
 
     const updateWidth = () => {
         const newWidth = window.innerWidth;
@@ -21,13 +23,6 @@ const Logo = () => {
         updateWidth();
     }, []);
 
-    // Detect dark mode on component mount
-    useEffect(() => {
-        const mode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setIsDarkMode(mode);
-    }, []);
-
-    // Change between the logo and the button when the user scrolls
     const [showButton, setShowButton] = useState(false);
 
     const changeNavButton = () => {
@@ -42,17 +37,32 @@ const Logo = () => {
         window.addEventListener("scroll", changeNavButton);
     }, []);
 
+    let logoSrc;
+    switch (resolvedTheme) {
+        case 'light':
+            logoSrc = '/logo-light.svg';
+            break;
+        case 'dark':
+            logoSrc = '/logo-dark.svg';
+            break;
+        default:
+            logoSrc = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+            break;
+    }
+
     return (
         <>
-            <Link href="/" style={{ display: showButton ? "none" : "block" }}>
-                <Image
-                    src={isDarkMode ? "/logo-light.svg" : "/logo-dark.svg"}
-                    alt="Logo"
-                    width={"64"}
-                    height={"64"}
-                    className="relative"
-                />
-            </Link>
+            {hasMounted && (
+                <Link href="/" style={{ display: showButton ? "none" : "block" }}>
+                    <Image
+                        src={logoSrc}
+                        alt="Logo"
+                        width={"64"}
+                        height={"64"}
+                        className="relative"
+                    />
+                </Link>
+            )}
             <div
                 style={{
                     display: showButton ? "block" : "none",

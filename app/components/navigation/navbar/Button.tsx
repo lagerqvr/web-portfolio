@@ -31,7 +31,7 @@ const Button = () => {
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     stroke="currentColor"
-                    className="w-10 md:w-6 h-10 md:h-6 text-yellow-500 dark:text-yellow-500"
+                    className="w-8 md:w-6 h-8 md:h-6 text-yellow-500 dark:text-yellow-500"
                 >
                     {theme === 'dark' ? (
                         <path
