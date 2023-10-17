@@ -1,5 +1,7 @@
+'use client';
 import React from "react";
 import Image from "next/image";
+import GithubRepos from "../components/projects/latestRepos";
 
 const Projects = () => {
     return <div className="container mx-auto pt-5 bg-white dark:bg-black min-h-[calc(100vh - 64px)] w-full md:w-[800px]">
@@ -59,23 +61,7 @@ const Projects = () => {
                 <p className="text-gray-500 mb-6">
                     Here are my most recent projects. You can find more info on <a href="https://www.github.com/lagerqvr" className="text-black dark:text-white">GitHub</a>.
                 </p>
-                <div className="flex flex-col">
-                    <div className="h-58 w-58 bg-blue-500 p-5 mb-3 rounded">
-                        <h3 className="text-lg font-bold">This is heading</h3>
-                        <p className="text-sm">This is a description</p>
-                        <p className="pt-5"><a>View repository</a></p>
-                    </div>
-                    <div className="h-58 w-58 bg-blue-500 p-5 mb-3 rounded">
-                        <h3 className="text-lg font-bold">This is heading</h3>
-                        <p className="text-sm">This is a description</p>
-                        <p className="pt-5"><a>View repository</a></p>
-                    </div>
-                    <div className="h-58 w-58 bg-blue-500 p-5 mb-3 rounded">
-                        <h3 className="text-lg font-bold">This is heading</h3>
-                        <p className="text-sm">This is a description</p>
-                        <p className="pt-5"><a>View repository</a></p>
-                    </div>
-                </div>
+                <GithubRepos />
             </section>
         </div>
     </div>;
