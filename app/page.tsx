@@ -13,7 +13,7 @@ export default function Home() {
     <main className="bg-white dark:bg-black">
       <div className="flex container mx-auto px-4 pt-20 min-h-[calc(100vh - 64px)] w-full md:w-[800px]">
         {/* Hero */}
-        <div className="pt-10">
+        <div className="pt-10 flex flex-col items-center">
           {/* Wrapper for blobs and text */}
           <div className="relative w-full max-w-2xl">
             {/* Blobs */}

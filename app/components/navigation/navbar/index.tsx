@@ -20,7 +20,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
         <>
             <div className="bg-white dark:bg-black w-full h-20 top-0 fadeIn">
                 <div className="container mx-auto px-4 h-full">
-                    <div className="flex justify-between items-center h-full">
+                    <div className="flex flex-row justify-between items-center align-middle h-full">
                         <Logo />
                         <button
                             type="button"
@@ -39,7 +39,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                 />
                             </svg>
                         </button>
-                        <ul className="hidden md:flex gap-x-6 text-black dark:text-white z-10">
+                        <ul className="hidden md:flex gap-x-12 text-black dark:text-white z-10 pt-3">
                             <li onClick={() => handleClick("/")} className={isActive("/")}>
                                 <Link href="/">
                                     <p>home</p>
