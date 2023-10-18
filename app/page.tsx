@@ -132,7 +132,7 @@ export default function Home() {
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Contact me</h1>
               <div className='flex'>
                 <p className="text-gray-600 dark:text-gray-400">Want to collaborate on something or just have a question? Down below you can find my social links if you want to reach out, or you could be old school. I&apos;ll get back to you as soon as possible.
-                  <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>Send me an email
+                  <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>If you&apos;re old school, send me an email
                     <EnvelopeIcon className="ml-2 w-5 h-5text-black dark:text-white" />
                   </span>
                   </Link>
