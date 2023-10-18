@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "./Button";
+import { usePathname } from 'next/navigation'
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
-    const [activeRoute, setActiveRoute] = useState("/");
+    const pathname = usePathname();
+    const [activeRoute, setActiveRoute] = useState(pathname);
 
     const handleClick = (route: string) => {
         setActiveRoute(route);
