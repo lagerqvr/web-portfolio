@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = ({ toggle }: { toggle: () => void }) => {
     return (
         <>
-            <div className="bg-white dark:bg-black w-full h-20 top-0">
+            <div className="bg-white dark:bg-black w-full h-20 top-0 fadeIn">
                 <div className="container mx-auto px-4 h-full">
                     <div className="flex justify-between items-center h-full">
                         <Logo />

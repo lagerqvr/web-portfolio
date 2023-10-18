@@ -50,3 +50,17 @@ body::-webkit-scrollbar {
 .Typewriter__cursor {
   color: black;
 }
+
+.fadeIn {
+  animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

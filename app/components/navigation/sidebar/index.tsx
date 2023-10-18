@@ -15,7 +15,7 @@ const Sidebar = ({
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: `${isOpen ? "0" : "-100%"}`,
-                    transition: 'all 0.3s ease-in-out'
+                    transition: 'all 0.4s ease-in-out'
                 }}
             >
                 <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle}>

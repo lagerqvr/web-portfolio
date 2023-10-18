@@ -1,4 +1,4 @@
-import userData from '@/utils/constants/data';
+import userData from '@/app/constants/data';
 import React from 'react';
 
 const Footer = () => {

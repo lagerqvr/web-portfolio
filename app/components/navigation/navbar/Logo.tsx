@@ -59,7 +59,7 @@ const Logo = () => {
                         alt="Logo"
                         width={"64"}
                         height={"64"}
-                        className="relative"
+                        className="relative fadeIn"
                     />
                 </Link>
             )}
