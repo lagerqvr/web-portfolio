@@ -19,7 +19,7 @@ const userData = {
         ],
         interests: [
             "As previously mentioned, I'm driven by problem-solving, no matter the stack. Currently my strongsuit is web-development, but I'm looking into DevOps and Cybersecurity, both of which I feel I can contribute in, especially when I learn more. Thus far I've created various full-stack projects which all are purpose made\n\
-            to serve a purpose or solve a real-world problem.Dynamic and robust applications are also something I strive to create in order to better the space I'm in but also to hopefully help somebody else out.",
+            to serve a purpose or solve a real-world problem. I aim to build dynamic and robust applications, not just to improve my own environment, but also to make life easier for others. I understand how frustrating it can be to use a buggy app, so I strive to create software that genuinely helps people.",
         ],
         buzzwords: [
             "Full-Stack Development",
