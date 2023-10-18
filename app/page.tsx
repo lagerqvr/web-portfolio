@@ -62,7 +62,7 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <div className='px-4 leading-8'>
-              <h1 className='hidden font-bold text-3xl pb-5 text-black dark:text-white'>Interests</h1>
+              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Interests</h1>
               <p className='text-gray-500 dark:text-gray-400'>{data.about.interests}</p>
               <Link href='/favorites'>
                 <div className='flex pt-3 text-black dark:text-white'>
