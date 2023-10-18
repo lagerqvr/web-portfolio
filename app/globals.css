@@ -39,6 +39,12 @@
 body {
   background-color: rgb(var(--foreground-rgb));
   color: rgb(var(--foreground-rgb));
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .Typewriter__cursor {

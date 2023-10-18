@@ -14,7 +14,8 @@ const Sidebar = ({
                 className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white dar dark:bg-black grid pt-[120px] left-0 z-10"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
-                    top: ` ${isOpen ? "0" : "-100%"}`,
+                    top: `${isOpen ? "0" : "-100%"}`,
+                    transition: 'all 0.3s ease-in-out'
                 }}
             >
                 <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle}>
