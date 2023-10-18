@@ -64,3 +64,27 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
 }
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+    filter: blur(10px);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+    filter: blur(0px);
+  }
+}
+
+.reveal {
+  /* Attach animation, linked to a view timeline that tracks self */
+  animation: linear reveal both;
+  border-radius: 50%;
+  animation-timeline: view();
+
+  /* Tweak range when effect should run*/
+  animation-range: entry 100% cover 50%;
+}

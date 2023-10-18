@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <span id='about'></span>
           </div>
-          <div className='mt-20'>
+          <div className='mt-20 reveal'>
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>About me</h1>
               <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-48 sm:h-48 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
@@ -131,7 +131,7 @@ export default function Home() {
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Contact me</h1>
               <div className='flex'>
-                <p className="text-gray-600 dark:text-gray-400">Want to collaborate on something or just have a question? Down below you can find my social links if you want to reach out, or you could be old school. I&apos;ll get back to you as soon as possible.
+                <p className="text-gray-600 dark:text-gray-400">Want to collaborate on something or just have a question? Down below you can find my social links if you want to reach out. I&apos;ll get back to you as soon as possible.
                   <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>If you&apos;re old school, send me an email
                     <EnvelopeIcon className="ml-2 w-5 h-5text-black dark:text-white" />
                   </span>
