@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Button from "../navbar/Button";
+import { usePathname } from "next/navigation";
 
 const Sidebar = ({
     isOpen,
@@ -9,7 +10,8 @@ const Sidebar = ({
     isOpen: boolean;
     toggle: () => void;
 }): JSX.Element => {
-    const [activeRoute, setActiveRoute] = useState<string>("/");
+    const pathname = usePathname();
+    const [activeRoute, setActiveRoute] = useState(pathname);
 
     const handleClick = (route: string) => {
         setActiveRoute(route);
@@ -41,21 +43,21 @@ const Sidebar = ({
                 </button>
                 <ul className="sidebar-nav text-center leading-relaxed text-xl text-black dark:text-white">
                     <li onClick={() => handleClick("/")} className={isActive("/")}>
-                        <Link href="/">
+                        <Link href="/" onClick={toggle}>
                             <p>home</p>
                         </Link>
                     </li>
                     <li onClick={() => handleClick("/experience")} className={isActive("/experience")}>
-                        <Link href="/experience">
+                        <Link href="/experience" onClick={toggle}>
                             <p>experience</p>
                         </Link>
                     </li>
-                    <li>
+                    <li onClick={() => handleClick("/projects")} className={isActive("/projects")}>
                         <Link href="/projects" onClick={toggle}>
                             <p>projects</p>
                         </Link>
                     </li>
-                    <li>
+                    <li onClick={() => handleClick("/favorites")} className={isActive("/favorites")}>
                         <Link href="/favorites" onClick={toggle}>
                             <p>favorites</p>
                         </Link>
@@ -67,7 +69,7 @@ const Sidebar = ({
                         </Link>
                     </li>
                     */}
-                    <li>
+                    <li onClick={() => handleClick("/contact")} className={isActive("/contact")}>
                         <Link href="/contact" onClick={toggle}>
                             <p>contact</p>
                         </Link>

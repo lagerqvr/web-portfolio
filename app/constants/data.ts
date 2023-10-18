@@ -14,7 +14,7 @@ const userData = {
     ],
     about: {
         introduction: [
-            "I'm Rasmus Lagerqvist, a final year Information Technology student at Arcada University of Applied Sciences in Helsinki, Finland. Diving into the software development scene in 2019, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover even though it can be scary at times.\n\
+            "Hi, I'm Rasmus Lagerqvist, a final year Information Technology student at Arcada University of Applied Sciences in Helsinki, Finland. Diving into the software development scene in 2019, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover even though it can be scary at times.\n\
             What really keeps me going? Real-world problems and crafting solutions that make a difference. After all, that's what it's all about, right?",
         ],
         interests: [
