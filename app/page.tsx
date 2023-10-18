@@ -72,7 +72,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className='mt-10'>
+          <div className='mt-10 w-full'>
             <div className='px-4'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Buzzwords</h1>
               <ul className='text-gray-500 dark:text-gray-400 grid grid-cols-1 gap-2 text-left text-secondary sm:grid-cols-2'>
