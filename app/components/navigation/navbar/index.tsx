@@ -48,11 +48,13 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                     <p>favorites</p>
                                 </Link>
                             </li>
+                            {/* 
                             <li>
                                 <Link href="/guestbook">
                                     <p>guestbook</p>
                                 </Link>
                             </li>
+                            */}
                             <li>
                                 <Link href="/contact">
                                     <p>contact</p>

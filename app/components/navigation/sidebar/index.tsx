@@ -48,11 +48,13 @@ const Sidebar = ({
                             <p>favorites</p>
                         </Link>
                     </li>
+                    {/*
                     <li>
                         <Link href="/guestbook" onClick={toggle}>
                             <p>guestbook</p>
                         </Link>
                     </li>
+                    */}
                     <li>
                         <Link href="/contact" onClick={toggle}>
                             <p>contact</p>
