@@ -33,8 +33,8 @@ const getLatestRepos = async (data: GithubData, token?: string): Promise<GithubR
 
         const jsonData = await res.json();
         let repos: GithubRepo[] = jsonData.items;
-        let latestSixRepos = repos.slice(0, 6);
-        return latestSixRepos;
+        let latestThreeRepos = repos.slice(0, 3);
+        return latestThreeRepos;
 
     } catch (err) {
         console.error(err);

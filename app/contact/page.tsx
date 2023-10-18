@@ -34,7 +34,7 @@ const Contact: FC = () => {
                     <input
                         type='text'
                         placeholder='Full Name'
-                        className='w-full rounded-md border border-gray-300 dark:border-gray-400 bg-white dark:bg-black py-2 px-3 text-base text-gray-700 dark:text-gray-300 outline-none focus:border-blue-500 focus:shadow-md'
+                        className='w-full rounded-md border border-gray-300 dark:border-gray-500 bg-white dark:bg-black py-2 px-3 text-base text-gray-700 dark:text-gray-300 outline-none focus:border-blue-500 focus:shadow-md'
                         {...register('name', { required: true })}
                     />
                 </div>
@@ -48,7 +48,7 @@ const Contact: FC = () => {
                     <input
                         type='email'
                         placeholder='example@domain.com'
-                        className='w-full rounded-md border border-gray-300 dark:border-gray-400 bg-white dark:bg-black py-2 px-3 text-gray-700 dark:text-gray-300 outline-none focus:border-blue-500 focus:shadow-md'
+                        className='w-full rounded-md border border-gray-300 dark:border-gray-500 bg-white dark:bg-black py-2 px-3 text-gray-700 dark:text-gray-300 outline-none focus:border-blue-500 focus:shadow-md'
                         {...register('email', { required: true })}
                     />
                 </div>
@@ -62,7 +62,7 @@ const Contact: FC = () => {
                     <textarea
                         rows={4}
                         placeholder='Type your message'
-                        className='w-full resize-none rounded-md border border-gray-300 dark:border-gray-400 bg-white dark:bg-black py-2 px-3 text-base text-gray-700 dark:text-gray-300 outline-none focus:border-blue-500 focus:shadow-md'
+                        className='w-full resize-none rounded-md border border-gray-300 dark:border-gray-500 bg-white dark:bg-black py-2 px-3 text-base text-gray-700 dark:text-gray-300 outline-none focus:border-blue-500 focus:shadow-md'
                         {...register('message', { required: true })}
                     ></textarea>
                 </div>
