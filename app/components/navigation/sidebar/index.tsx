@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Link from "next/link";
 import Button from "../navbar/Button";
 
@@ -8,6 +9,17 @@ const Sidebar = ({
     isOpen: boolean;
     toggle: () => void;
 }): JSX.Element => {
+    const [activeRoute, setActiveRoute] = useState<string>("/");
+
+    const handleClick = (route: string) => {
+        setActiveRoute(route);
+        toggle(); // Close the sidebar when a link is clicked
+    };
+
+    const isActive = (route: string) => {
+        return activeRoute === route ? "font-bold" : "";
+    };
+
     return (
         <>
             <div
@@ -27,15 +39,14 @@ const Sidebar = ({
                         />
                     </svg>
                 </button>
-
                 <ul className="sidebar-nav text-center leading-relaxed text-xl text-black dark:text-white">
-                    <li>
-                        <Link href="/" onClick={toggle}>
+                    <li onClick={() => handleClick("/")} className={isActive("/")}>
+                        <Link href="/">
                             <p>home</p>
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/experience" onClick={toggle}>
+                    <li onClick={() => handleClick("/experience")} className={isActive("/experience")}>
+                        <Link href="/experience">
                             <p>experience</p>
                         </Link>
                     </li>

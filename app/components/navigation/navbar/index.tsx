@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "./Button";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
+    const [activeRoute, setActiveRoute] = useState("/");
+
+    const handleClick = (route: string) => {
+        setActiveRoute(route);
+    };
+
+    const isActive = (route: string) => {
+        return activeRoute === route ? "font-bold " : "";
+    };
+
     return (
         <>
             <div className="bg-white dark:bg-black w-full h-20 top-0 fadeIn">
@@ -28,34 +38,27 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             </svg>
                         </button>
                         <ul className="hidden md:flex gap-x-6 text-black dark:text-white z-10">
-                            <li>
+                            <li onClick={() => handleClick("/")} className={isActive("/")}>
                                 <Link href="/">
                                     <p>home</p>
                                 </Link>
                             </li>
-                            <li>
+                            <li onClick={() => handleClick("/experience")} className={isActive("/experience")}>
                                 <Link href="/experience">
                                     <p>experience</p>
                                 </Link>
                             </li>
-                            <li>
+                            <li onClick={() => handleClick("/projects")} className={isActive("/projects")}>
                                 <Link href="/projects">
                                     <p>projects</p>
                                 </Link>
                             </li>
-                            <li>
+                            <li onClick={() => handleClick("/favorites")} className={isActive("/favorites")}>
                                 <Link href="/favorites">
                                     <p>favorites</p>
                                 </Link>
                             </li>
-                            {/* 
-                            <li>
-                                <Link href="/guestbook">
-                                    <p>guestbook</p>
-                                </Link>
-                            </li>
-                            */}
-                            <li>
+                            <li onClick={() => handleClick("/contact")} className={isActive("/contact")}>
                                 <Link href="/contact">
                                     <p>contact</p>
                                 </Link>
