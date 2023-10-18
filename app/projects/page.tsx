@@ -10,7 +10,7 @@ const Projects = () => {
                 Projects
             </h1>
         </div>
-        <div className="flex flex-col pt-10 px-8">
+        <div className="flex flex-col pt-5 px-8">
             <p className="text-gray-500 mb-6">
                 Every developer inevitably creates some personal projects to expand their skillset or to solve a problem. Here you can find some of my featured projects and also my most recent creations.
             </p>
@@ -35,7 +35,7 @@ const Projects = () => {
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white pt-5 md:pt-0">Arabia Lunch</h3>
                         <p className="text-gray-500">
-                            Arabia lunch is a simple frontend for fetching student lunch menus in Arabianranta area in Helsinki. The site currently supports four lunch restaurants; Artebia 135 (Metropolia), Arcada, DIAK and UniCafe Chemicum.
+                            Arabia Lunch is a simple frontend for fetching student lunch menus in Arabianranta area in Helsinki. The site currently supports four lunch restaurants; Artebia 135 (Metropolia), Arcada, DIAK and UniCafe Chemicum.
 
                             The website can be installed on both iOS and Android to function like an application.
 

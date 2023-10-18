@@ -63,7 +63,7 @@ export default function Home() {
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Interests</h1>
               <p className='text-gray-500 dark:text-gray-400'>{data.about.interests}</p>
-              <Link href='/interests'>
+              <Link href='/favorites'>
                 <div className='flex pt-3 text-black dark:text-white'>
                   <p>See what keeps me motivated</p>
                   <ArrowRightIcon className='w-5 h-5 ml-1 pt-1 mt-1' />
