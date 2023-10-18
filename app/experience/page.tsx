@@ -48,7 +48,7 @@ interface Props {
 
 const ExperienceCard: React.FC<Props> = ({ title, desc, year, company, companyLink }) => {
     return (
-        <div className="relative experience-card border border-gray-200 dark:border-gray-600 p-4 rounded-md shadow-xl mx-4">
+        <div className="relative experience-card border border-gray-200 dark:border-gray-800 p-4 rounded-md shadow-xl mx-4">
             <div className="flex justify-between items-baseline">
                 <h1 className="font-semibold text-xl text-black dark:text-white">{title}</h1>
                 <h1 className="text-sm md:text-xl font-bold text-gray-300 dark:text-gray-500">

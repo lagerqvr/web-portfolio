@@ -3,7 +3,7 @@ import Image from 'next/image';
 import 'react-toastify/dist/ReactToastify.css';
 import TypingEffect from "./components/common/TypingEffect";
 import Link from 'next/link';
-import { ArrowRightIcon, ArrowDownIcon, InboxArrowDownIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, ArrowDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import data from '@/utils/constants/data'
 
 export default function Home() {
@@ -35,10 +35,13 @@ export default function Home() {
               </Link>
               <div className='flex flex-col items-center'>
                 <p className='text-2xl font-bold py-10 text-black dark:text-white'>or</p>
-                <p className="text-gray-600 dark:text-gray-400">Get to know me</p>
-                <ArrowDownIcon className="w-5 h-5 ml-1 pt-1 text-gray-600 dark:text-gray-400" />
+                <Link href='#about' className='flex flex-col items-center'>
+                  <p className="text-gray-600 dark:text-gray-400">Get to know me</p>
+                  <ArrowDownIcon className="w-5 h-5 ml-1 pt-1 text-gray-600 dark:text-gray-400" />
+                </Link>
               </div>
             </div>
+            <span id='about'></span>
           </div>
           <div className='mt-20'>
             <div className='px-4 leading-8'>
@@ -62,7 +65,7 @@ export default function Home() {
               <p className='text-gray-500 dark:text-gray-400'>{data.about.interests}</p>
               <Link href='/interests'>
                 <div className='flex pt-3 text-black dark:text-white'>
-                  <p>More on my interests</p>
+                  <p>See what keeps me motivated</p>
                   <ArrowRightIcon className='w-5 h-5 ml-1 pt-1 mt-1' />
                 </div>
               </Link>
@@ -124,14 +127,16 @@ export default function Home() {
             </div>
           </div>
           <div className='mt-10 pb-20'>
-            <div className='px-4'>
+            <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Contact me</h1>
-              <Link href='/contact'>
-                <div className='flex'>
-                  <p className="text-gray-600 dark:text-gray-400">Send me an email</p>
-                  <InboxArrowDownIcon className="w-5 h-5 ml-1 pt-1 text-gray-600 dark:text-gray-400" />
-                </div>
-              </Link>
+              <div className='flex'>
+                <p className="text-gray-600 dark:text-gray-400">Want to collaborate on something or just have a question? Down below you can find my social links if you want to reach out, or you could be old school. I&apos;ll get back to you as soon as possible.
+                  <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>Send me an email
+                    <EnvelopeIcon className="ml-2 w-5 h-5text-black dark:text-white" />
+                  </span>
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>

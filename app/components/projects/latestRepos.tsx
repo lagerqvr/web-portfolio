@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import getLatestRepos from '../../lib/getLatestRepos';
 import { GithubRepo, GithubData } from '../../lib/getLatestRepos';
+import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 const GithubRepos: React.FC = () => {
     const [repos, setRepos] = useState<GithubRepo[]>([]);
@@ -21,14 +22,18 @@ const GithubRepos: React.FC = () => {
     return (
         <div className="flex flex-col">
             {repos.slice(0, 3).map((repo, index) => (
-                <div key={index} className="h-58 w-58 bg-gray-400 dark:bg-gray-500 p-5 mb-3 rounded">
-                    <h3 className="text-lg font-bold">{repo.name}</h3>
+                <div key={index} className="h-58 w-58 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-5 mb-3 rounded">
+                    <div className='flex align-baseline'>
+                        <h3 className="text-lg font-bold">{repo.name}</h3>
+                        <CodeBracketIcon className="w-5 h-5 ml-2 mt-1" />
+                    </div>
                     <p className="text-sm">{repo.description}</p>
                     <p className="pt-5">
-                        <a href={`https://github.com/${repo.name}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://github.com/lagerqvr/${repo.name}`} target="_blank" rel="noopener noreferrer">
                             View repository
                         </a>
                     </p>
+
                 </div>
             ))}
         </div>
