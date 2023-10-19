@@ -1,19 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 import Logo from "./Logo";
 import Button from "./Button";
-import { usePathname } from 'next/navigation'
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
     const pathname = usePathname();
-    const [activeRoute, setActiveRoute] = useState(pathname);
-
-    const handleClick = (route: string) => {
-        setActiveRoute(route);
-    };
 
     const isActive = (route: string) => {
-        return activeRoute === route ? "" : "";
+        return pathname === route ? "bg-gray-200 dark:bg-gray-600 px-5 py-1 rounded" : "";
     };
 
     return (
@@ -40,27 +35,27 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             </svg>
                         </button>
                         <ul className="hidden md:flex gap-x-12 text-black dark:text-white z-10 pt-3">
-                            <li onClick={() => handleClick("/")} className={`zoom ${isActive("/")}`}>
+                            <li className={`zoom ${isActive("/")}`}>
                                 <Link href="/">
                                     <p>home</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/experience")} className={`zoom ${isActive("/experience")}`}>
+                            <li className={`zoom ${isActive("/experience")}`}>
                                 <Link href="/experience">
                                     <p>experience</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/projects")} className={`zoom ${isActive("/projects")}`}>
+                            <li className={`zoom ${isActive("/projects")}`}>
                                 <Link href="/projects">
                                     <p>projects</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/favorites")} className={`zoom ${isActive("/favorites")}`}>
+                            <li className={`zoom ${isActive("/favorites")}`}>
                                 <Link href="/favorites">
                                     <p>favorites</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/contact")} className={`zoom ${isActive("/contact")}`}>
+                            <li className={`zoom ${isActive("/contact")}`}>
                                 <Link href="/contact">
                                     <p>contact</p>
                                 </Link>
@@ -77,3 +72,4 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
 };
 
 export default Navbar;
+
