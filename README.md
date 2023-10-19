@@ -13,7 +13,7 @@ Welcome to my (updated) personal portfolio, built using Next.js. For a long time
 ![banner](https://i.imgur.com/DWd0NHN.png)
 
 ## Demo
-View the website on live on Vercel: https://www.lagerqvr.com
+View the website live on Vercel: https://www.lagerqvr.com
 
 ## Getting Started
 
