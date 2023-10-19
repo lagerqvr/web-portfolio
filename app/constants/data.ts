@@ -9,14 +9,14 @@ const userData = {
         },
         introduction: {
             heading: "About Me",
-            description: "Hi, I'm <span class='text-white dark:text-white'>Rasmus Lagerqvist</span>, a final year <span class='text-white dark:text-white'>Information Technology</span> student at Arcada University of Applied Sciences in Helsinki, Finland. Diving into the software development scene in 2019, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover even though it can be scary at times.\n\
+            description: "Hi, I'm <span class='text-black dark:text-white'>Rasmus Lagerqvist</span>, a final year <span class='text-black dark:text-white'>Information Technology</span> student at Arcada University of Applied Sciences in Helsinki, Finland. Diving into the software development scene in 2019, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover even though it can be scary at times.\n\
             What really keeps me going? Real-world problems and crafting solutions that make a difference. After all, that's what it's all about, right?",
             description_alt: "Note: I'm currently looking for a full-time position as a software developer, so if you're looking for someone to join your team, feel free to reach out!",
             call_to_action: "See what I'm up to",
         },
         interests: {
             heading: "Interests",
-            description: "As previously mentioned, I'm driven by problem-solving, no matter the stack. Currently my strongsuit is <span class='text-white dark:text-white'>web-development</span>, but I'm looking into <span class='text-white dark:text-white'>DevOps</span> and <span class='text-white dark:text-white'>Cybersecurity</span>, both of which I feel I can contribute in, especially when I learn more. Thus far I've created various full-stack projects which all are purpose made\n\
+            description: "As previously mentioned, I'm driven by problem-solving, no matter the stack. Currently my strongsuit is <span class='text-black dark:text-white'>web-development</span>, but I'm looking into <span class='text-black dark:text-white'>DevOps</span> and <span class='text-black dark:text-white'>Cybersecurity</span>, both of which I feel I can contribute in, especially when I learn more. Thus far I've created various full-stack projects which all are purpose made\n\
             to serve a purpose or solve a real-world problem. I aim to build dynamic and robust applications, not just to improve my own environment, but also to make life easier for others. I understand how frustrating it can be to use a buggy app, so I strive to create software that genuinely helps people.",
             call_to_action: "See what keeps me motivated",
         },

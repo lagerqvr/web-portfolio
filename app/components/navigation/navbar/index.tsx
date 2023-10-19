@@ -13,7 +13,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     };
 
     const isActive = (route: string) => {
-        return activeRoute === route ? "font-bold " : "";
+        return activeRoute === route ? "" : "";
     };
 
     return (

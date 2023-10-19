@@ -20,11 +20,11 @@ export default function Home() {
               <div className="absolute top-0 -right-4 w-36 h-36 md:w-44 md:h-44 bg-red-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
               <div className="absolute -bottom-8 left-20 w-36 h-36 md:w-44 md:h-44 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
             </div>
-            <div className="w-full md:w-[600px] relative flex flex-col items-left md:items-center text-left md:text-center">
+            <div className="w-full relative flex flex-col items-left md:items-center text-left md:text-center">
               <h1 className="text-5xl font-bold text-black dark:text-white pb-3">
                 <TypingEffect />
               </h1>
-              <p className="text-lg text-gray-700 dark:text-white pb-3" dangerouslySetInnerHTML={{ __html: data.about.hero.headings.introduction }}></p>
+              <p className="md:w-[525px] text-lg text-gray-700 dark:text-white pb-4" dangerouslySetInnerHTML={{ __html: data.about.hero.headings.introduction }}></p>
               <button className='hover:shadow-form bg-gradient-to-r from-blue-500 to-red-500 rounded-md py-2 px-5 text-base text-white outline-none'>
                 <Link href='/projects'>
                   {data.about.hero.headings.call_to_action_one}
