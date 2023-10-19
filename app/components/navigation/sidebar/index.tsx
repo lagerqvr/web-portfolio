@@ -19,13 +19,13 @@ const Sidebar = ({
     };
 
     const isActive = (route: string) => {
-        return activeRoute === route ? "" : "";
+        return pathname === route ? "bg-gray-200 dark:bg-gray-600 px-5 py-0 rounded" : "";
     };
 
     return (
         <>
             <div
-                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white dar dark:bg-black grid pt-[120px] left-0 z-10"
+                className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white dark:bg-black grid pt-[120px] left-0 z-10"
                 style={{
                     opacity: `${isOpen ? "1" : "0"}`,
                     top: `${isOpen ? "0" : "-100%"}`,
@@ -42,35 +42,28 @@ const Sidebar = ({
                     </svg>
                 </button>
                 <ul className="sidebar-nav text-center leading-relaxed text-xl text-black dark:text-white">
-                    <li onClick={() => handleClick("/")} className={isActive("/")}>
-                        <Link href="/" onClick={toggle}>
+                    <li onClick={() => handleClick("/")} className={`${isActive("/")}`}>
+                        <Link href="/">
                             <p>home</p>
                         </Link>
                     </li>
-                    <li onClick={() => handleClick("/experience")} className={isActive("/experience")}>
-                        <Link href="/experience" onClick={toggle}>
+                    <li onClick={() => handleClick("/experience")} className={`${isActive("/experience")}`}>
+                        <Link href="/experience">
                             <p>experience</p>
                         </Link>
                     </li>
-                    <li onClick={() => handleClick("/projects")} className={isActive("/projects")}>
-                        <Link href="/projects" onClick={toggle}>
+                    <li onClick={() => handleClick("/projects")} className={`${isActive("/projects")}`}>
+                        <Link href="/projects">
                             <p>projects</p>
                         </Link>
                     </li>
-                    <li onClick={() => handleClick("/favorites")} className={isActive("/favorites")}>
-                        <Link href="/favorites" onClick={toggle}>
+                    <li onClick={() => handleClick("/favorites")} className={`${isActive("/favorites")}`}>
+                        <Link href="/favorites">
                             <p>favorites</p>
                         </Link>
                     </li>
-                    {/*
-                    <li>
-                        <Link href="/guestbook" onClick={toggle}>
-                            <p>guestbook</p>
-                        </Link>
-                    </li>
-                    */}
-                    <li onClick={() => handleClick("/contact")} className={isActive("/contact")}>
-                        <Link href="/contact" onClick={toggle}>
+                    <li onClick={() => handleClick("/contact")} className={`zoom ${isActive("/contact")}`}>
+                        <Link href="/contact">
                             <p>contact</p>
                         </Link>
                     </li>

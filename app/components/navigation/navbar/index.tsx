@@ -8,7 +8,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     const pathname = usePathname();
 
     const isActive = (route: string) => {
-        return pathname === route ? "bg-gray-200 dark:bg-gray-600 px-5 py-1 rounded" : "";
+        return pathname === route ? "bg-gray-300 dark:bg-gray-600 px-5 py-1 rounded" : "";
     };
 
     return (
