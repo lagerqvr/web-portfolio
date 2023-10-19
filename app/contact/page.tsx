@@ -3,12 +3,7 @@ import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/app/utils/send-email';
 import data from '@/app/constants/data';
-
-export type FormData = {
-    name: string;
-    email: string;
-    message: string;
-};
+import { FormData } from '@/app/types/types'
 
 const Contact: FC = () => {
     const { register, handleSubmit } = useForm<FormData>();

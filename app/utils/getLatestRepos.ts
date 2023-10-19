@@ -1,12 +1,4 @@
-export interface GithubRepo {
-    id: number;
-    name: string;
-    description: string;
-}
-
-export interface GithubData {
-    githubUsername: string;
-}
+import { GithubData, GithubRepo } from '../types/types';
 
 const getLatestRepos = async (data: GithubData, token?: string): Promise<GithubRepo[] | undefined> => {
     try {

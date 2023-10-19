@@ -1,5 +1,6 @@
 import data from "../constants/data";
 import React from "react";
+import { ExperienceProps } from "../types/types";
 
 export default function Experience() {
     return (
@@ -38,15 +39,7 @@ export default function Experience() {
     );
 }
 
-interface Props {
-    title: string;
-    desc: string;
-    year: string;
-    company: string;
-    companyLink: string;
-}
-
-const ExperienceCard: React.FC<Props> = ({ title, desc, year, company, companyLink }) => {
+const ExperienceCard: React.FC<ExperienceProps> = ({ title, desc, year, company, companyLink }) => {
     return (
         <div className="relative experience-card border border-gray-200 dark:border-gray-600 p-4 rounded-md shadow-xl mx-4">
             <div className="flex justify-between items-baseline">

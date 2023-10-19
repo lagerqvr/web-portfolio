@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import TypingEffect from "./components/common/TypingEffect";
-import BuzzwordList from './lib/BuzzwordList';
+import BuzzwordList from './utils/BuzzwordList';
 import 'react-toastify/dist/ReactToastify.css';
 import { ArrowRightIcon, ArrowDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import data from '@/app/constants/data';

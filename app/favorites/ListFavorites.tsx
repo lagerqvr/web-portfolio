@@ -1,27 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
-
-interface MediaItem {
-    title: string;
-    description: string;
-    imgSrc: string;
-    link: string;
-}
-
-interface MediaData {
-    heading: string;
-    description: string;
-    items: MediaItem[];
-}
-
-type MediaType = 'podcasts' | 'youtube';
-
-interface MediaSectionProps {
-    type: MediaType;
-    data: MediaData;
-}
-
+import { MediaSectionProps } from '../types/types';
 
 function FavoritesSection({ type, data }: MediaSectionProps) {
     const linkText = type === 'podcasts' ? 'Visit Website' : 'View Channel';

@@ -1,8 +1,5 @@
 import React from 'react';
-
-interface BuzzwordListProps {
-  buzzwords: string[];
-}
+import { BuzzwordListProps } from '../types/types';
 
 const BuzzwordList: React.FC<BuzzwordListProps> = ({ buzzwords }) => {
   return (

@@ -1,17 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-
-interface Project {
-    title: string;
-    description: string;
-    imgSrc: string;
-    link?: string;
-}
-
-
-interface ProjectsListProps {
-    projects: Project[];
-}
+import { ProjectsListProps } from '../types/types';
 
 const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
     return (
