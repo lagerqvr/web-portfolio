@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import getLatestRepos from '../utils/getLatestRepos';
-import { GithubRepo, GithubData } from '../utils/getLatestRepos';
+import { GithubRepo, GithubData } from '../types/types';
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
 
 const GithubRepos: React.FC = () => {
