@@ -100,7 +100,7 @@ const userData = {
     },
     favorites: {
         heading: "Favorites",
-        description: "Equality is important, but we all have our favorites. Below, I've listed some of my preferred things to listen to and watch. Each of these have a connection to technology in some way. Although I strive to explore new things, these are the ones I consistently return to. I'd like to list all my favorites, but I've attempted to keep this list short and sweet. Enjoy!",
+        description: "Equality is important, but we all have our favorites. Here I've listed some of my preferred things to listen to and watch. I'd like to list all my favorites, but I've attempted to keep this list short and sweet. Enjoy!",
         podcasts: {
             heading: "Podcasts",
             description: "I regularly listen to all of these podcasts and can't recommend them enough. They're not just packed with useful information, but also provide an excellent opportunity to learn more.",

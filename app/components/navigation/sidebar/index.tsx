@@ -32,7 +32,7 @@ const Sidebar = ({
                     transition: 'all 0.3s ease-in-out'
                 }}
             >
-                <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle}>
+                <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle} aria-label="Menu">
                     {/* Close icon */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
