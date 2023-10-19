@@ -1,0 +1,7 @@
+# Block all crawlers for /contact
+User-agent: *
+Disallow: /contact
+
+# Allow all crawlers
+User-agent: *
+Allow: /
