@@ -26,14 +26,14 @@ export default function Home() {
               </h1>
               <Link href='/projects'>
                 <div className='flex'>
-                  <p className="text-gray-600 dark:text-gray-400">Discover what I&apos;m building</p>
+                  <p className="text-gray-600 dark:text-gray-400">{data.about.hero.headings.call_to_action_one}</p>
                   <ArrowRightIcon className="w-5 h-5 ml-1 pt-1 text-gray-600 dark:text-gray-400" />
                 </div>
               </Link>
               <div className='flex flex-col items-center'>
                 <p className='text-2xl font-bold py-10 text-black dark:text-white'>or</p>
                 <Link href='#about' className='flex flex-col items-center'>
-                  <p className="text-gray-600 dark:text-gray-400">Get to know me</p>
+                  <p className="text-gray-600 dark:text-gray-400">{data.about.hero.headings.call_to_action_two}</p>
                   <ArrowDownIcon className="w-5 h-5 ml-1 pt-1 text-gray-600 dark:text-gray-400" />
                 </Link>
               </div>
@@ -42,15 +42,16 @@ export default function Home() {
           </div>
           <div className='mt-20 reveal'>
             <div className='px-4 leading-8'>
-              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>About me</h1>
+              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.introduction.heading}</h1>
               <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-48 sm:h-48 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
     rounded-lg shadow-lg object-cover object-center mb-3 mr-6
     [clip-path:circle(100%)] 
     [shape-outside:circle(100%)]'></Image>
-              <p className='text-gray-500 dark:text-gray-400'>{data.about.introduction}</p>
+              <p className='text-gray-500 dark:text-gray-400'>{data.about.introduction.description}</p>
+              <p className='text-gray-500 dark:text-gray-400 pt-5'>{data.about.introduction.description_alt}</p>
               <Link href='/experience'>
                 <div className='flex pt-3 text-black dark:text-white'>
-                  <p>See where I&apos;m at</p>
+                  <p>{data.about.introduction.call_to_action}</p>
                   <ArrowRightIcon className='w-5 h-5 ml-1 pt-1 mt-1' />
                 </div>
               </Link>
@@ -58,11 +59,11 @@ export default function Home() {
           </div>
           <div className='mt-10'>
             <div className='px-4 leading-8'>
-              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Interests</h1>
-              <p className='text-gray-500 dark:text-gray-400'>{data.about.interests}</p>
+              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.interests.heading}</h1>
+              <p className='text-gray-500 dark:text-gray-400'>{data.about.interests.description}</p>
               <Link href='/favorites'>
                 <div className='flex pt-3 text-black dark:text-white'>
-                  <p>See what keeps me motivated</p>
+                  <p>{data.about.interests.call_to_action}</p>
                   <ArrowRightIcon className='w-5 h-5 ml-1 pt-1 mt-1' />
                 </div>
               </Link>
@@ -70,16 +71,17 @@ export default function Home() {
           </div>
           <div className='mt-10 w-full'>
             <div className='px-4'>
-              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Buzzwords</h1>
-              <BuzzwordList buzzwords={data.about.buzzwords} />
+              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.buzzwords.heading}</h1>
+              <p className='text-gray-500 dark:text-gray-400 pb-5 leading-8'>{data.about.buzzwords.description}</p>
+              <BuzzwordList buzzwords={data.about.buzzwords.list} />
             </div>
           </div>
           <div className='mt-10 pb-20'>
             <div className='px-4 leading-8'>
-              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>Contact me</h1>
+              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.contact.heading}</h1>
               <div className='flex'>
-                <p className="text-gray-600 dark:text-gray-400">{data.about.contact}
-                  <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>If you&apos;re old school, send me an email
+                <p className="text-gray-600 dark:text-gray-400">{data.about.contact.description}
+                  <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>{data.about.contact.description_alt}
                     <EnvelopeIcon className="ml-2 w-5 h-5text-black dark:text-white" />
                   </span>
                   </Link>

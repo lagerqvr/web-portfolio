@@ -2,6 +2,7 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/app/utils/send-email';
+import data from '@/app/constants/data';
 
 export type FormData = {
     name: string;
@@ -18,9 +19,9 @@ const Contact: FC = () => {
     return <div className="container mx-auto pt-5 bg-white dark:bg-black min-h-[calc(100vh - 64px)]">
         <div className="flex flex-col justify-center items-center z-10">
             <h1 className="text-4xl font-bold text-black dark:text-white leading-fix pb-3">
-                Get in touch
+                {data.contact.heading}
             </h1>
-            <p className="text-gray-500 w-full md:w-[400px] text-center">Have a job offer or just want to chat? Reach out and we&apos;ll go from there.</p>
+            <p className="text-gray-500 w-full md:w-[400px] text-center">{data.contact.description}</p>
         </div>
         <div className='flex flex-col justify-center items-center pt-10 px-6'>
             <form onSubmit={handleSubmit(onSubmit)} className='w-full md:w-[400px]'>
@@ -29,7 +30,7 @@ const Contact: FC = () => {
                         htmlFor='name'
                         className='mb-2 block text-base text-black dark:text-gray-500'
                     >
-                        Full Name
+                        {data.contact.form_name}
                     </label>
                     <input
                         type='text'
@@ -43,7 +44,7 @@ const Contact: FC = () => {
                         htmlFor='email'
                         className='mb-2 block text-base text-black dark:text-gray-500'
                     >
-                        Email Address
+                        {data.contact.form_email}
                     </label>
                     <input
                         type='email'
@@ -57,7 +58,7 @@ const Contact: FC = () => {
                         htmlFor='message'
                         className='mb-2 block text-base text-black dark:text-gray-500'
                     >
-                        Message
+                        {data.contact.form_message}
                     </label>
                     <textarea
                         rows={4}
@@ -68,7 +69,7 @@ const Contact: FC = () => {
                 </div>
                 <div className='flex justify-end'>
                     <button className='hover:shadow-form bg-gradient-to-r from-blue-500 to-red-500 rounded-md py-2 px-5 text-base text-white outline-none'>
-                        Send message
+                        {data.contact.form_button}
                     </button>
                 </div>
             </form>

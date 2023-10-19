@@ -6,13 +6,13 @@ export default function Experience() {
         <div className="bg-white dark:bg-black pb-20">
             <div className="max-w-6xl mx-auto h-15">
                 <h1 className="text-4xl font-bold py-5 text-center text-black dark:text-white">
-                    Experience
+                    {data.experience.heading}
                 </h1>
             </div>
             <div className="bg-white dark:bg-black pt-5">
                 <div className="grid grid-cols-1 bg-white dark:bg-black max-w-xl mx-auto">
                     {/* Experience card */}
-                    {data.experience.map((exp, idx) => (
+                    {data.experience.positions.map((exp, idx) => (
                         <>
                             <ExperienceCard
                                 key={idx}
@@ -22,7 +22,7 @@ export default function Experience() {
                                 company={exp.company}
                                 companyLink={exp.companyLink}
                             />
-                            {idx === data.experience.length - 1 ? null : (
+                            {idx === data.experience.positions.length - 1 ? null : (
                                 <div className="divider-container flex flex-col items-center -mt-2">
                                     <div className="w-4 h-4 bg-green-500 rounded-full relative">
                                         <div className="w-4 h-4 bg-green-500 rounded-full relative animate-ping"></div>
