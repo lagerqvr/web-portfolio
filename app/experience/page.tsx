@@ -1,4 +1,4 @@
-import userData from "../constants/data";
+import data from "../constants/data";
 import React from "react";
 
 export default function Experience() {
@@ -12,7 +12,7 @@ export default function Experience() {
             <div className="bg-white dark:bg-black pt-5">
                 <div className="grid grid-cols-1 bg-white dark:bg-black max-w-xl mx-auto">
                     {/* Experience card */}
-                    {userData.experience.map((exp, idx) => (
+                    {data.experience.map((exp, idx) => (
                         <>
                             <ExperienceCard
                                 key={idx}
@@ -22,7 +22,7 @@ export default function Experience() {
                                 company={exp.company}
                                 companyLink={exp.companyLink}
                             />
-                            {idx === userData.experience.length - 1 ? null : (
+                            {idx === data.experience.length - 1 ? null : (
                                 <div className="divider-container flex flex-col items-center -mt-2">
                                     <div className="w-4 h-4 bg-green-500 rounded-full relative">
                                         <div className="w-4 h-4 bg-green-500 rounded-full relative animate-ping"></div>

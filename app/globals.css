@@ -55,6 +55,14 @@ body::-webkit-scrollbar {
   animation: fadeInAnimation 1s forwards;
 }
 
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

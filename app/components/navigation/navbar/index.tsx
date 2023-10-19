@@ -40,27 +40,27 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             </svg>
                         </button>
                         <ul className="hidden md:flex gap-x-12 text-black dark:text-white z-10 pt-3">
-                            <li onClick={() => handleClick("/")} className={isActive("/")}>
+                            <li onClick={() => handleClick("/")} className={`zoom ${isActive("/")}`}>
                                 <Link href="/">
                                     <p>home</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/experience")} className={isActive("/experience")}>
+                            <li onClick={() => handleClick("/experience")} className={`zoom ${isActive("/experience")}`}>
                                 <Link href="/experience">
                                     <p>experience</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/projects")} className={isActive("/projects")}>
+                            <li onClick={() => handleClick("/projects")} className={`zoom ${isActive("/projects")}`}>
                                 <Link href="/projects">
                                     <p>projects</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/favorites")} className={isActive("/favorites")}>
+                            <li onClick={() => handleClick("/favorites")} className={`zoom ${isActive("/favorites")}`}>
                                 <Link href="/favorites">
                                     <p>favorites</p>
                                 </Link>
                             </li>
-                            <li onClick={() => handleClick("/contact")} className={isActive("/contact")}>
+                            <li onClick={() => handleClick("/contact")} className={`zoom ${isActive("/contact")}`}>
                                 <Link href="/contact">
                                     <p>contact</p>
                                 </Link>
