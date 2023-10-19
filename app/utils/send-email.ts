@@ -1,4 +1,4 @@
-import { FormData } from '@/app/contact/page';
+import { FormData } from '../types/types';
 import { toast } from 'react-toastify';
 
 export function sendEmail(data: FormData) {
