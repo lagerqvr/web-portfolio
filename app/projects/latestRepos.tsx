@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import getLatestRepos from '../utils/getLatestRepos';
 import { GithubRepo, GithubData } from '../types/types';
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
+import LoadingSkeleton from '../utils/LoadingSkeleton';
 
 const GithubRepos: React.FC = () => {
     const [repos, setRepos] = useState<GithubRepo[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -14,10 +16,15 @@ const GithubRepos: React.FC = () => {
             if (latestRepos) {
                 setRepos(latestRepos);
             }
+            setLoading(false);
         };
 
         fetchData();
     }, []);
+
+    if (loading) {
+        return <LoadingSkeleton />;
+    }
 
     return (
         <div className="flex flex-col">
@@ -33,7 +40,6 @@ const GithubRepos: React.FC = () => {
                             View repository
                         </a>
                     </p>
-
                 </div>
             ))}
         </div>

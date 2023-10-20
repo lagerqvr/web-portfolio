@@ -1,7 +1,6 @@
 'use client';
 import React from "react";
 import GithubRepos from "./latestRepos";
-import { Suspense } from "react";
 import data from "@/app/constants/data";
 import ProjectsList from "./ProjectsList";
 
@@ -25,9 +24,7 @@ const Projects = () => {
             <section className="mb-8 w-full">
                 <h2 className="text-2xl font-semibold mb-3 text-black dark:text-white">{data.projects.heading_recent}</h2>
                 <p className="text-gray-500 mb-6" dangerouslySetInnerHTML={{ __html: data.projects.description_recent }}></p>
-                <Suspense fallback={<div className="text-white">Loading...</div>}>
-                    <GithubRepos />
-                </Suspense>
+                <GithubRepos />
             </section>
         </div>
     </div>;
