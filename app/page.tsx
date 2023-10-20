@@ -44,7 +44,7 @@ export default function Home() {
             <div className='px-4 leading-8'>
               <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.introduction.heading}</h1>
               <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-48 sm:h-48 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
-    rounded-lg shadow-lg object-cover object-center mr-6
+    rounded-lg shadow-xl object-cover object-center mr-6
     [clip-path:circle(100%)] 
     [shape-outside:circle(100%)]'></Image>
               <p className='text-gray-500 dark:text-gray-400' dangerouslySetInnerHTML={{ __html: data.about.introduction.description }}></p>

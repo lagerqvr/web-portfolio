@@ -8,7 +8,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     const pathname = usePathname();
 
     const isActive = (route: string) => {
-        return pathname === route ? "bg-gray-300 dark:bg-gray-600 px-5 py-1 rounded" : "";
+        return pathname === route ? "" : "";
     };
 
     return (
@@ -16,7 +16,9 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
             <div className="bg-white dark:bg-black w-full h-20 top-0 fadeIn">
                 <div className="container mx-auto px-4 h-full">
                     <div className="flex flex-row justify-between items-center align-middle h-full">
-                        <Logo />
+                        <div className="w-20 h-8">
+                            <Logo />
+                        </div>
                         <button
                             type="button"
                             className="inline-flex items-center md:hidden text-black dark:text-white"
@@ -61,7 +63,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                 </Link>
                             </li>
                         </ul>
-                        <div className="hidden md:block">
+                        <div className="hidden md:block w-20 h-10">
                             <Button />
                         </div>
                     </div>
