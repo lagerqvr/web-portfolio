@@ -55,7 +55,7 @@ const userData = {
                 company: "TechLabs",
                 year: "2022",
                 companyLink: "https://techlabs.fi/",
-                desc: "Worked as a web designer for Arcada’s research department TechLabs. Responsible for designing and optimizing user experiences for the company’s website in Figma.",
+                desc: "Worked as a web designer for Arcada's research department TechLabs. Responsible for designing and optimizing user experiences for the company's website in Figma.",
             },
             {
                 title: "Junior Software Developer",
@@ -78,6 +78,8 @@ const userData = {
         heading_featured: "Featured Projects",
         heading_recent: "Recent Projects",
         description: "Every developer inevitably creates some personal projects to expand their skillset or to solve a problem. Here you can find some of my featured projects and also my most recent creations.",
+        description_featured: "These are some my most recent and interesting projects. The source code and more info on some of these projects can be found on <a href='https://www.github.com/lagerqvr' class='text-black dark:text-white'>GitHub</a>.",
+        description_recent: "Here are my most recent projects. You can find more info on <a href='https://www.github.com/lagerqvr' class='text-black dark:text-white'>GitHub</a>.",
         featured: [
             {
                 title: "Sitzy.app",
