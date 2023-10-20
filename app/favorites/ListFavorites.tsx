@@ -12,8 +12,8 @@ function FavoritesSection({ type, data }: MediaSectionProps) {
             <p className="text-gray-500 mb-6">{data.description}</p>
 
             {data.items.map(item => (
-                <div className="flex flex-col md:flex-row items-start py-6" key={item.title}>
-                    <Image width={150} height={150} className="w-40 h-40 rounded mr-4" src={item.imgSrc} alt={`${type} Logo`} />
+                <div className="flex flex-col md:flex-row items-center md:items-start py-6" key={item.title}>
+                    <Image width={150} height={150} className="w-44 h-44 md:w-40 md:h-40 rounded mr-0 md:mr-4 mb-4 md:mb-0" src={item.imgSrc} alt={`${type} Logo`} />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white pt-5 md:pt-0">{item.title}</h3>
                         <p className="text-gray-500">{item.description}</p>

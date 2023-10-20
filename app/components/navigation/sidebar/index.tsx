@@ -34,8 +34,8 @@ const Sidebar = ({
             >
                 <button className="absolute right-0 p-6 text-black dark:text-white" onClick={toggle} aria-label="Menu">
                     {/* Close icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
                 <ul className="sidebar-nav text-center leading-relaxed text-2xl text-black dark:text-white">

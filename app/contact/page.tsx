@@ -18,7 +18,7 @@ const Contact: FC = () => {
             </h1>
             <p className="text-gray-500 w-full md:w-[400px] text-center">{data.contact.description}</p>
         </div>
-        <div className='flex flex-col justify-center items-center pt-10 px-6'>
+        <div className='flex flex-col justify-center items-center pt-8 px-6'>
             <form onSubmit={handleSubmit(onSubmit)} className='w-full md:w-[400px]'>
                 <div className='mb-5'>
                     <label

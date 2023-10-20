@@ -149,7 +149,7 @@ const userData = {
         },
     },
     contact: {
-        heading: "Get in Touch",
+        heading: "Contact Me",
         description: "Have a job offer or just want to chat? Reach out and we'll go from there.",
         form_name: "Full Name",
         form_email: "Email Address",
