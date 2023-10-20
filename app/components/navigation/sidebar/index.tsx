@@ -19,7 +19,7 @@ const Sidebar = ({
     };
 
     const isActive = (route: string) => {
-        return pathname === route ? "bg-gray-200 dark:bg-gray-600 px-5 py-0 rounded" : "";
+        return pathname === route ? "font-bold" : "";
     };
 
     return (
@@ -34,14 +34,11 @@ const Sidebar = ({
             >
                 <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle} aria-label="Menu">
                     {/* Close icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                        <path
-                            fill="currentColor"
-                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                        />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <ul className="sidebar-nav text-center leading-relaxed text-xl text-black dark:text-white">
+                <ul className="sidebar-nav text-center leading-relaxed text-2xl text-black dark:text-white">
                     <li onClick={() => handleClick("/")} className={`${isActive("/")}`}>
                         <Link href="/">
                             <p>home</p>

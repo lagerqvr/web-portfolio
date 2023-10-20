@@ -8,7 +8,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     const pathname = usePathname();
 
     const isActive = (route: string) => {
-        return pathname === route ? "" : "";
+        return pathname === route ? "font-bold" : "";
     };
 
     return (
@@ -24,16 +24,9 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             className="inline-flex items-center md:hidden text-black dark:text-white"
                             onClick={toggle}
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="40"
-                                height="40"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
-                                />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8" width="40"
+                                height="40">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </button>
                         <ul className="hidden md:flex gap-x-12 text-black dark:text-white z-10 pt-3">
