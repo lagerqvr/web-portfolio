@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#next-sitemap
+sitemap*.xml
+
+# Ignore robots.txt
+public/robots.txt
+

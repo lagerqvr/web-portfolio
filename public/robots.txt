@@ -1,7 +1,9 @@
-# Block all crawlers for /contact
-User-agent: *
-Disallow: /contact
-
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://lagerqvr.com
+
+# Sitemaps
+Sitemap: https://lagerqvr.com/sitemap.xml
