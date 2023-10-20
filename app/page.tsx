@@ -25,7 +25,7 @@ export default function Home() {
                 <TypingEffect />
               </h1>
               <p className="md:w-[525px] text-lg text-gray-700 dark:text-white pb-4" dangerouslySetInnerHTML={{ __html: data.about.hero.headings.introduction }}></p>
-              <button className='hover:shadow-form bg-gradient-to-r from-blue-500 to-red-500 rounded-md py-2 px-5 text-base text-white outline-none'>
+              <button className='hover:shadow-form bg-gradient-to-r from-blue-500 to-red-500 rounded-md py-3 px-5 text-base text-white outline-none'>
                 <Link href='/projects'>
                   {data.about.hero.headings.call_to_action_one}
                 </Link>
