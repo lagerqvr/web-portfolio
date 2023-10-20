@@ -15,7 +15,7 @@ const Sidebar = ({
 
     const handleClick = (route: string) => {
         setActiveRoute(route);
-        toggle(); // Close the sidebar when a link is clicked
+        toggle();
     };
 
     const isActive = (route: string) => {
@@ -32,7 +32,7 @@ const Sidebar = ({
                     transition: 'all 0.3s ease-in-out'
                 }}
             >
-                <button className="absolute right-0 p-5 text-black dark:text-white" onClick={toggle} aria-label="Menu">
+                <button className="absolute right-0 p-6 text-black dark:text-white" onClick={toggle} aria-label="Menu">
                     {/* Close icon */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -65,7 +65,7 @@ const Sidebar = ({
                         </Link>
                     </li>
                 </ul>
-                <div className="absolute left-0 p-5">
+                <div className="absolute left-0 p-4">
                     <Button />
                 </div>
             </div>
@@ -74,3 +74,4 @@ const Sidebar = ({
 };
 
 export default Sidebar;
+
