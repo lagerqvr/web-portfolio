@@ -2,10 +2,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import TypingEffect from "./components/common/TypingEffect";
+import TypingEffect from "./utils/TypingEffect";
 import BuzzwordList from './utils/BuzzwordList';
 import 'react-toastify/dist/ReactToastify.css';
-import { ArrowRightIcon, ArrowDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, ArrowDownIcon } from '@heroicons/react/24/outline';
+import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
 import data from '@/app/constants/data';
 
 export default function Home() {
@@ -24,6 +25,20 @@ export default function Home() {
               <h1 className="text-5xl font-bold text-black dark:text-white pb-3">
                 <TypingEffect />
               </h1>
+              <div className='flex flex-row mt-2 mb-3 space-x-7 md:space-x-7'>
+                <Link href={data.socialLinks.linkedin}>
+                  <FaLinkedin className='w-7 h-7 text-black dark:text-white' />
+                </Link>
+                <Link href={data.socialLinks.github}>
+                  <FaGithub className='w-7 h-7 text-black dark:text-white' />
+                </Link>
+                <Link href={data.socialLinks.telegram}>
+                  <FaTelegram className='w-7 h-7 text-black dark:text-white' />
+                </Link>
+                <Link href={data.socialLinks.email}>
+                  <FaEnvelope className='w-7 h-7 text-black dark:text-white' />
+                </Link>
+              </div>
               <p className="md:w-[525px] text-lg text-gray-700 dark:text-white pb-4" dangerouslySetInnerHTML={{ __html: data.about.hero.headings.introduction }}></p>
               <button className='hover:shadow-form bg-gradient-to-r from-blue-500 to-red-500 rounded-md py-3 px-5 text-base text-white outline-none'>
                 <Link href='/projects'>
@@ -42,8 +57,10 @@ export default function Home() {
           </div>
           <div className='mt-20'>
             <div className='px-4 leading-8'>
-              <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.introduction.heading}</h1>
-              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-38 h-36 sm:w-48 sm:h-48 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
+              <div className='flex flex-row justify-between'>
+                <h1 className='font-bold text-3xl pb-5 text-black dark:text-white'>{data.about.introduction.heading}</h1>
+              </div>
+              <Image alt="Avatar" width={150} height={150} src='/img/avatar.jpeg' className='w-36 h-36 sm:w-64 sm:h-64 mt-3 float-left aspect-[1/1] lg:aspect-[1/2] 
     rounded-lg shadow-xl object-cover object-center mr-6
     [clip-path:circle(100%)] 
     [shape-outside:circle(100%)]'></Image>
@@ -82,7 +99,7 @@ export default function Home() {
               <div className='flex'>
                 <p className="text-gray-600 dark:text-gray-400">{data.about.contact.description}
                   <Link href='/contact'><span className='flex text-black dark:text-white mt-3'>{data.about.contact.description_alt}
-                    <EnvelopeIcon className="ml-2 w-5 h-5text-black dark:text-white" />
+                    <FaEnvelope className="ml-2 mt-1 w-5 h-5 text-black dark:text-white" />
                   </span>
                   </Link>
                 </p>
