@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="bg-white dark:bg-black">
       <div className="flex container mx-auto px-4 pt-20 min-h-[calc(100vh - 64px)] w-full md:w-[800px]">
-        <div className="pt-10 flex flex-col items-center">
+        <div className="pt-5 md:pt-10 flex flex-col items-center">
           <div className="relative w-full max-w-2xl">
             <div className="absolute top-0 left-0 right-0 bottom-0 z-0 max-w-xs md:max-w-3xl">
               <div className="absolute top-0 -left-4 w-36 h-36 md:w-44 md:h-44 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
