@@ -6,7 +6,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
     return (
         <>
             {projects.map((project, index) => (
-                <div key={index} className="flex flex-col md:flex-row items-center md:items-start py-6">
+                <div key={index} className="flex flex-col md:flex-row items-start py-6">
                     <Image width={150} height={150} className="w-44 h-44 md:w-40 md:h-40 rounded mr-0 md:mr-4 mb-4 md:mb-0" src={project.imgSrc} alt={`${project.title} Logo`} />
                     <div>
                         <h3 className="text-xl mb-2 font-bold text-black dark:text-white pt-3 md:pt-0">{project.title}</h3>
