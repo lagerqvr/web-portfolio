@@ -9,7 +9,7 @@ const userData = {
         },
         introduction: {
             heading: "About Me",
-            description: "Hi, I'm <span class='text-black dark:text-white'>Rasmus Lagerqvist</span>, a final year <span class='text-black dark:text-white'>Information Technology</span> engineering student and full-stack developer from Helsinki, Finland. Diving into the software development scene in 2019, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover even though it can be scary at times.\n\
+            description: "Hi, I'm <span class='text-black dark:text-white'>Rasmus Lagerqvist</span>, a recent <span class='text-black dark:text-white'>Information Technology</span> engineering graduate and full-stack developer from Helsinki, Finland. Diving into the software development scene in 2019, it's been a whirlwind of learning and coding ever since. Always been a tech enthusiast, and the more I explore, the more I realize how much there is to discover even though it can be scary at times.\n\
             What really keeps me going? Real-world problems and crafting solutions that make a difference. After all, that's what it's all about, right?",
             description_alt: "Note: I'm currently looking for a full-time position as a software developer, so if you're looking for someone to join your team, feel free to reach out!",
             call_to_action: "See what I'm up to",
@@ -67,7 +67,7 @@ const userData = {
             {
                 title: "Student",
                 company: "Arcada University of Applied Sciences",
-                year: "2020 - Present",
+                year: "2020 - 2023",
                 companyLink: "https://www.arcada.fi/en",
                 desc: "Bachelor of Engineering - Information Technology. Key highlights include full-stack web development projects, networking, cyber security, and various projects in Python. Additionally, experience in machine learning and computer vision. Graduating fall 2023.",
             },
