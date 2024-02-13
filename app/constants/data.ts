@@ -44,9 +44,16 @@ const userData = {
         heading: "Experience",
         positions: [
             {
+                title: "Full Stack Developer",
+                company: "CGI",
+                year: "2024 - Present",
+                companyLink: "https://www.cgi.com/fi/fi",
+                desc: "Full Stack development with Angular and Java.",
+            },
+            {
                 title: "Software Developer",
                 company: "Jotbar Solutions Oy",
-                year: "2022 - Present",
+                year: "2022 - 2023",
                 companyLink: "https://www.jotbar.fi/",
                 desc: "Web development with React.js and C#. Migration of company services to the cloud with AWS. Created, maintained, and migrated all company pages to AWS using using AWS Lightsail. ",
             },
