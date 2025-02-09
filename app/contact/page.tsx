@@ -1,5 +1,4 @@
 'use client';
-
 import { FC, useRef, useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import ReCAPTCHA from 'react-google-recaptcha';
