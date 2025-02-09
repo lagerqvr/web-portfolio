@@ -3,6 +3,7 @@
 import { FC, useRef, useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { toast } from 'react-toastify';
 import data from '@/app/constants/data';
 
 interface FormData {
@@ -15,10 +16,6 @@ const Contact: FC = () => {
     const recaptchaRef = useRef<ReCAPTCHA>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isClient, setIsClient] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<{
-        type: 'success' | 'error' | null;
-        message: string;
-    }>({ type: null, message: '' });
 
     useEffect(() => {
         setIsClient(true);
@@ -29,12 +26,11 @@ const Contact: FC = () => {
     async function onSubmit(formData: FormData) {
         try {
             setIsSubmitting(true);
-            setSubmitStatus({ type: null, message: '' });
 
             const captchaToken = await recaptchaRef.current?.executeAsync();
-
             if (!captchaToken) {
-                throw new Error('reCAPTCHA verification failed');
+                toast.error('reCAPTCHA verification failed');
+                return;
             }
 
             const response = await fetch('/api/email', {
@@ -54,19 +50,12 @@ const Contact: FC = () => {
                 throw new Error(result.error || 'Failed to send message');
             }
 
-            setSubmitStatus({
-                type: 'success',
-                message: 'Message sent successfully!'
-            });
-
+            toast.success('Message sent successfully!');
             reset();
             recaptchaRef.current?.reset();
 
         } catch (error) {
-            setSubmitStatus({
-                type: 'error',
-                message: error instanceof Error ? error.message : 'Failed to send message'
-            });
+            toast.error(error instanceof Error ? error.message : 'Failed to send message');
         } finally {
             setIsSubmitting(false);
         }
@@ -133,17 +122,6 @@ const Contact: FC = () => {
                         ></textarea>
                     </div>
 
-                    {/* Display submission status messages */}
-                    {submitStatus.type && (
-                        <div className={`mb-4 p-3 rounded-md ${submitStatus.type === 'success'
-                            ? 'bg-green-100 text-green-700'
-                            : 'bg-red-100 text-red-700'
-                            }`}>
-                            {submitStatus.message}
-                        </div>
-                    )}
-
-                    {/* Only render ReCAPTCHA on the client side */}
                     {isClient && (
                         <ReCAPTCHA
                             ref={recaptchaRef}
