@@ -1,41 +1,63 @@
-import { type NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-    const { email, name, message } = await request.json();
+	try {
+		const { email, name, message, captchaToken } = await request.json();
 
-    const transport = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.MY_EMAIL,
-            pass: process.env.MY_PASSWORD,
-        },
-    });
+		const recaptchaResponse = await fetch(
+			'https://www.google.com/recaptcha/api/siteverify',
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded',
+				},
+				body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captchaToken}`,
+			}
+		);
 
-    const mailOptions: Mail.Options = {
-        from: process.env.MY_EMAIL,
-        to: process.env.MY_EMAIL,
-        // cc: email, (uncomment this line if you want to send a copy to the sender)
-        subject: `Message from ${name} (${email})`,
-        text: message,
-    };
+		const recaptchaResult = await recaptchaResponse.json();
 
-    const sendMailPromise = () =>
-        new Promise<string>((resolve, reject) => {
-            transport.sendMail(mailOptions, function (err) {
-                if (!err) {
-                    resolve('Email sent');
-                } else {
-                    reject(err.message);
-                }
-            });
-        });
+		if (!recaptchaResult.success) {
+			return NextResponse.json(
+				{ error: 'reCAPTCHA verification failed' },
+				{ status: 400 }
+			);
+		}
 
-    try {
-        await sendMailPromise();
-        return NextResponse.json({ message: 'Email sent' });
-    } catch (err) {
-        return NextResponse.json({ error: err }, { status: 500 });
-    }
+		const transport = nodemailer.createTransport({
+			service: 'gmail',
+			auth: {
+				user: process.env.MY_EMAIL,
+				pass: process.env.MY_PASSWORD,
+			},
+		});
+
+		const mailOptions: Mail.Options = {
+			from: process.env.MY_EMAIL,
+			to: process.env.MY_EMAIL,
+			subject: `Message from ${name} (${email})`,
+			text: message,
+		};
+
+		const sendMailPromise = () =>
+			new Promise<string>((resolve, reject) => {
+				transport.sendMail(mailOptions, function (err) {
+					if (!err) {
+						resolve('Email sent');
+					} else {
+						reject(err.message);
+					}
+				});
+			});
+
+		await sendMailPromise();
+		return NextResponse.json({ message: 'Email sent successfully' });
+	} catch (err) {
+		return NextResponse.json(
+			{ error: err instanceof Error ? err.message : 'Failed to send email' },
+			{ status: 500 }
+		);
+	}
 }

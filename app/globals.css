@@ -72,3 +72,7 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
