@@ -44,14 +44,18 @@ await writeFile(
 // worktop and the dither turned it to mud. Dithered like everything else, which
 // is precisely the joke.
 const pizzaMeta = await sharp('public/img/pizza.jpeg').metadata();
-const pizzaSide = Math.round(pizzaMeta.width! * 0.96);
+const pizzaW = pizzaMeta.width!;
+const pizzaH = pizzaMeta.height!;
+// The pie sits low in a tall portrait frame; centre the square crop on it
+// rather than starting the crop at its top edge.
+const pizzaSide = Math.round(pizzaW * 0.78);
+const pizzaLeft = Math.round((pizzaW - pizzaSide) / 2);
+const pizzaTop = Math.min(
+  Math.max(0, Math.round(pizzaH * 0.615 - pizzaSide / 2)),
+  pizzaH - pizzaSide,
+);
 const pizzaCrop = await sharp('public/img/pizza.jpeg')
-  .extract({
-    left: Math.round(pizzaMeta.width! * 0.02),
-    top: Math.round(pizzaMeta.height! * 0.42),
-    width: pizzaSide,
-    height: Math.min(pizzaSide, pizzaMeta.height! - Math.round(pizzaMeta.height! * 0.42)),
-  })
+  .extract({ left: pizzaLeft, top: pizzaTop, width: pizzaSide, height: pizzaSide })
   .modulate({ brightness: 1.12 })
   .toBuffer();
 await writeFile('public/img/pizza-pixel.png', await pixelate(pizzaCrop, { size: 96 }));
