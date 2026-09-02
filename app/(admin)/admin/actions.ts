@@ -19,6 +19,7 @@ export async function login(_prev: ActionState, formData: FormData): Promise<Act
   // guessing one.
   const limit = rateLimit(`login:${ip}`, 5, 15 * 60 * 1000);
   if (!limit.ok) {
+    console.warn('[admin] login rate limited', { ip, retryAfterSeconds: limit.retryAfterSeconds });
     return { error: `Too many attempts. Try again in ${Math.ceil(limit.retryAfterSeconds / 60)} min.` };
   }
 
@@ -28,6 +29,10 @@ export async function login(_prev: ActionState, formData: FormData): Promise<Act
   }
 
   if (!(await verifyPassword(password))) {
+    // Same reasoning: a failed admin login is worth seeing in the logs, and
+    // it is the signal that shows a brute-force attempt before the limiter
+    // starts refusing.
+    console.warn('[admin] failed login', { ip });
     return { error: 'Incorrect password.' };
   }
 

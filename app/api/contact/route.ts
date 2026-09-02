@@ -19,6 +19,10 @@ export async function POST(request: Request) {
   // 1. Rate limit first — it is the cheapest check and shields the rest.
   const limit = rateLimit(`contact:${ip}`, 3, 10 * 60 * 1000);
   if (!limit.ok) {
+    // Logged like every other rejection: a silent 429 is indistinguishable in
+    // the logs from a request that never arrived, which makes a throttled
+    // sender look like a broken form.
+    console.warn('[contact] rate limited', { ip, retryAfterSeconds: limit.retryAfterSeconds });
     return NextResponse.json(
       { error: 'rate_limited' },
       { status: 429, headers: { 'Retry-After': String(limit.retryAfterSeconds) } },
