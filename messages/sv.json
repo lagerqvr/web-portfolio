@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Rasmus Lagerqvist — Mjukvaruingenjör",
+    "description": "Mjukvaruingenjör och DI baserad i Vasa, Finland. På väg mot applikationssäkerhet och DevSecOps, med forskningsbakgrund inom språkmodeller som körs lokalt.",
+    "ogAlt": "Rasmus Lagerqvist — Mjukvaruingenjör"
+  },
+  "nav": {
+    "core": "Profil",
+    "trajectory": "Bana",
+    "vector": "Riktning",
+    "work": "Arbeten",
+    "signals": "Signaler",
+    "contact": "Kontakt",
+    "menu": "Meny",
+    "close": "Stäng menyn",
+    "skip": "Hoppa till innehåll"
+  },
+  "sections": {
+    "core": "Kärnlogik",
+    "trajectory": "Bana",
+    "vector": "Vektor",
+    "work": "Utvalda arbeten",
+    "signals": "Signaler",
+    "contact": "Kontakt"
+  },
+  "status": {
+    "active": "Systemstatus: aktiv",
+    "languages": "FI · SV · EN"
+  },
+  "work": {
+    "featured": "Utvalda",
+    "readMore": "Läs mer",
+    "external": "Besök",
+    "back": "Tillbaka till index",
+    "repos": "Senaste repositorier",
+    "reposNote": "Hämtat från GitHub, uppdateras varje timme.",
+    "reposEmpty": "Repositorielistan är inte tillgänglig just nu.",
+    "viewRepo": "Öppna repositorium"
+  },
+  "contact": {
+    "name": "Namn",
+    "namePlaceholder": "Ditt namn",
+    "email": "E-post",
+    "emailPlaceholder": "du@exempel.fi",
+    "message": "Meddelande",
+    "messagePlaceholder": "Vad har du på hjärtat?",
+    "send": "Skicka meddelande",
+    "sending": "Skickar",
+    "success": "Meddelandet är skickat. Jag återkommer.",
+    "error": "Något gick fel. Försök igen eller mejla mig direkt.",
+    "rateLimited": "För många meddelanden från den här adressen. Försök igen senare.",
+    "invalid": "Kontrollera fälten och försök igen.",
+    "captchaPending": "Verifierar att du är människa",
+    "captchaFailed": "Verifieringen misslyckades. Ladda om sidan och försök igen.",
+    "directEmail": "Eller mejla direkt",
+    "protected": "Skyddad av Cloudflare Turnstile."
+  },
+  "footer": {
+    "builtWith": "Byggd med Next.js. Källkod på GitHub.",
+    "rights": "Alla rättigheter förbehållna."
+  },
+  "notFound": {
+    "title": "Signal förlorad",
+    "body": "Den här sidan finns inte.",
+    "home": "Tillbaka till startsidan"
+  }
+}

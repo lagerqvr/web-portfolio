@@ -1,78 +1,175 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Industrial pixel — monochrome, quantised, dark only.
+   One accent (sodium) and it is reserved for live/status indicators.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-ground: #08090a;
+  --color-panel: #0f1113;
+  --color-panel-2: #141719;
+  --color-hairline: #1e2124;
+  --color-hairline-hi: #2c3033;
+  --color-text: #e8e9ea;
+  --color-muted: #8a8f94;
+  --color-dim: #5a6066;
+  --color-sodium: #d4b483;
+
+  --font-display: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --ease-step: steps(6, end);
+  --ease-step-fine: steps(12, end);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-hairline);
+  }
+
+  html {
+    background-color: var(--color-ground);
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ground);
+    color: var(--color-text);
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-text);
+    color: var(--color-ground);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-sodium);
+    outline-offset: 3px;
+  }
+
+  /* Monospace numerals keep the year gutter and section indices from jittering. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Small uppercase mono metadata label, suffixed with the rule from the
+     reference: `CORE LOGIC — —`. */
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  .label-dim {
+    color: var(--color-dim);
+  }
+
+  .hairline {
+    border-top: 1px solid var(--color-hairline);
+  }
+
+  /* Outlined pill action, as in the reference screenshots. */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--color-hairline-hi);
+    border-radius: 999px;
+    padding: 0.6rem 1.1rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    background: transparent;
+    transition:
+      border-color 120ms var(--ease-step),
+      background-color 120ms var(--ease-step),
+      color 120ms var(--ease-step);
+  }
+
+  .pill:hover:not(:disabled) {
+    border-color: var(--color-text);
+    background: var(--color-panel-2);
+  }
+
+  .pill:disabled {
+    color: var(--color-dim);
+    cursor: not-allowed;
+  }
+
+  .field {
+    width: 100%;
+    background: var(--color-panel);
+    border: 1px solid var(--color-hairline);
+    padding: 0.75rem 0.9rem;
+    color: var(--color-text);
+    font-size: 0.9375rem;
+    transition: border-color 120ms var(--ease-step);
+  }
+
+  .field::placeholder {
+    color: var(--color-dim);
+  }
+
+  .field:focus {
+    outline: none;
+    border-color: var(--color-muted);
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+  }
+}
 
 @layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
-}
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  /* Toastify override */
-  --toastify-color-success: rgb(22 163 74) !important;
-  --toastify-color-error: rgb(220 38 38) !important;
-}
-
-.dark {
-  .Typewriter__cursor {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  background-color: rgb(var(--foreground-rgb));
-  color: rgb(var(--foreground-rgb));
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.Typewriter__cursor {
-  color: black;
-}
-
-.fadeIn {
-  animation: fadeInAnimation 1s forwards;
-}
-
-.zoom {
-  transition: transform .2s;
-}
-
-.zoom:hover {
-  transform: scale(1.1);
-}
-
-@keyframes fadeInAnimation {
-  0% {
+  /* Elements resolve from coarse to sharp as they enter the viewport —
+     the scroll-reveal equivalent of the dither settling. */
+  .resolve {
     opacity: 0;
+    filter: blur(6px) contrast(1.4);
+    transform: translateY(10px);
+    transition:
+      opacity 420ms var(--ease-step),
+      filter 420ms var(--ease-step),
+      transform 420ms var(--ease-step);
   }
 
-  100% {
+  .resolve.is-resolved {
     opacity: 1;
+    filter: none;
+    transform: none;
   }
 }
 
-.grecaptcha-badge {
-  visibility: hidden;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .resolve {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

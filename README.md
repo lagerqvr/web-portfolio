@@ -1,44 +1,93 @@
-# web-portfolio
+# lagerqvr.com
 
-[![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
+Personal site and portfolio. Next.js 16 (App Router), React 19, Tailwind v4, TypeScript.
+Dark, monochrome, "industrial pixel" — available in English, Finnish and Swedish, with a
+small admin UI for editing content without a redeploy.
 
-A web portfolio built with Typescript, Next.js, and styled with Tailwind. Deployed on Vercel.
+Live: https://www.lagerqvr.com
 
-## About The Project
-Welcome to my (updated) personal portfolio, built using Next.js. For a long time, I had the urge to create a web portfolio to showcase some of my skills, experience, and projects. Life had other plans and I found myself constantly caught up in other obligations. However, I finally took the plunge and decided to put my portfolio into existence.
-
-![banner](https://i.imgur.com/DWd0NHN.png)
-
-## Demo
-View the website live on Vercel: https://www.lagerqvr.com
-
-## Getting Started
-
-First, run the development server:
+## Running it
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site builds and runs with no environment at all: content falls back to the committed
+`content/seed.json`, and the contact form uses Cloudflare's documented always-passes
+Turnstile test keys.
 
+| Script | What it does |
+| --- | --- |
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run lint` / `npm run typecheck` | ESLint (flat config) / `tsc --noEmit` |
+| `npm run avatar` | Regenerates `public/img/avatar-pixel.png` from the source photo |
+| `npm run hash-password -- '<password>'` | Prints `ADMIN_PASSWORD_HASH` and a fresh `AUTH_SECRET` |
 
-## Learn More
+## Environment
 
-To learn more about Next.js, take a look at the following resources:
+See `.env.local.example`. Nothing here is optional in production:
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Variable | Purpose |
+| --- | --- |
+| `AUTH_SECRET` | Signs the admin session and the contact form's timing token. 32+ chars. |
+| `ADMIN_PASSWORD_HASH` | `scrypt:<salt>:<hash>` from `npm run hash-password`. The plaintext is never stored. |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY` | Cloudflare Turnstile. **Without the secret the API refuses every submission in production** rather than falling back to test keys. |
+| `TURNSTILE_ALLOWED_HOSTNAMES` | Comma-separated hostnames a token may be solved on. |
+| `RESEND_API_KEY` | Set by the Resend Marketplace integration. |
+| `CONTACT_TO_EMAIL` / `CONTACT_FROM_EMAIL` | Recipient, and a sender on a domain verified in Resend. |
+| `BLOB_READ_WRITE_TOKEN` | Set by Vercel Blob. Stores the content document and uploaded images. |
+| `GITHUB_AUTH_TOKEN` | Optional. Raises the rate limit for the repository list. |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## How content works
 
-## Deploy on Vercel
+- `content/seed.json` is the committed floor. It is validated against `lib/schemas.ts` at
+  build time, so a malformed seed fails the build rather than the page.
+- The live document lives in Vercel Blob at `content/site.json`. If it is missing,
+  unreachable, or no longer matches the schema, the site silently serves the seed.
+- `/admin` edits the document and writes it back. Saving calls `updateTag`, so the public
+  pages pick the change up immediately — **no redeploy**.
+- Text is stored as plain strings and rendered as React nodes. Emphasis is `*asterisks*`,
+  resolved by `lib/rich-text.tsx`. Content is never stored or rendered as HTML, because it
+  is user-editable and that would be a stored-XSS surface.
+- Localised fields carry `en` / `fi` / `sv`; an empty translation falls back to `en`, so
+  the admin never has to fill all three to publish.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Five independent layers, because the previous version had one and it failed open:
+
+1. **Turnstile**, verified server-side, with the solving hostname pinned.
+2. **Honeypot** — a hidden `company` field. Any value returns `200 OK` and drops the
+   message, so a bot gets no signal to adapt to.
+3. **Timing** — a signed token issued when the form renders; under 3s or over 30m is refused.
+4. **Rate limit** — 3 per 10 minutes per IP.
+5. **Schema + sanitisation** — zod with length caps, and control characters stripped from
+   everything that reaches a mail header. The subject is a fixed string; the sender only
+   ever appears in `Reply-To`.
+
+The old form checked `recaptchaResult.success` alone. With a reCAPTCHA v3 key that is true
+for any well-formed token regardless of score, which is why spam was getting through.
+
+## Layout
+
+```
+app/(site)/[locale]/   public pages — index sections, /work/[slug]
+app/(admin)/admin/     login + editor (noindex, outside locale routing)
+app/api/contact/       hardened contact endpoint
+components/dither/     ordered-dither canvas + pointer ripples
+components/sections/   the six index sections
+lib/                   content store, schemas, auth, turnstile, mail, rate limit
+content/seed.json      committed content floor (all three locales)
+messages/*.json        UI chrome strings
+proxy.ts               locale negotiation + CSP nonce + security headers
+```
+
+## Notes
+
+- Security headers and a nonce-based CSP (`strict-dynamic`) are set in `proxy.ts`.
+- The dither field runs at ~1/6 resolution and blits up with smoothing off. It pauses when
+  scrolled out of view or the tab is hidden, and renders a single static frame under
+  `prefers-reduced-motion: reduce`.
+- Deployed on Vercel.

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Rasmus Lagerqvist — Software Engineer",
+    "description": "Software engineer and MSc (Tech.) based in Vaasa, Finland. Working toward application security and DevSecOps, with a research background in on-device language models.",
+    "ogAlt": "Rasmus Lagerqvist — Software Engineer"
+  },
+  "nav": {
+    "core": "Profile",
+    "trajectory": "Trajectory",
+    "vector": "Direction",
+    "work": "Work",
+    "signals": "Signals",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close menu",
+    "skip": "Skip to content"
+  },
+  "sections": {
+    "core": "Core logic",
+    "trajectory": "Trajectory",
+    "vector": "Vector",
+    "work": "Selected work",
+    "signals": "Signals",
+    "contact": "Contact"
+  },
+  "status": {
+    "active": "System status: active",
+    "languages": "FI · SV · EN"
+  },
+  "work": {
+    "featured": "Featured",
+    "readMore": "Read more",
+    "external": "Visit",
+    "back": "Back to index",
+    "repos": "Recent repositories",
+    "reposNote": "Pulled from GitHub, refreshed hourly.",
+    "reposEmpty": "Repository list unavailable right now.",
+    "viewRepo": "View repository"
+  },
+  "contact": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Message",
+    "messagePlaceholder": "What's on your mind?",
+    "send": "Send message",
+    "sending": "Sending",
+    "success": "Message sent. I'll get back to you.",
+    "error": "Something went wrong. Try again, or email me directly.",
+    "rateLimited": "Too many messages from this address. Try again later.",
+    "invalid": "Please check the fields and try again.",
+    "captchaPending": "Verifying you're human",
+    "captchaFailed": "Verification failed. Reload the page and try again.",
+    "directEmail": "Or email directly",
+    "protected": "Protected by Cloudflare Turnstile."
+  },
+  "footer": {
+    "builtWith": "Built with Next.js. Source on GitHub.",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Signal lost",
+    "body": "That page doesn't exist.",
+    "home": "Return to index"
+  }
+}

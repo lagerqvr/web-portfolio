@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Rasmus Lagerqvist — Ohjelmistokehittäjä",
+    "description": "Ohjelmistokehittäjä ja DI Vaasasta. Suuntaa kohti sovellusturvallisuutta ja DevSecOpsia, taustalla tutkimusta laitteessa ajettavista kielimalleista.",
+    "ogAlt": "Rasmus Lagerqvist — Ohjelmistokehittäjä"
+  },
+  "nav": {
+    "core": "Profiili",
+    "trajectory": "Urapolku",
+    "vector": "Suunta",
+    "work": "Työt",
+    "signals": "Signaalit",
+    "contact": "Yhteys",
+    "menu": "Valikko",
+    "close": "Sulje valikko",
+    "skip": "Siirry sisältöön"
+  },
+  "sections": {
+    "core": "Ydinlogiikka",
+    "trajectory": "Urapolku",
+    "vector": "Vektori",
+    "work": "Valitut työt",
+    "signals": "Signaalit",
+    "contact": "Yhteystiedot"
+  },
+  "status": {
+    "active": "Järjestelmän tila: aktiivinen",
+    "languages": "FI · SV · EN"
+  },
+  "work": {
+    "featured": "Nostot",
+    "readMore": "Lue lisää",
+    "external": "Siirry",
+    "back": "Takaisin hakemistoon",
+    "repos": "Viimeisimmät repositoriot",
+    "reposNote": "Haettu GitHubista, päivittyy tunneittain.",
+    "reposEmpty": "Repositoriolista ei ole juuri nyt saatavilla.",
+    "viewRepo": "Avaa repositorio"
+  },
+  "contact": {
+    "name": "Nimi",
+    "namePlaceholder": "Nimesi",
+    "email": "Sähköposti",
+    "emailPlaceholder": "sina@esimerkki.fi",
+    "message": "Viesti",
+    "messagePlaceholder": "Mitä mielessä?",
+    "send": "Lähetä viesti",
+    "sending": "Lähetetään",
+    "success": "Viesti lähetetty. Palaan asiaan.",
+    "error": "Jokin meni pieleen. Yritä uudelleen tai lähetä sähköpostia suoraan.",
+    "rateLimited": "Liian monta viestiä tästä osoitteesta. Yritä myöhemmin uudelleen.",
+    "invalid": "Tarkista kentät ja yritä uudelleen.",
+    "captchaPending": "Varmistetaan, ettet ole botti",
+    "captchaFailed": "Varmistus epäonnistui. Lataa sivu uudelleen ja yritä uudestaan.",
+    "directEmail": "Tai lähetä sähköpostia suoraan",
+    "protected": "Suojattu Cloudflare Turnstilella."
+  },
+  "footer": {
+    "builtWith": "Rakennettu Next.js:llä. Lähdekoodi GitHubissa.",
+    "rights": "Kaikki oikeudet pidätetään."
+  },
+  "notFound": {
+    "title": "Signaali kadonnut",
+    "body": "Tätä sivua ei ole olemassa.",
+    "home": "Palaa etusivulle"
+  }
+}

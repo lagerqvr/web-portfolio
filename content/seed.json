@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-02T00:00:00.000Z",
+  "profile": {
+    "name": "Rasmus Lagerqvist",
+    "role": "Software Engineer",
+    "location": "Vaasa, FI",
+    "avatar": "/img/avatar-pixel.png",
+    "status": {
+      "en": "Open to application security & DevSecOps roles",
+      "fi": "Avoin sovellusturvallisuuden ja DevSecOpsin tehtäville",
+      "sv": "Öppen för roller inom applikationssäkerhet och DevSecOps"
+    }
+  },
+  "hero": {
+    "headline": {
+      "en": "Most software breaks at the seam between *people and systems.* That seam is where I work.",
+      "fi": "Useimmat ohjelmistot hajoavat saumasta *ihmisen ja järjestelmän välillä.* Siinä saumassa minä työskentelen.",
+      "sv": "De flesta system brister i fogen mellan *människa och maskin.* Det är där jag arbetar."
+    },
+    "sub": {
+      "en": "Software engineer at CGI. MSc (Tech.) from Åbo Akademi. Heading toward application security and DevSecOps — and running language models locally while everyone else talks about the cloud.",
+      "fi": "Ohjelmistokehittäjä CGI:llä. Diplomi-insinööri Åbo Akademista. Suuntaan kohti sovellusturvallisuutta ja DevSecOpsia — ja ajan kielimalleja paikallisesti, kun muut puhuvat pilvestä.",
+      "sv": "Mjukvaruingenjör på CGI. Diplomingenjör från Åbo Akademi. På väg mot applikationssäkerhet och DevSecOps — och kör språkmodeller lokalt medan alla andra pratar om molnet."
+    }
+  },
+  "core": {
+    "body": {
+      "en": "I'm a software engineer at CGI, working mostly in Java and JavaScript on systems that other people depend on to get their jobs done. Before that I built frontends at Pyramid Creative, shipped product work at JotBar Solutions, and designed interfaces for Arcada's research lab.\n\nI won't claim to be the strongest engineer in any room. What I am reliably good at is the part many teams find hard: standing between the customer and the product and making sure the thing we build is the thing that was actually needed. I ask the awkward questions early, I translate in both directions, and I would rather solve the real problem than the one that was easiest to write down.\n\nThe rest of the time I'm building something. Lately that has meant local AI — running models on hardware I own, which is also what my master's thesis was about. The interesting problems tend to show up once you take the cloud away.",
+      "fi": "Työskentelen ohjelmistokehittäjänä CGI:llä, pääosin Javan ja JavaScriptin parissa järjestelmissä, joiden varassa muut tekevät työnsä. Sitä ennen rakensin käyttöliittymiä Pyramid Creativella, tein tuotetyötä JotBar Solutionsilla ja suunnittelin käyttöliittymiä Arcadan tutkimusyksikölle.\n\nEn väitä olevani huoneen vahvin insinööri. Se, missä olen luotettavan hyvä, on osa jonka moni tiimi kokee vaikeaksi: seistä asiakkaan ja tuotteen välissä ja varmistaa, että rakennamme sen mitä oikeasti tarvittiin. Kysyn kiusalliset kysymykset ajoissa, käännän molempiin suuntiin, ja ratkaisen mieluummin oikean ongelman kuin sen joka oli helpoin kirjata ylös.\n\nMuun ajan rakennan jotain. Viime aikoina se on tarkoittanut paikallista tekoälyä — mallien ajamista omalla raudallani, mistä myös diplomityöni kertoi. Kiinnostavat ongelmat tulevat esiin vasta kun pilvi otetaan pois.",
+      "sv": "Jag är mjukvaruingenjör på CGI och arbetar mest i Java och JavaScript med system som andra människor är beroende av för att göra sitt jobb. Dessförinnan byggde jag frontend på Pyramid Creative, gjorde produktarbete på JotBar Solutions och formgav gränssnitt för Arcadas forskningsenhet.\n\nJag påstår inte att jag är den vassaste ingenjören i rummet. Det jag är pålitligt bra på är den del många team tycker är svår: att stå mellan kunden och produkten och se till att det vi bygger är det som faktiskt behövdes. Jag ställer de obekväma frågorna tidigt, jag översätter i båda riktningarna, och jag löser hellre det verkliga problemet än det som var lättast att skriva ner.\n\nResten av tiden bygger jag något. På sistone har det betytt lokal AI — att köra modeller på hårdvara jag äger, vilket också var vad mitt diplomarbete handlade om. De intressanta problemen dyker upp först när man tar bort molnet."
+    }
+  },
+  "trajectory": [
+    {
+      "id": "cgi",
+      "kind": "work",
+      "org": "CGI",
+      "orgUrl": "https://www.cgi.com/fi/fi",
+      "role": {
+        "en": "Software Engineer",
+        "fi": "Ohjelmistokehittäjä",
+        "sv": "Mjukvaruingenjör"
+      },
+      "period": "2024 —",
+      "sortKey": 2024,
+      "body": {
+        "en": "Building and maintaining production systems in Java, JavaScript and Angular, with cloud services and modern web tooling around them. Consulting work, which means the requirements arrive as conversations rather than tickets — a lot of the job is turning one into the other.",
+        "fi": "Rakennan ja ylläpidän tuotantojärjestelmiä Javalla, JavaScriptillä ja Angularilla, ympärillä pilvipalvelut ja moderni web-työkalusto. Konsultointityötä, mikä tarkoittaa että vaatimukset saapuvat keskusteluina eivätkä tiketteinä — iso osa työtä on muuttaa toinen toiseksi.",
+        "sv": "Bygger och underhåller produktionssystem i Java, JavaScript och Angular, med molntjänster och modern webbverktygskedja omkring. Konsultarbete, vilket betyder att kraven kommer som samtal snarare än som ärenden — en stor del av jobbet är att omvandla det ena till det andra."
+      }
+    },
+    {
+      "id": "abo-akademi",
+      "kind": "education",
+      "org": "Åbo Akademi University",
+      "orgUrl": "https://www.abo.fi/en/",
+      "role": {
+        "en": "MSc (Tech.), Information Technology",
+        "fi": "DI, tietotekniikka",
+        "sv": "DI, informationsteknologi"
+      },
+      "period": "2024 — 2026",
+      "sortKey": 2023,
+      "body": {
+        "en": "Graduated 1 June 2026, grade 4.13. Master's thesis on prompt-level defenses for small on-device language models — built the evaluation harness independently and ran the jailbreak testing end to end.",
+        "fi": "Valmistuin 1. kesäkuuta 2026, arvosana 4,13. Diplomityö kehotetason suojauksista pienille laitteessa ajettaville kielimalleille — rakensin arviointiympäristön itsenäisesti ja ajoin jailbreak-testauksen alusta loppuun.",
+        "sv": "Utexaminerad 1 juni 2026, vitsord 4,13. Diplomarbete om promptbaserade försvar för små språkmodeller som körs på enheten — byggde utvärderingsmiljön självständigt och genomförde jailbreak-testningen från början till slut."
+      }
+    },
+    {
+      "id": "pyramid",
+      "kind": "work",
+      "org": "Pyramid Creative",
+      "orgUrl": "",
+      "role": {
+        "en": "Frontend Developer",
+        "fi": "Frontend-kehittäjä",
+        "sv": "Frontend-utvecklare"
+      },
+      "period": "2021 — 2023",
+      "sortKey": 2021,
+      "body": {
+        "en": "Frontend work for client projects alongside studies. Small team, short feedback loops, and direct contact with the people the work was for.",
+        "fi": "Frontend-työtä asiakasprojekteissa opintojen ohella. Pieni tiimi, lyhyet palautesyklit ja suora kontakti niihin ihmisiin joille työtä tehtiin.",
+        "sv": "Frontend-arbete i kundprojekt vid sidan av studierna. Litet team, korta återkopplingsslingor och direkt kontakt med de människor arbetet var till för."
+      }
+    },
+    {
+      "id": "jotbar",
+      "kind": "work",
+      "org": "JotBar Solutions Oy",
+      "orgUrl": "https://www.jotbar.fi/",
+      "role": {
+        "en": "Software Developer",
+        "fi": "Ohjelmistokehittäjä",
+        "sv": "Mjukvaruutvecklare"
+      },
+      "period": "2021 — 2023",
+      "sortKey": 2020,
+      "body": {
+        "en": "Web development in React and C#. Migrated the company's services and public sites to AWS on Lightsail, then owned them — the first time I was responsible for infrastructure someone else's business ran on.",
+        "fi": "Web-kehitystä Reactilla ja C#:lla. Siirsin yrityksen palvelut ja julkiset sivut AWS:ään Lightsailille ja vastasin niistä sen jälkeen — ensimmäinen kerta kun vastuullani oli infrastruktuuri, jonka varassa jonkun toisen liiketoiminta pyöri.",
+        "sv": "Webbutveckling i React och C#. Migrerade företagets tjänster och publika sidor till AWS på Lightsail och ansvarade sedan för dem — första gången jag hade ansvar för infrastruktur som någon annans verksamhet vilade på."
+      }
+    },
+    {
+      "id": "techlabs",
+      "kind": "work",
+      "org": "Arcada TechLabs",
+      "orgUrl": "https://techlabs.fi/",
+      "role": {
+        "en": "UX/UI Designer",
+        "fi": "UX/UI-suunnittelija",
+        "sv": "UX/UI-designer"
+      },
+      "period": "2022",
+      "sortKey": 2019,
+      "body": {
+        "en": "Designed and optimised the user experience for the research department's site in Figma. Where I learned that most interface problems are really unresolved decisions about who the thing is for.",
+        "fi": "Suunnittelin ja optimoin tutkimusyksikön sivuston käyttökokemuksen Figmassa. Täällä opin, että useimmat käyttöliittymäongelmat ovat oikeasti ratkaisemattomia päätöksiä siitä, kenelle asia on tarkoitettu.",
+        "sv": "Formgav och optimerade användarupplevelsen för forskningsenhetens webbplats i Figma. Det var här jag lärde mig att de flesta gränssnittsproblem egentligen är olösta beslut om vem saken är till för."
+      }
+    },
+    {
+      "id": "arcada",
+      "kind": "education",
+      "org": "Arcada University of Applied Sciences",
+      "orgUrl": "https://www.arcada.fi/en",
+      "role": {
+        "en": "BEng, Information Technology",
+        "fi": "Insinööri (AMK), tietotekniikka",
+        "sv": "Ingenjör (YH), informationsteknik"
+      },
+      "period": "2020 — 2023",
+      "sortKey": 2018,
+      "body": {
+        "en": "Full-stack development, networking, cyber security, machine learning and computer vision. Graduated December 2023.",
+        "fi": "Full stack -kehitystä, tietoverkkoja, kyberturvallisuutta, koneoppimista ja konenäköä. Valmistuin joulukuussa 2023.",
+        "sv": "Full stack-utveckling, nätverk, cybersäkerhet, maskininlärning och datorseende. Utexaminerad i december 2023."
+      }
+    }
+  ],
+  "vector": {
+    "intro": {
+      "en": "Where I'm pointed, stated honestly — some of this is experience, some of it is direction. I've marked which is which.",
+      "fi": "Mihin olen suuntaamassa, rehellisesti sanottuna — osa tästä on kokemusta, osa suuntaa. Olen merkinnyt kumpi on kumpi.",
+      "sv": "Vart jag är på väg, ärligt formulerat — en del av detta är erfarenhet, en del är riktning. Jag har markerat vilket som är vilket."
+    },
+    "modes": [
+      {
+        "id": "appsec",
+        "label": "Application security",
+        "title": {
+          "en": "Where the thesis pointed",
+          "fi": "Minne diplomityö osoitti",
+          "sv": "Dit diplomarbetet pekade"
+        },
+        "body": {
+          "en": "My master's thesis evaluated how far prompt-level defenses actually go on small on-device language models — how vulnerable they are to jailbreaks and misuse once the model is running on someone's phone rather than behind a provider's API. The finding that stuck with me is the one that generalises: security is a property of a whole system, not a control you bolt on at the boundary. I want to keep working on that layer.",
+          "fi": "Diplomityöni arvioi, kuinka pitkälle kehotetason suojaukset todella kantavat pienillä laitteessa ajettavilla kielimalleilla — kuinka alttiita ne ovat jailbreakeille ja väärinkäytölle, kun malli pyörii jonkun puhelimessa eikä palveluntarjoajan rajapinnan takana. Havainto joka jäi mieleen on se joka yleistyy: turvallisuus on koko järjestelmän ominaisuus, ei kontrolli jonka pultataan rajapintaan. Haluan jatkaa työskentelyä sillä tasolla.",
+          "sv": "Mitt diplomarbete utvärderade hur långt promptbaserade försvar faktiskt räcker på små språkmodeller som körs på enheten — hur sårbara de är för jailbreaks och missbruk när modellen körs i någons telefon i stället för bakom en leverantörs API. Insikten som stannade kvar är den som generaliserar: säkerhet är en egenskap hos ett helt system, inte en kontroll man skruvar fast vid gränsen. Det är på det lagret jag vill fortsätta arbeta."
+        }
+      },
+      {
+        "id": "devsecops",
+        "label": "DevSecOps",
+        "title": {
+          "en": "Where I'm heading next",
+          "fi": "Minne olen menossa seuraavaksi",
+          "sv": "Dit jag är på väg härnäst"
+        },
+        "body": {
+          "en": "The pivot I'm actively making. I've owned infrastructure before — AWS migrations, services other people's businesses ran on — and I've shipped enough product to know how late security usually arrives. The interesting work is moving it earlier: into pipelines, into defaults, into the path of least resistance for the developer. This is the role I'm looking for.",
+          "fi": "Käännös jota teen aktiivisesti. Olen vastannut infrastruktuurista aiemmin — AWS-migraatioista, palveluista joiden varassa toisten yritykset pyörivät — ja tehnyt tarpeeksi tuotetyötä tietääkseni kuinka myöhään turvallisuus yleensä saapuu. Kiinnostava työ on sen siirtäminen aikaisemmaksi: putkiin, oletusasetuksiin, kehittäjän vähimmän vastuksen tielle. Tätä roolia etsin.",
+          "sv": "Den pivot jag aktivt gör. Jag har ansvarat för infrastruktur tidigare — AWS-migrationer, tjänster som andras verksamheter vilade på — och byggt tillräckligt med produkt för att veta hur sent säkerheten oftast dyker upp. Det intressanta arbetet är att flytta den tidigare: in i pipelines, in i standardinställningar, in i utvecklarens väg med minst motstånd. Det är den rollen jag söker."
+        }
+      },
+      {
+        "id": "applied-ai",
+        "label": "Applied AI",
+        "title": {
+          "en": "What I actually build with",
+          "fi": "Millä oikeasti rakennan",
+          "sv": "Vad jag faktiskt bygger med"
+        },
+        "body": {
+          "en": "Not a buzzword line. I write about, test, and run language models — mostly locally, on hardware I own, because that's where the constraints get honest. Quantisation, small-model behaviour, what breaks when there's no frontier model to fall back on. It's both my research background and what I'd be doing on a weekend anyway.",
+          "fi": "Ei muotisana. Kirjoitan kielimalleista, testaan ja ajan niitä — pääosin paikallisesti, omalla raudallani, koska siellä reunaehdot muuttuvat rehellisiksi. Kvantisointi, pienten mallien käyttäytyminen, se mikä hajoaa kun takana ei ole huippumallia johon nojata. Tämä on sekä tutkimustaustani että se mitä tekisin viikonloppuna joka tapauksessa.",
+          "sv": "Inget modeord. Jag skriver om, testar och kör språkmodeller — mest lokalt, på hårdvara jag äger, eftersom det är där begränsningarna blir ärliga. Kvantisering, hur små modeller beter sig, vad som brister när det inte finns någon toppmodell att falla tillbaka på. Det är både min forskningsbakgrund och det jag ändå skulle göra på en helg."
+        }
+      },
+      {
+        "id": "offsec",
+        "label": "Offensive security",
+        "title": {
+          "en": "The longer arc",
+          "fi": "Pidempi kaari",
+          "sv": "Den längre bågen"
+        },
+        "body": {
+          "en": "Stated as an ambition, not a credential — I don't hold one yet. I want to spend time on the attacking side eventually, because I don't think you can defend a system you've never seriously tried to break. That's a few years out, and I'd rather say so than dress it up.",
+          "fi": "Todettu tavoitteena, ei meriittinä — sellaista minulla ei vielä ole. Haluan aikanaan viettää aikaa hyökkäävällä puolella, koska en usko että järjestelmää voi puolustaa jos sitä ei ole koskaan tosissaan yrittänyt murtaa. Se on muutaman vuoden päässä, ja sanon sen mieluummin suoraan kuin kaunistelen.",
+          "sv": "Uttalat som en ambition, inte som en merit — någon sådan har jag inte ännu. Jag vill så småningom lägga tid på den anfallande sidan, för jag tror inte att man kan försvara ett system man aldrig på allvar har försökt bryta. Det ligger några år bort, och det säger jag hellre rakt ut än klär upp."
+        }
+      }
+    ]
+  },
+  "work": [
+    {
+      "slug": "prompt-defenses",
+      "title": "Evaluating Prompt Defenses on Small On-Device LLMs",
+      "year": "2026",
+      "kind": {
+        "en": "Master's thesis",
+        "fi": "Diplomityö",
+        "sv": "Diplomarbete"
+      },
+      "summary": {
+        "en": "How much protection can prompt-level defenses realistically provide when a language model runs on the device instead of behind an API? I built a local evaluation setup and tested it against jailbreak attempts.",
+        "fi": "Kuinka paljon suojaa kehotetason puolustukset realistisesti antavat, kun kielimalli pyörii laitteessa eikä rajapinnan takana? Rakensin paikallisen arviointiympäristön ja testasin sitä jailbreak-yrityksiä vastaan.",
+        "sv": "Hur mycket skydd kan promptbaserade försvar realistiskt ge när en språkmodell körs på enheten i stället för bakom ett API? Jag byggde en lokal utvärderingsmiljö och testade den mot jailbreak-försök."
+      },
+      "body": {
+        "en": "As inference moves from cloud services onto everyday devices, the defenses move with it — and most of them are prompts. That's a thin layer to be relying on, so I wanted to measure how thin.\n\nI built a local evaluation harness: a set of small models running entirely on-device, a corpus of jailbreak and misuse attempts, and a scoring pass that could tell a genuine refusal from a model that had simply been talked around. Then I ran prompt-level defenses through it and recorded where they held and where they didn't.\n\nThe honest summary is that prompt defenses are a speed bump, not a wall — useful in depth, dangerous alone. The work was done independently, from setup through analysis, and it's the reason application security is where I want to spend the next few years.",
+        "fi": "Kun päättely siirtyy pilvipalveluista arkisiin laitteisiin, myös suojaukset siirtyvät mukana — ja useimmat niistä ovat kehotteita. Se on ohut kerros luottaa, joten halusin mitata kuinka ohut.\n\nRakensin paikallisen arviointiympäristön: joukon pieniä malleja jotka ajetaan kokonaan laitteessa, kokoelman jailbreak- ja väärinkäyttöyrityksiä sekä pisteytyksen joka erottaa aidon kieltäytymisen mallista joka oli vain puhuttu ympäri. Sen jälkeen ajoin kehotetason suojaukset läpi ja kirjasin, missä ne pitivät ja missä eivät.\n\nRehellinen yhteenveto on, että kehotesuojaukset ovat hidaste eivätkä muuri — hyödyllisiä osana syvyyttä, vaarallisia yksin. Tein työn itsenäisesti alusta analyysiin asti, ja se on syy siihen miksi haluan viettää seuraavat vuodet sovellusturvallisuuden parissa.",
+        "sv": "När inferensen flyttar från molntjänster ut på vardagliga enheter följer försvaren med — och de flesta av dem är prompter. Det är ett tunt lager att luta sig mot, så jag ville mäta hur tunt.\n\nJag byggde en lokal utvärderingsmiljö: ett antal små modeller som kördes helt på enheten, en samling jailbreak- och missbruksförsök, och en bedömning som kunde skilja ett äkta avslag från en modell som helt enkelt hade blivit övertalad. Sedan körde jag promptbaserade försvar genom den och noterade var de höll och var de inte gjorde det.\n\nDen ärliga sammanfattningen är att promptförsvar är ett farthinder, inte en mur — användbara som ett lager bland flera, farliga ensamma. Arbetet gjordes självständigt, från uppsättning till analys, och det är anledningen till att applikationssäkerhet är där jag vill lägga de kommande åren."
+      },
+      "image": "",
+      "link": "",
+      "featured": true
+    },
+    {
+      "slug": "local-ai-lab",
+      "title": "Local AI lab",
+      "year": "2025 —",
+      "kind": {
+        "en": "Ongoing",
+        "fi": "Käynnissä",
+        "sv": "Pågående"
+      },
+      "summary": {
+        "en": "An ongoing habit of running models on hardware I own, while the industry conversation stays firmly in the cloud. Quantisation, small-model behaviour, and what breaks when there's no fallback.",
+        "fi": "Jatkuva tapa ajaa malleja omalla raudalla, samalla kun alan keskustelu pysyy tiukasti pilvessä. Kvantisointia, pienten mallien käyttäytymistä ja sitä mikä hajoaa kun varasuunnitelmaa ei ole.",
+        "sv": "En pågående vana att köra modeller på hårdvara jag äger, medan branschens samtal stannar kvar i molnet. Kvantisering, hur små modeller beter sig, och vad som brister när det inte finns någon reserv."
+      },
+      "body": {
+        "en": "A standing setup for running language models locally — partly the infrastructure my thesis needed, mostly curiosity that kept going after the thesis was done.\n\nThe appeal is that local inference is unforgiving in a useful way. There's no frontier model to paper over a bad prompt, no provider-side safety layer to catch what you missed, and no way to pretend latency and memory aren't real. You find out quickly which of your assumptions were actually the API's doing.\n\nIt's also, increasingly, where the privacy-sensitive work is going. Being fluent in it now seems like a reasonable bet.",
+        "fi": "Pysyvä ympäristö kielimallien ajamiseen paikallisesti — osin se infrastruktuuri jota diplomityöni vaati, pääosin uteliaisuutta joka jatkui työn valmistuttua.\n\nViehätys on siinä, että paikallinen päättely on hyödyllisellä tavalla anteeksiantamatonta. Ei ole huippumallia peittämässä huonoa kehotetta, ei palveluntarjoajan turvakerrosta nappaamassa sitä minkä ohitit, eikä tapaa teeskennellä ettei viive ja muisti olisi todellisia. Selviää nopeasti, mitkä oletuksistasi olivatkin rajapinnan ansiota.\n\nSe on myös yhä useammin suunta johon yksityisyyttä vaativa työ menee. Sujuvuus siinä nyt vaikuttaa järkevältä vedolta.",
+        "sv": "En stående uppsättning för att köra språkmodeller lokalt — dels den infrastruktur mitt diplomarbete krävde, mest en nyfikenhet som fortsatte efter att arbetet var klart.\n\nTjusningen är att lokal inferens är oförsonlig på ett användbart sätt. Det finns ingen toppmodell som slätar över en dålig prompt, inget säkerhetslager hos leverantören som fångar det du missade, och inget sätt att låtsas att latens och minne inte är verkliga. Man får snabbt veta vilka av ens antaganden som egentligen var API:ets förtjänst.\n\nDet är också i allt högre grad dit det integritetskänsliga arbetet är på väg. Att vara hemma i det nu framstår som en rimlig satsning."
+      },
+      "image": "",
+      "link": "",
+      "featured": true
+    },
+    {
+      "slug": "sitzy",
+      "title": "Sitzy.app",
+      "year": "2023",
+      "kind": {
+        "en": "Side project",
+        "fi": "Sivuprojekti",
+        "sv": "Sidoprojekt"
+      },
+      "summary": {
+        "en": "An alternate frontend to a ticketing API, built because the official flow lost people tickets at exactly the wrong moment.",
+        "fi": "Vaihtoehtoinen käyttöliittymä lipunmyynnin rajapintaan, tehty koska virallinen polku hukkasi ihmisiltä liput juuri väärällä hetkellä.",
+        "sv": "Ett alternativt gränssnitt till ett biljett-API, byggt för att det officiella flödet tappade biljetter åt folk i precis fel ögonblick."
+      },
+      "body": {
+        "en": "A wrapper around the Kide.app API that let people reserve tickets over the web through an interface that didn't fall over under load. Built with JavaScript, Bootstrap and Firebase.\n\nThe problem was a user-experience one wearing an engineering costume: the official flow was fine until the moment it mattered, and by then everyone was on it at once. Kept private and shared only with friends and family, given what it wraps.",
+        "fi": "Kääre Kide.appin rajapinnan ympärille, joka antoi varata lippuja webissä käyttöliittymällä joka ei kaatunut kuormassa. Rakennettu JavaScriptillä, Bootstrapilla ja Firebasella.\n\nOngelma oli käyttökokemusongelma insinööripuvussa: virallinen polku toimi hyvin siihen hetkeen asti jolla oli väliä, ja silloin kaikki olivat siellä yhtä aikaa. Pidetty yksityisenä ja jaettu vain ystäville ja perheelle, ottaen huomioon mitä se kääri.",
+        "sv": "Ett omslag kring Kide.apps API som lät folk boka biljetter över webben genom ett gränssnitt som inte föll ihop under belastning. Byggt med JavaScript, Bootstrap och Firebase.\n\nProblemet var ett användarupplevelseproblem i ingenjörskostym: det officiella flödet fungerade bra ända fram till det ögonblick då det gällde, och då var alla där samtidigt. Hölls privat och delades bara med vänner och familj, med tanke på vad det omsluter."
+      },
+      "image": "/img/sitzy.png",
+      "link": "",
+      "featured": false
+    },
+    {
+      "slug": "arabia-lunch",
+      "title": "Arabia Lunch",
+      "year": "2022",
+      "kind": {
+        "en": "Side project",
+        "fi": "Sivuprojekti",
+        "sv": "Sidoprojekt"
+      },
+      "summary": {
+        "en": "One page that answered one question — what's for lunch near campus — for four restaurants that each published it differently.",
+        "fi": "Yksi sivu joka vastasi yhteen kysymykseen — mitä on lounaaksi kampuksen lähellä — neljälle ravintolalle jotka kaikki julkaisivat sen eri tavalla.",
+        "sv": "En sida som besvarade en fråga — vad som serveras till lunch nära campus — för fyra restauranger som alla publicerade det på olika sätt."
+      },
+      "body": {
+        "en": "A small frontend that pulled student lunch menus for the Arabianranta area in Helsinki into a single view: Artebia 135, Arcada, DIAK and UniCafe Chemicum. Vanilla JavaScript and Bootstrap, installable on iOS and Android so it behaved like an app.\n\nNo framework, no build step, and it solved the problem completely. Still one of the projects I'm happiest with.",
+        "fi": "Pieni frontend joka haki opiskelijalounaslistat Helsingin Arabianrannan alueelta yhteen näkymään: Artebia 135, Arcada, DIAK ja UniCafe Chemicum. Vanilla JavaScriptiä ja Bootstrapia, asennettavissa iOS:lle ja Androidille niin että se käyttäytyi kuin sovellus.\n\nEi kehystä, ei käännösvaihetta, ja se ratkaisi ongelman kokonaan. Yhä yksi projekteista joihin olen tyytyväisin.",
+        "sv": "En liten frontend som hämtade studentlunchlistorna för Arabiastranden i Helsingfors till en enda vy: Artebia 135, Arcada, DIAK och UniCafe Chemicum. Vanilla JavaScript och Bootstrap, installerbar på iOS och Android så att den betedde sig som en app.\n\nInget ramverk, inget byggsteg, och den löste problemet helt. Fortfarande ett av de projekt jag är nöjdast med."
+      },
+      "image": "/img/arabia_lunch.png",
+      "link": "https://github.com/lagerqvr/arabia-lunch",
+      "featured": false
+    },
+    {
+      "slug": "frunk",
+      "title": "Frunk",
+      "year": "2022",
+      "kind": {
+        "en": "Coursework",
+        "fi": "Kurssityö",
+        "sv": "Kursarbete"
+      },
+      "summary": {
+        "en": "A student card generator, built for a course, prompted by graduated friends losing access to a cheap lunch.",
+        "fi": "Opiskelijakorttigeneraattori, tehty kurssille, kimmokkeena valmistuneet ystävät jotka menettivät oikeuden halpaan lounaaseen.",
+        "sv": "En generator för studiekort, gjord för en kurs, föranledd av utexaminerade vänner som förlorade tillgången till den billiga lunchen."
+      },
+      "body": {
+        "en": "A generator for digital student ID cards, made as part of a course at Arcada. The prompt was mundane — friends who had graduated could no longer get the student lunch price — and the result was academic rather than production, which is the right size for that problem.\n\nSource kept private; built purely for coursework.",
+        "fi": "Generaattori digitaalisille opiskelijakorteille, tehty osana Arcadan kurssia. Lähtökohta oli arkinen — valmistuneet ystävät eivät enää saaneet opiskelijalounaan hintaa — ja tulos oli akateeminen eikä tuotantokelpoinen, mikä on oikea mittakaava sille ongelmalle.\n\nLähdekoodi pidetty yksityisenä; tehty puhtaasti opintotarkoitukseen.",
+        "sv": "En generator för digitala studiekort, gjord som en del av en kurs på Arcada. Utgångspunkten var vardaglig — vänner som tagit examen kunde inte längre få studentpris på lunchen — och resultatet blev akademiskt snarare än produktionsfärdigt, vilket är rätt storlek för det problemet.\n\nKällkoden hålls privat; byggd enbart för studieändamål."
+      },
+      "image": "/img/frunk.png",
+      "link": "",
+      "featured": false
+    }
+  ],
+  "signals": {
+    "intro": {
+      "en": "What I read, listen to, and keep an eye on. Mostly security research and people doing careful work in public.",
+      "fi": "Mitä luen, kuuntelen ja pidän silmällä. Enimmäkseen turvallisuustutkimusta ja ihmisiä jotka tekevät huolellista työtä julkisesti.",
+      "sv": "Vad jag läser, lyssnar på och håller ett öga på. Mestadels säkerhetsforskning och människor som gör noggrant arbete offentligt."
+    },
+    "items": [
+      {
+        "id": "s1",
+        "category": "Security",
+        "label": "Trail of Bits",
+        "note": {
+          "en": "Research writing that shows the work, not just the finding.",
+          "fi": "Tutkimuskirjoittamista joka näyttää työn, ei vain löydöstä.",
+          "sv": "Forskningstexter som visar arbetet, inte bara fyndet."
+        },
+        "url": "https://blog.trailofbits.com/"
+      },
+      {
+        "id": "s2",
+        "category": "Security",
+        "label": "PortSwigger Research",
+        "note": {
+          "en": "Web security research with a very high hit rate.",
+          "fi": "Web-turvallisuustutkimusta erittäin korkealla osumatarkkuudella.",
+          "sv": "Webbsäkerhetsforskning med mycket hög träffsäkerhet."
+        },
+        "url": "https://portswigger.net/research"
+      },
+      {
+        "id": "s3",
+        "category": "Security",
+        "label": "Darknet Diaries",
+        "note": {
+          "en": "Jack Rhysider on the people behind the incidents.",
+          "fi": "Jack Rhysider ihmisistä poikkeamien takana.",
+          "sv": "Jack Rhysider om människorna bakom incidenterna."
+        },
+        "url": "https://darknetdiaries.com/"
+      },
+      {
+        "id": "s4",
+        "category": "Local AI",
+        "label": "llama.cpp",
+        "note": {
+          "en": "The project that made running models on your own hardware ordinary.",
+          "fi": "Projekti joka teki mallien ajamisesta omalla raudalla arkipäivää.",
+          "sv": "Projektet som gjorde det vardagligt att köra modeller på egen hårdvara."
+        },
+        "url": "https://github.com/ggml-org/llama.cpp"
+      },
+      {
+        "id": "s5",
+        "category": "Local AI",
+        "label": "Ollama",
+        "note": {
+          "en": "Where most of my local experiments start.",
+          "fi": "Täältä useimmat paikalliset kokeiluni alkavat.",
+          "sv": "Härifrån startar de flesta av mina lokala experiment."
+        },
+        "url": "https://ollama.com/"
+      },
+      {
+        "id": "s6",
+        "category": "Local AI",
+        "label": "Simon Willison's blog",
+        "note": {
+          "en": "Consistently the earliest clear-eyed writing on what these models actually do.",
+          "fi": "Johdonmukaisesti varhaisin selväsilmäinen kirjoittaminen siitä, mitä nämä mallit oikeasti tekevät.",
+          "sv": "Genomgående den tidigaste klarsynta texten om vad dessa modeller faktiskt gör."
+        },
+        "url": "https://simonwillison.net/"
+      },
+      {
+        "id": "s7",
+        "category": "Infrastructure",
+        "label": "Cloudflare Blog",
+        "note": {
+          "en": "Postmortems written like they want you to learn something.",
+          "fi": "Jälkiselvityksiä jotka on kirjoitettu niin että niistä oppii jotain.",
+          "sv": "Postmortems skrivna som om de vill att du ska lära dig något."
+        },
+        "url": "https://blog.cloudflare.com/"
+      },
+      {
+        "id": "s8",
+        "category": "Craft",
+        "label": "Command Line Heroes",
+        "note": {
+          "en": "How open source actually got built, told well.",
+          "fi": "Miten avoin lähdekoodi oikeasti rakennettiin, hyvin kerrottuna.",
+          "sv": "Hur öppen källkod faktiskt byggdes, väl berättat."
+        },
+        "url": "https://www.redhat.com/en/command-line-heroes"
+      }
+    ]
+  },
+  "contact": {
+    "intro": {
+      "en": "If you're hiring for application security or DevSecOps, or you just want to argue about running models locally — write to me. I answer everything that isn't a bot.",
+      "fi": "Jos rekrytoit sovellusturvallisuuteen tai DevSecOpsiin — tai haluat vain väitellä mallien ajamisesta paikallisesti — kirjoita minulle. Vastaan kaikkeen mikä ei ole botti.",
+      "sv": "Om du rekryterar inom applikationssäkerhet eller DevSecOps — eller bara vill diskutera att köra modeller lokalt — skriv till mig. Jag svarar på allt som inte är en bot."
+    },
+    "email": "contact@lagerqvr.com"
+  },
+  "social": {
+    "github": "https://github.com/lagerqvr",
+    "linkedin": "https://www.linkedin.com/in/rasmus-lagerqvist/",
+    "telegram": "https://t.me/lagerqvr"
+  }
+}
