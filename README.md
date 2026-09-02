@@ -88,7 +88,12 @@ proxy.ts               locale negotiation + CSP nonce + security headers
 
 ## Notes
 
-- Security headers and a nonce-based CSP (`strict-dynamic`) are set in `proxy.ts`.
+- Security headers and CSP are set in `proxy.ts`. The CSP is deliberately not
+  nonce-based: these pages are statically prerendered, so their script tags are
+  emitted at build time when no request — and so no nonce — exists. A runtime
+  nonce plus `strict-dynamic` blocks every Next.js chunk and ships a page with
+  no JavaScript. `script-src` therefore allows `'self' 'unsafe-inline'`; the
+  trade is narrow because no user content is ever rendered as HTML.
 - The dither field runs at ~1/6 resolution and blits up with smoothing off. It pauses when
   scrolled out of view or the tab is hidden, and renders a single static frame under
   `prefers-reduced-motion: reduce`.
