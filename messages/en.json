@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "Rasmus Lagerqvist — Software Engineer",
-    "description": "Software engineer and MSc (Tech.) based in Vaasa, Finland. Working toward application security and DevSecOps, with a research background in on-device language models.",
-    "ogAlt": "Rasmus Lagerqvist — Software Engineer"
+    "description": "Software engineer and MSc (Tech.) based in Vaasa, Finland. Working toward application security and DevSecOps, with a research background in on-device language models."
   },
   "nav": {
     "core": "Profile",
@@ -23,18 +22,12 @@
     "signals": "Signals",
     "contact": "Contact"
   },
-  "status": {
-    "languages": "FI · SV · EN"
-  },
   "work": {
-    "featured": "Featured",
     "readMore": "Read more",
     "external": "Visit",
     "back": "Back to index",
     "repos": "Recent repositories",
-    "reposNote": "Pulled from GitHub, refreshed hourly.",
-    "reposEmpty": "Repository list unavailable right now.",
-    "viewRepo": "View repository"
+    "reposNote": "Pulled from GitHub, refreshed hourly."
   },
   "contact": {
     "name": "Name",
@@ -49,14 +42,9 @@
     "error": "Something went wrong. Try again, or email me directly.",
     "rateLimited": "Too many messages from this address. Try again later.",
     "invalid": "Please check the fields and try again.",
-    "captchaPending": "Verifying you're human",
     "captchaFailed": "Verification failed. Reload the page and try again.",
     "directEmail": "Or email directly",
     "protected": "Protected by Cloudflare Turnstile."
-  },
-  "footer": {
-    "builtWith": "Built with Next.js. Source on GitHub.",
-    "rights": "All rights reserved."
   },
   "notFound": {
     "title": "Signal lost",

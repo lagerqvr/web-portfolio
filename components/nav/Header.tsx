@@ -6,7 +6,7 @@ import { Link } from '@/lib/i18n/navigation';
 import { Wordmark } from '@/components/ui/Mark';
 import LocaleSwitcher from './LocaleSwitcher';
 
-const SECTIONS = ['core', 'trajectory', 'vector', 'work', 'signals', 'contact'] as const;
+const SECTIONS = ['core', 'vector', 'trajectory', 'work', 'signals', 'contact'] as const;
 
 export default function Header({ onIndex }: { onIndex: boolean }) {
   const t = useTranslations('nav');

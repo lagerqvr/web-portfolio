@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "Rasmus Lagerqvist — Mjukvaruingenjör",
-    "description": "Mjukvaruingenjör och DI baserad i Vasa, Finland. På väg mot applikationssäkerhet och DevSecOps, med forskningsbakgrund inom språkmodeller som körs lokalt.",
-    "ogAlt": "Rasmus Lagerqvist — Mjukvaruingenjör"
+    "description": "Mjukvaruingenjör och DI baserad i Vasa, Finland. På väg mot applikationssäkerhet och DevSecOps, med forskningsbakgrund inom språkmodeller som körs lokalt."
   },
   "nav": {
     "core": "Profil",
@@ -23,18 +22,12 @@
     "signals": "Signaler",
     "contact": "Kontakt"
   },
-  "status": {
-    "languages": "FI · SV · EN"
-  },
   "work": {
-    "featured": "Utvalda",
     "readMore": "Läs mer",
     "external": "Besök",
     "back": "Tillbaka till index",
     "repos": "Senaste repositorier",
-    "reposNote": "Hämtat från GitHub, uppdateras varje timme.",
-    "reposEmpty": "Repositorielistan är inte tillgänglig just nu.",
-    "viewRepo": "Öppna repositorium"
+    "reposNote": "Hämtat från GitHub, uppdateras varje timme."
   },
   "contact": {
     "name": "Namn",
@@ -49,14 +42,9 @@
     "error": "Något gick fel. Försök igen eller mejla mig direkt.",
     "rateLimited": "För många meddelanden från den här adressen. Försök igen senare.",
     "invalid": "Kontrollera fälten och försök igen.",
-    "captchaPending": "Verifierar att du är människa",
     "captchaFailed": "Verifieringen misslyckades. Ladda om sidan och försök igen.",
     "directEmail": "Eller mejla direkt",
     "protected": "Skyddad av Cloudflare Turnstile."
-  },
-  "footer": {
-    "builtWith": "Byggd med Next.js. Källkod på GitHub.",
-    "rights": "Alla rättigheter förbehållna."
   },
   "notFound": {
     "title": "Signal förlorad",

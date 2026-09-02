@@ -1,5 +1,5 @@
 import 'server-only';
-import { randomBytes, scrypt as scryptCb, timingSafeEqual } from 'node:crypto';
+import { scrypt as scryptCb, timingSafeEqual } from 'node:crypto';
 import { promisify } from 'node:util';
 import { cookies } from 'next/headers';
 import { SignJWT, jwtVerify } from 'jose';
@@ -11,16 +11,8 @@ const scrypt = promisify(scryptCb) as (
   keylen: number,
 ) => Promise<Buffer>;
 
-const KEYLEN = 64;
 export const SESSION_COOKIE = 'admin_session';
 const SESSION_TTL = '8h';
-
-/** `scrypt:<salt-b64>:<hash-b64>` — the plaintext password is never stored. */
-export async function hashPassword(password: string): Promise<string> {
-  const salt = randomBytes(16);
-  const derived = await scrypt(password, salt, KEYLEN);
-  return `scrypt:${salt.toString('base64')}:${derived.toString('base64')}`;
-}
 
 export async function verifyPassword(password: string): Promise<boolean> {
   const stored = process.env.ADMIN_PASSWORD_HASH;

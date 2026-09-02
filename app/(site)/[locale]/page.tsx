@@ -31,12 +31,12 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
         <Core content={content} locale={l} />
       </Section>
 
-      <Section id="trajectory" label={t('sections.trajectory')} index={2}>
-        <Trajectory content={content} locale={l} />
+      <Section id="vector" label={t('sections.vector')} index={2}>
+        <Vector content={content} locale={l} />
       </Section>
 
-      <Section id="vector" label={t('sections.vector')} index={3}>
-        <Vector content={content} locale={l} />
+      <Section id="trajectory" label={t('sections.trajectory')} index={3}>
+        <Trajectory content={content} locale={l} />
       </Section>
 
       <Section id="work" label={t('sections.work')} index={4}>

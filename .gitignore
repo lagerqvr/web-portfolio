@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated banner candidates — regenerate with `npm run banner`
+banner/candidate-*.png
+banner/contact-sheet.png
+
+# vendored by `vercel integration add`
+/.agents/
+/.claude/
+skills-lock.json

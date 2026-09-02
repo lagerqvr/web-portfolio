@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "Rasmus Lagerqvist — Ohjelmistokehittäjä",
-    "description": "Ohjelmistokehittäjä ja DI Vaasasta. Suuntaa kohti sovellusturvallisuutta ja DevSecOpsia, taustalla tutkimusta laitteessa ajettavista kielimalleista.",
-    "ogAlt": "Rasmus Lagerqvist — Ohjelmistokehittäjä"
+    "description": "Ohjelmistokehittäjä ja DI Vaasasta. Suuntaa kohti sovellusturvallisuutta ja DevSecOpsia, taustalla tutkimusta laitteessa ajettavista kielimalleista."
   },
   "nav": {
     "core": "Profiili",
@@ -23,18 +22,12 @@
     "signals": "Signaalit",
     "contact": "Yhteystiedot"
   },
-  "status": {
-    "languages": "FI · SV · EN"
-  },
   "work": {
-    "featured": "Nostot",
     "readMore": "Lue lisää",
     "external": "Siirry",
     "back": "Takaisin hakemistoon",
     "repos": "Viimeisimmät repositoriot",
-    "reposNote": "Haettu GitHubista, päivittyy tunneittain.",
-    "reposEmpty": "Repositoriolista ei ole juuri nyt saatavilla.",
-    "viewRepo": "Avaa repositorio"
+    "reposNote": "Haettu GitHubista, päivittyy tunneittain."
   },
   "contact": {
     "name": "Nimi",
@@ -49,14 +42,9 @@
     "error": "Jokin meni pieleen. Yritä uudelleen tai lähetä sähköpostia suoraan.",
     "rateLimited": "Liian monta viestiä tästä osoitteesta. Yritä myöhemmin uudelleen.",
     "invalid": "Tarkista kentät ja yritä uudelleen.",
-    "captchaPending": "Varmistetaan, ettet ole botti",
     "captchaFailed": "Varmistus epäonnistui. Lataa sivu uudelleen ja yritä uudestaan.",
     "directEmail": "Tai lähetä sähköpostia suoraan",
     "protected": "Suojattu Cloudflare Turnstilella."
-  },
-  "footer": {
-    "builtWith": "Rakennettu Next.js:llä. Lähdekoodi GitHubissa.",
-    "rights": "Kaikki oikeudet pidätetään."
   },
   "notFound": {
     "title": "Signaali kadonnut",
