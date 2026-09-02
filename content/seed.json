@@ -4,39 +4,40 @@
   "profile": {
     "name": "Rasmus Lagerqvist",
     "role": "Software Engineer",
-    "location": "Vaasa, FI",
+    "location": "FI",
     "avatar": "/img/avatar-pixel.png",
     "status": {
-      "en": "Open to application security & DevSecOps roles",
-      "fi": "Avoin sovellusturvallisuuden ja DevSecOpsin tehtäville",
-      "sv": "Öppen för roller inom applikationssäkerhet och DevSecOps"
-    }
+      "en": "Open to security & DevSecOps roles — or anything AI",
+      "fi": "Avoin tietoturvan ja DevSecOpsin tehtäville — tai mille tahansa tekoälyyn liittyvälle",
+      "sv": "Öppen för roller inom säkerhet och DevSecOps — eller något med AI"
+    },
+    "handle": "lagerqvr"
   },
   "hero": {
     "headline": {
-      "en": "Most software breaks at the seam between *people and systems.* That seam is where I work.",
-      "fi": "Useimmat ohjelmistot hajoavat saumasta *ihmisen ja järjestelmän välillä.* Siinä saumassa minä työskentelen.",
-      "sv": "De flesta system brister i fogen mellan *människa och maskin.* Det är där jag arbetar."
+      "en": "Most software breaks at the seam between *people and systems.* That seam is where I want to work.",
+      "fi": "Useimmat ohjelmistot hajoavat saumasta *ihmisen ja järjestelmän välillä.* Siinä saumassa haluan työskennellä.",
+      "sv": "De flesta system brister i fogen mellan *människa och maskin.* Det är där jag vill arbeta."
     },
     "sub": {
-      "en": "Software engineer at CGI. MSc (Tech.) from Åbo Akademi. Heading toward application security and DevSecOps — and running language models locally while everyone else talks about the cloud.",
-      "fi": "Ohjelmistokehittäjä CGI:llä. Diplomi-insinööri Åbo Akademista. Suuntaan kohti sovellusturvallisuutta ja DevSecOpsia — ja ajan kielimalleja paikallisesti, kun muut puhuvat pilvestä.",
-      "sv": "Mjukvaruingenjör på CGI. Diplomingenjör från Åbo Akademi. På väg mot applikationssäkerhet och DevSecOps — och kör språkmodeller lokalt medan alla andra pratar om molnet."
+      "en": "Software engineer in Finland, MSc (Tech.). I'm at my best where the interface meets the implementation — and most of my own time goes into local AI and, slowly, security.",
+      "fi": "Ohjelmistokehittäjä Suomessa, DI. Olen parhaimmillani siinä kohdassa jossa käyttöliittymä kohtaa toteutuksen — ja suurin osa omasta ajastani menee paikalliseen tekoälyyn ja vähitellen tietoturvaan.",
+      "sv": "Mjukvaruingenjör i Finland, DI. Jag är som bäst där gränssnittet möter implementationen — och det mesta av min egen tid går till lokal AI och, så småningom, säkerhet."
     }
   },
   "core": {
     "body": {
-      "en": "I'm a software engineer at CGI, working mostly in Java and JavaScript on systems that other people depend on to get their jobs done. Before that I built frontends at Pyramid Creative, shipped product work at JotBar Solutions, and designed interfaces for Arcada's research lab.\n\nI won't claim to be the strongest engineer in any room. What I am reliably good at is the part many teams find hard: standing between the customer and the product and making sure the thing we build is the thing that was actually needed. I ask the awkward questions early, I translate in both directions, and I would rather solve the real problem than the one that was easiest to write down.\n\nThe rest of the time I'm building something. Lately that has meant local AI — running models on hardware I own, which is also what my master's thesis was about. The interesting problems tend to show up once you take the cloud away.",
-      "fi": "Työskentelen ohjelmistokehittäjänä CGI:llä, pääosin Javan ja JavaScriptin parissa järjestelmissä, joiden varassa muut tekevät työnsä. Sitä ennen rakensin käyttöliittymiä Pyramid Creativella, tein tuotetyötä JotBar Solutionsilla ja suunnittelin käyttöliittymiä Arcadan tutkimusyksikölle.\n\nEn väitä olevani huoneen vahvin insinööri. Se, missä olen luotettavan hyvä, on osa jonka moni tiimi kokee vaikeaksi: seistä asiakkaan ja tuotteen välissä ja varmistaa, että rakennamme sen mitä oikeasti tarvittiin. Kysyn kiusalliset kysymykset ajoissa, käännän molempiin suuntiin, ja ratkaisen mieluummin oikean ongelman kuin sen joka oli helpoin kirjata ylös.\n\nMuun ajan rakennan jotain. Viime aikoina se on tarkoittanut paikallista tekoälyä — mallien ajamista omalla raudallani, mistä myös diplomityöni kertoi. Kiinnostavat ongelmat tulevat esiin vasta kun pilvi otetaan pois.",
-      "sv": "Jag är mjukvaruingenjör på CGI och arbetar mest i Java och JavaScript med system som andra människor är beroende av för att göra sitt jobb. Dessförinnan byggde jag frontend på Pyramid Creative, gjorde produktarbete på JotBar Solutions och formgav gränssnitt för Arcadas forskningsenhet.\n\nJag påstår inte att jag är den vassaste ingenjören i rummet. Det jag är pålitligt bra på är den del många team tycker är svår: att stå mellan kunden och produkten och se till att det vi bygger är det som faktiskt behövdes. Jag ställer de obekväma frågorna tidigt, jag översätter i båda riktningarna, och jag löser hellre det verkliga problemet än det som var lättast att skriva ner.\n\nResten av tiden bygger jag något. På sistone har det betytt lokal AI — att köra modeller på hårdvara jag äger, vilket också var vad mitt diplomarbete handlade om. De intressanta problemen dyker upp först när man tar bort molnet."
+      "en": "I'm a software engineer currently working mostly in Java and JavaScript, on systems people depend on to get through their working day. Before that I was a developer at JotBar Solutions, where I moved the company's services onto AWS and then looked after them, and I spent a stretch designing interfaces for Arcada's research lab.\n\nI'm not the strongest engineer in the room and I'd rather not pretend otherwise. What I'm actually good at sits between the customer and the product: working out what someone meant rather than what they asked for. My instincts are as much UX as backend — I care how a thing feels to use, and I tend to remember interfaces and code I've seen in unreasonable detail, which is quietly useful when you're the one joining the dots. I try to ask the awkward questions early, and I'd rather solve the real problem than the tidy one. Mostly I want to make people's working lives a little easier. Hopefully I manage it.\n\nOutside work I'm usually building something, and lately that means local AI — models running on hardware I own. It opens up things that simply weren't possible before, it's getting better quickly, and nobody is harvesting your data on the way. My master's thesis went the same direction.",
+      "fi": "Työskentelen ohjelmistokehittäjänä pääosin Javan ja JavaScriptin parissa, järjestelmissä joiden varassa ihmiset tekevät työpäivänsä. Sitä ennen olin kehittäjänä JotBar Solutionsilla, missä siirsin yrityksen palvelut AWS:ään ja vastasin niistä sen jälkeen, ja suunnittelin jonkin aikaa käyttöliittymiä Arcadan tutkimusyksikölle.\n\nEn ole huoneen vahvin insinööri enkä halua esittää muuta. Se missä olen oikeasti hyvä on asiakkaan ja tuotteen välissä: sen selvittämisessä mitä joku tarkoitti, ei sitä mitä hän pyysi. Vaistoni ovat yhtä paljon käyttökokemuksen kuin taustajärjestelmien puolella — välitän siitä miltä asia tuntuu käyttää, ja muistan näkemäni käyttöliittymät ja koodin kohtuuttoman tarkasti, mistä on hiljaista hyötyä kun on se joka yhdistää palaset. Yritän kysyä kiusalliset kysymykset ajoissa, ja ratkaisen mieluummin oikean ongelman kuin siistin. Enimmäkseen haluan tehdä ihmisten työpäivistä hieman helpompia. Toivottavasti onnistun.\n\nTyön ulkopuolella rakennan yleensä jotain, ja viime aikoina se tarkoittaa paikallista tekoälyä — malleja jotka pyörivät omalla raudallani. Se avaa asioita jotka eivät aiemmin olleet mahdollisia, kehittyy nopeasti, eikä kukaan kerää dataasi matkan varrella. Diplomityöni meni samaan suuntaan.",
+      "sv": "Jag är mjukvaruingenjör och arbetar mest i Java och JavaScript, med system som människor är beroende av för att ta sig igenom sin arbetsdag. Dessförinnan var jag utvecklare på JotBar Solutions, där jag flyttade företagets tjänster till AWS och sedan ansvarade för dem, och jag formgav under en period gränssnitt för Arcadas forskningsenhet.\n\nJag är inte den vassaste ingenjören i rummet och vill helst inte låtsas annat. Det jag faktiskt är bra på ligger mellan kunden och produkten: att lista ut vad någon menade snarare än vad de bad om. Mina instinkter är lika mycket UX som backend — jag bryr mig om hur något känns att använda, och jag minns gränssnitt och kod jag sett i orimlig detalj, vilket är tyst användbart när man är den som binder ihop trådarna. Jag försöker ställa de obekväma frågorna tidigt, och löser hellre det verkliga problemet än det prydliga. Mest av allt vill jag göra människors arbetsdagar lite lättare. Förhoppningsvis lyckas jag.\n\nUtanför jobbet bygger jag oftast något, och på sistone betyder det lokal AI — modeller som körs på hårdvara jag äger. Det öppnar för saker som inte var möjliga förut, det blir snabbt bättre, och ingen skördar dina data på vägen. Mitt diplomarbete gick åt samma håll."
     }
   },
   "trajectory": [
     {
       "id": "cgi",
       "kind": "work",
-      "org": "CGI",
-      "orgUrl": "https://www.cgi.com/fi/fi",
+      "org": "Consultancy, Finland",
+      "orgUrl": "",
       "role": {
         "en": "Software Engineer",
         "fi": "Ohjelmistokehittäjä",
@@ -45,9 +46,9 @@
       "period": "2024 —",
       "sortKey": 2024,
       "body": {
-        "en": "Building and maintaining production systems in Java, JavaScript and Angular, with cloud services and modern web tooling around them. Consulting work, which means the requirements arrive as conversations rather than tickets — a lot of the job is turning one into the other.",
-        "fi": "Rakennan ja ylläpidän tuotantojärjestelmiä Javalla, JavaScriptillä ja Angularilla, ympärillä pilvipalvelut ja moderni web-työkalusto. Konsultointityötä, mikä tarkoittaa että vaatimukset saapuvat keskusteluina eivätkä tiketteinä — iso osa työtä on muuttaa toinen toiseksi.",
-        "sv": "Bygger och underhåller produktionssystem i Java, JavaScript och Angular, med molntjänster och modern webbverktygskedja omkring. Konsultarbete, vilket betyder att kraven kommer som samtal snarare än som ärenden — en stor del av jobbet är att omvandla det ena till det andra."
+        "en": "Building and maintaining production systems in Java, JavaScript and Angular, with cloud services and modern web tooling around them. Consulting work, which means requirements arrive as conversations rather than tickets — a good part of the job is turning one into the other, and making the result easier to live with than what it replaced.",
+        "fi": "Rakennan ja ylläpidän tuotantojärjestelmiä Javalla, JavaScriptillä ja Angularilla, ympärillä pilvipalvelut ja moderni web-työkalusto. Konsultointityötä, mikä tarkoittaa että vaatimukset saapuvat keskusteluina eivätkä tiketteinä — iso osa työtä on muuttaa toinen toiseksi ja tehdä lopputuloksesta helpompi elää kuin se jonka se korvasi.",
+        "sv": "Bygger och underhåller produktionssystem i Java, JavaScript och Angular, med molntjänster och modern webbverktygskedja omkring. Konsultarbete, vilket betyder att kraven kommer som samtal snarare än som ärenden — en stor del av jobbet är att omvandla det ena till det andra och göra resultatet lättare att leva med än det som ersattes."
       }
     },
     {
@@ -69,24 +70,6 @@
       }
     },
     {
-      "id": "pyramid",
-      "kind": "work",
-      "org": "Pyramid Creative",
-      "orgUrl": "",
-      "role": {
-        "en": "Frontend Developer",
-        "fi": "Frontend-kehittäjä",
-        "sv": "Frontend-utvecklare"
-      },
-      "period": "2021 — 2023",
-      "sortKey": 2021,
-      "body": {
-        "en": "Frontend work for client projects alongside studies. Small team, short feedback loops, and direct contact with the people the work was for.",
-        "fi": "Frontend-työtä asiakasprojekteissa opintojen ohella. Pieni tiimi, lyhyet palautesyklit ja suora kontakti niihin ihmisiin joille työtä tehtiin.",
-        "sv": "Frontend-arbete i kundprojekt vid sidan av studierna. Litet team, korta återkopplingsslingor och direkt kontakt med de människor arbetet var till för."
-      }
-    },
-    {
       "id": "jotbar",
       "kind": "work",
       "org": "JotBar Solutions Oy",
@@ -99,8 +82,8 @@
       "period": "2021 — 2023",
       "sortKey": 2020,
       "body": {
-        "en": "Web development in React and C#. Migrated the company's services and public sites to AWS on Lightsail, then owned them — the first time I was responsible for infrastructure someone else's business ran on.",
-        "fi": "Web-kehitystä Reactilla ja C#:lla. Siirsin yrityksen palvelut ja julkiset sivut AWS:ään Lightsailille ja vastasin niistä sen jälkeen — ensimmäinen kerta kun vastuullani oli infrastruktuuri, jonka varassa jonkun toisen liiketoiminta pyöri.",
+        "en": "Web development in React and C#. Migrated the company's services and public sites to AWS on Lightsail and then owned them — the first time I was responsible for infrastructure someone else's business ran on.",
+        "fi": "Web-kehitystä Reactilla ja C#:lla. Siirsin yrityksen palvelut ja julkiset sivut AWS:ään Lightsailille ja vastasin niistä sen jälkeen — ensimmäinen kerta kun vastuullani oli infrastruktuuri jonka varassa jonkun toisen liiketoiminta pyöri.",
         "sv": "Webbutveckling i React och C#. Migrerade företagets tjänster och publika sidor till AWS på Lightsail och ansvarade sedan för dem — första gången jag hade ansvar för infrastruktur som någon annans verksamhet vilade på."
       }
     },
@@ -143,51 +126,51 @@
   ],
   "vector": {
     "intro": {
-      "en": "Where I'm pointed, stated honestly — some of this is experience, some of it is direction. I've marked which is which.",
-      "fi": "Mihin olen suuntaamassa, rehellisesti sanottuna — osa tästä on kokemusta, osa suuntaa. Olen merkinnyt kumpi on kumpi.",
-      "sv": "Vart jag är på väg, ärligt formulerat — en del av detta är erfarenhet, en del är riktning. Jag har markerat vilket som är vilket."
+      "en": "Where I'm pointed. Some of this is experience and some of it is only a direction — I've tried to be clear about which is which.",
+      "fi": "Mihin olen suuntaamassa. Osa tästä on kokemusta ja osa pelkkä suunta — olen yrittänyt tehdä selväksi kumpi on kumpi.",
+      "sv": "Vart jag är på väg. En del av detta är erfarenhet och en del bara en riktning — jag har försökt vara tydlig med vilket som är vilket."
     },
     "modes": [
       {
-        "id": "appsec",
-        "label": "Application security",
+        "id": "product",
+        "label": "Product & UX",
         "title": {
-          "en": "Where the thesis pointed",
-          "fi": "Minne diplomityö osoitti",
-          "sv": "Dit diplomarbetet pekade"
+          "en": "Where I’m useful now",
+          "fi": "Missä olen hyödyksi nyt",
+          "sv": "Där jag är till nytta nu"
         },
         "body": {
-          "en": "My master's thesis evaluated how far prompt-level defenses actually go on small on-device language models — how vulnerable they are to jailbreaks and misuse once the model is running on someone's phone rather than behind a provider's API. The finding that stuck with me is the one that generalises: security is a property of a whole system, not a control you bolt on at the boundary. I want to keep working on that layer.",
-          "fi": "Diplomityöni arvioi, kuinka pitkälle kehotetason suojaukset todella kantavat pienillä laitteessa ajettavilla kielimalleilla — kuinka alttiita ne ovat jailbreakeille ja väärinkäytölle, kun malli pyörii jonkun puhelimessa eikä palveluntarjoajan rajapinnan takana. Havainto joka jäi mieleen on se joka yleistyy: turvallisuus on koko järjestelmän ominaisuus, ei kontrolli jonka pultataan rajapintaan. Haluan jatkaa työskentelyä sillä tasolla.",
-          "sv": "Mitt diplomarbete utvärderade hur långt promptbaserade försvar faktiskt räcker på små språkmodeller som körs på enheten — hur sårbara de är för jailbreaks och missbruk när modellen körs i någons telefon i stället för bakom en leverantörs API. Insikten som stannade kvar är den som generaliserar: säkerhet är en egenskap hos ett helt system, inte en kontroll man skruvar fast vid gränsen. Det är på det lagret jag vill fortsätta arbeta."
+          "en": "The most technical thing I do isn't always the code. I'm usually the one who notices the flow doesn't make sense before it ships, who can hold the whole interface in their head at once, and who would rather go and ask the person using it than guess. It's UX, but from inside the implementation rather than from a Figma file — and being the bridge between what someone needs and what actually gets built is the part of the job I'm reliably good at.",
+          "fi": "Teknisin asia jonka teen ei ole aina koodi. Olen yleensä se joka huomaa ettei kulku ole järkevä ennen kuin se julkaistaan, joka pitää koko käyttöliittymän kerralla päässään, ja joka menee mieluummin kysymään käyttäjältä kuin arvaa. Se on käyttökokemussuunnittelua, mutta toteutuksen sisältä eikä Figma-tiedostosta — ja sillan oleminen tarpeen ja lopputuloksen välillä on se osa työtä jossa olen luotettavasti hyvä.",
+          "sv": "Det mest tekniska jag gör är inte alltid koden. Jag är oftast den som märker att flödet inte går ihop innan det släpps, som kan hålla hela gränssnittet i huvudet på en gång, och som hellre går och frågar den som använder det än gissar. Det är UX, fast inifrån implementationen snarare än från en Figma-fil — och att vara bryggan mellan vad någon behöver och vad som faktiskt byggs är den del av jobbet jag är pålitligt bra på."
         }
       },
       {
-        "id": "devsecops",
-        "label": "DevSecOps",
+        "id": "local-ai",
+        "label": "Local AI",
         "title": {
-          "en": "Where I'm heading next",
-          "fi": "Minne olen menossa seuraavaksi",
-          "sv": "Dit jag är på väg härnäst"
+          "en": "What I keep building with",
+          "fi": "Millä rakennan jatkuvasti",
+          "sv": "Vad jag ständigt bygger med"
         },
         "body": {
-          "en": "The pivot I'm actively making. I've owned infrastructure before — AWS migrations, services other people's businesses ran on — and I've shipped enough product to know how late security usually arrives. The interesting work is moving it earlier: into pipelines, into defaults, into the path of least resistance for the developer. This is the role I'm looking for.",
-          "fi": "Käännös jota teen aktiivisesti. Olen vastannut infrastruktuurista aiemmin — AWS-migraatioista, palveluista joiden varassa toisten yritykset pyörivät — ja tehnyt tarpeeksi tuotetyötä tietääkseni kuinka myöhään turvallisuus yleensä saapuu. Kiinnostava työ on sen siirtäminen aikaisemmaksi: putkiin, oletusasetuksiin, kehittäjän vähimmän vastuksen tielle. Tätä roolia etsin.",
-          "sv": "Den pivot jag aktivt gör. Jag har ansvarat för infrastruktur tidigare — AWS-migrationer, tjänster som andras verksamheter vilade på — och byggt tillräckligt med produkt för att veta hur sent säkerheten oftast dyker upp. Det intressanta arbetet är att flytta den tidigare: in i pipelines, in i standardinställningar, in i utvecklarens väg med minst motstånd. Det är den rollen jag söker."
+          "en": "I find local inference genuinely exciting. Partly for what it makes possible — things you couldn't attempt when every request had to leave the building — and partly because your data stays yours instead of being harvested on the way past. It's early, it's improving fast, and almost everything I build now runs entirely on the machine in front of me. I think that's where a lot of the interesting work ends up.",
+          "fi": "Paikallinen päättely on minusta aidosti innostavaa. Osin siksi mitä se mahdollistaa — asioita joihin ei voinut ryhtyä kun jokaisen pyynnön piti lähteä talosta — ja osin siksi että data pysyy sinun eikä sitä kerätä matkan varrella. Ala on nuori, kehittyy nopeasti, ja lähes kaikki mitä nykyään rakennan pyörii kokonaan edessäni olevalla koneella. Uskon että iso osa kiinnostavasta työstä päätyy sinne.",
+          "sv": "Jag tycker att lokal inferens är genuint spännande. Dels för vad det möjliggör — sådant man inte kunde försöka sig på när varje förfrågan måste lämna huset — och dels för att dina data förblir dina i stället för att skördas på vägen. Det är tidigt, det blir snabbt bättre, och nästan allt jag bygger nu körs helt på maskinen framför mig. Jag tror att mycket av det intressanta arbetet hamnar där."
         }
       },
       {
-        "id": "applied-ai",
-        "label": "Applied AI",
+        "id": "security",
+        "label": "Security",
         "title": {
-          "en": "What I actually build with",
-          "fi": "Millä oikeasti rakennan",
-          "sv": "Vad jag faktiskt bygger med"
+          "en": "The direction I’m moving",
+          "fi": "Suunta johon liikun",
+          "sv": "Riktningen jag rör mig i"
         },
         "body": {
-          "en": "Not a buzzword line. I write about, test, and run language models — mostly locally, on hardware I own, because that's where the constraints get honest. Quantisation, small-model behaviour, what breaks when there's no frontier model to fall back on. It's both my research background and what I'd be doing on a weekend anyway.",
-          "fi": "Ei muotisana. Kirjoitan kielimalleista, testaan ja ajan niitä — pääosin paikallisesti, omalla raudallani, koska siellä reunaehdot muuttuvat rehellisiksi. Kvantisointi, pienten mallien käyttäytyminen, se mikä hajoaa kun takana ei ole huippumallia johon nojata. Tämä on sekä tutkimustaustani että se mitä tekisin viikonloppuna joka tapauksessa.",
-          "sv": "Inget modeord. Jag skriver om, testar och kör språkmodeller — mest lokalt, på hårdvara jag äger, eftersom det är där begränsningarna blir ärliga. Kvantisering, hur små modeller beter sig, vad som brister när det inte finns någon toppmodell att falla tillbaka på. Det är både min forskningsbakgrund och det jag ändå skulle göra på en helg."
+          "en": "I don't have formal security experience yet, and I'd rather say that than imply otherwise. What I do have is the instinct: I like breaking things, legally, and finding the case nobody planned for. DevSecOps is the realistic next step — I've owned infrastructure before and shipped enough product to know how late security usually turns up. Moving it earlier is work I'd be glad to do.",
+          "fi": "Minulla ei ole vielä muodollista tietoturvakokemusta, ja sanon sen mieluummin suoraan. Se mitä minulla on, on vaisto: pidän asioiden rikkomisesta, laillisesti, ja sen tapauksen löytämisestä jota kukaan ei suunnitellut. DevSecOps on realistinen seuraava askel — olen vastannut infrastruktuurista aiemmin ja tehnyt tarpeeksi tuotetyötä tietääkseni kuinka myöhään turvallisuus yleensä ilmestyy. Sen siirtäminen aikaisemmaksi on työtä jota tekisin mielelläni.",
+          "sv": "Jag har ingen formell säkerhetserfarenhet ännu, och det säger jag hellre rakt ut. Det jag har är instinkten: jag gillar att ha sönder saker, lagligt, och att hitta fallet ingen planerat för. DevSecOps är det realistiska nästa steget — jag har ansvarat för infrastruktur tidigare och byggt tillräckligt med produkt för att veta hur sent säkerheten oftast dyker upp. Att flytta den tidigare är arbete jag gärna gör."
         }
       },
       {
@@ -199,14 +182,74 @@
           "sv": "Den längre bågen"
         },
         "body": {
-          "en": "Stated as an ambition, not a credential — I don't hold one yet. I want to spend time on the attacking side eventually, because I don't think you can defend a system you've never seriously tried to break. That's a few years out, and I'd rather say so than dress it up.",
-          "fi": "Todettu tavoitteena, ei meriittinä — sellaista minulla ei vielä ole. Haluan aikanaan viettää aikaa hyökkäävällä puolella, koska en usko että järjestelmää voi puolustaa jos sitä ei ole koskaan tosissaan yrittänyt murtaa. Se on muutaman vuoden päässä, ja sanon sen mieluummin suoraan kuin kaunistelen.",
-          "sv": "Uttalat som en ambition, inte som en merit — någon sådan har jag inte ännu. Jag vill så småningom lägga tid på den anfallande sidan, för jag tror inte att man kan försvara ett system man aldrig på allvar har försökt bryta. Det ligger några år bort, och det säger jag hellre rakt ut än klär upp."
+          "en": "Stated as an ambition, not a credential — I don't hold one yet. I want to spend time on the attacking side eventually, because I don't think you can defend a system you've never seriously tried to break. Physical penetration testing is the version of it I find most interesting. That's a few years out, and I'd rather say so than dress it up.",
+          "fi": "Todettu tavoitteena, ei meriittinä — sellaista minulla ei vielä ole. Haluan aikanaan viettää aikaa hyökkäävällä puolella, koska en usko että järjestelmää voi puolustaa jos sitä ei ole koskaan tosissaan yrittänyt murtaa. Fyysinen tunkeutumistestaus on se versio siitä joka kiinnostaa minua eniten. Se on muutaman vuoden päässä, ja sanon sen mieluummin suoraan kuin kaunistelen.",
+          "sv": "Uttalat som en ambition, inte som en merit — någon sådan har jag inte ännu. Jag vill så småningom lägga tid på den anfallande sidan, för jag tror inte att man kan försvara ett system man aldrig på allvar har försökt bryta. Fysisk penetrationstestning är den version av det jag tycker är mest intressant. Det ligger några år bort, och det säger jag hellre rakt ut än klär upp."
+        }
+      },
+      {
+        "id": "own-thing",
+        "label": "Something of my own",
+        "title": {
+          "en": "The one I’m not in a hurry about",
+          "fi": "Se jonka kanssa minulla ei ole kiire",
+          "sv": "Den jag inte har bråttom med"
+        },
+        "body": {
+          "en": "Somewhere down the line I want to build something that's genuinely mine — with the freedom and, realistically, the pain that comes with it. The condition I'd put on it is that it actually helps people rather than just existing. Parox and Dictix are the closest I've come so far, and they're the kind of thing I mean.",
+          "fi": "Jossain vaiheessa haluan rakentaa jotain joka on aidosti omaani — sen vapauden ja, realistisesti, sen tuskan kanssa joka siihen kuuluu. Ehto jonka asettaisin on että se oikeasti auttaa ihmisiä eikä vain ole olemassa. Parox ja Dictix ovat lähimpänä sitä mihin olen toistaiseksi päässyt, ja juuri sellaista tarkoitan.",
+          "sv": "Någon gång vill jag bygga något som verkligen är mitt eget — med friheten och, realistiskt sett, smärtan som följer med. Villkoret jag skulle sätta är att det faktiskt hjälper människor och inte bara existerar. Parox och Dictix är det närmaste jag kommit hittills, och det är den sortens sak jag menar."
         }
       }
     ]
   },
   "work": [
+    {
+      "slug": "parox",
+      "title": "Parox",
+      "year": "2025",
+      "featured": true,
+      "kind": {
+        "en": "Private project",
+        "fi": "Yksityinen projekti",
+        "sv": "Privat projekt"
+      },
+      "summary": {
+        "en": "A local-first interpreter for healthcare conversations. Patient and clinician take turns speaking, and both the recognition and the translation run on the computer in the room.",
+        "fi": "Paikallisesti toimiva tulkki terveydenhuollon keskusteluihin. Potilas ja kliinikko puhuvat vuorotellen, ja sekä puheentunnistus että käännös ajetaan huoneessa olevalla koneella.",
+        "sv": "En lokal tolk för vårdsamtal. Patient och kliniker talar i tur och ordning, och både taligenkänningen och översättningen körs på datorn i rummet."
+      },
+      "body": {
+        "en": "Parox is built for the situation where a patient and a clinician don't share a language and the conversation still has to be accurate. It handles multilingual speech recognition and translation turn by turn, so each person speaks and hears their own language.\n\nThe part that matters is where the processing happens: entirely on the local machine. Medical conversations are about as sensitive as data gets, and quietly sending them to a third-party API to be transcribed is not a decision most patients would make knowingly. Running the models locally removes the question.\n\nNot public — the domain it touches doesn't lend itself to an open demo.",
+        "fi": "Parox on rakennettu tilanteeseen jossa potilaalla ja kliinikolla ei ole yhteistä kieltä ja keskustelun on silti oltava tarkka. Se hoitaa monikielisen puheentunnistuksen ja käännöksen vuoro kerrallaan, joten kumpikin puhuu ja kuulee omaa kieltään.\n\nOlennaista on se missä käsittely tapahtuu: kokonaan paikallisella koneella. Terveydenhuollon keskustelut ovat suunnilleen niin arkaluontoista dataa kuin olla voi, eikä niiden hiljainen lähettäminen kolmannen osapuolen rajapintaan litteroitavaksi ole päätös jonka useimmat potilaat tekisivät tietoisesti. Mallien ajaminen paikallisesti poistaa koko kysymyksen.\n\nEi julkinen — aihepiiri ei oikein sovi avoimeen demoon.",
+        "sv": "Parox är byggt för situationen där patient och kliniker inte delar språk och samtalet ändå måste bli korrekt. Det hanterar flerspråkig taligenkänning och översättning tur för tur, så att var och en talar och hör sitt eget språk.\n\nDet väsentliga är var bearbetningen sker: helt på den lokala datorn. Vårdsamtal är ungefär så känsliga data det blir, och att i tysthet skicka dem till ett tredjeparts-API för transkribering är inte ett beslut de flesta patienter skulle fatta medvetet. Att köra modellerna lokalt tar bort frågan.\n\nInte offentligt — området lämpar sig inte för en öppen demo."
+      },
+      "image": "",
+      "link": ""
+    },
+    {
+      "slug": "dictix",
+      "title": "Dictix",
+      "year": "2025",
+      "featured": true,
+      "kind": {
+        "en": "Private project",
+        "fi": "Yksityinen projekti",
+        "sv": "Privat projekt"
+      },
+      "summary": {
+        "en": "An installable desktop application for medical dictation where the audio never leaves the machine. Record, transcribe on purpose, edit, export.",
+        "fi": "Asennettava työpöytäsovellus lääketieteelliseen sanelun purkuun, jossa ääni ei koskaan poistu koneelta. Nauhoita, pura tarkoituksella, muokkaa, vie ulos.",
+        "sv": "En installerbar skrivbordsapplikation för medicinsk diktering där ljudet aldrig lämnar datorn. Spela in, transkribera med avsikt, redigera, exportera."
+      },
+      "body": {
+        "en": "Dictix is a local-first dictation tool for clinical notes. The workflow is deliberately explicit: start a new transcript, record, stop, then press Transcribe. Nothing is streamed off to be processed in the background, because nothing leaves the computer at all — there is no cloud transcription fallback, by design.\n\nWhen you continue an existing dictation it processes a rolling local audio window roughly every five seconds, so a long session stays responsive without ever handing the whole recording to someone else's server.\n\nThe interesting constraint is that everything you'd normally solve with a bigger model in a data centre has to be solved on a laptop instead. That's the part I enjoy.",
+        "fi": "Dictix on paikallisesti toimiva sanelutyökalu kliinisiin muistiinpanoihin. Työnkulku on tarkoituksella eksplisiittinen: aloita uusi litterointi, nauhoita, lopeta, ja paina sitten Pura. Mitään ei virtaa taustalla käsiteltäväksi, koska mikään ei poistu koneelta lainkaan — pilvipurkua ei ole varajärjestelmänäkään, ja se on tarkoituksellista.\n\nKun jatkat olemassa olevaa sanelua, se käsittelee liukuvaa paikallista ääni-ikkunaa noin viiden sekunnin välein, joten pitkäkin istunto pysyy responsiivisena luovuttamatta koskaan koko nauhoitusta jonkun toisen palvelimelle.\n\nKiinnostava rajoite on se, että kaikki minkä normaalisti ratkaisisi isommalla mallilla konesalissa on ratkaistava kannettavalla. Juuri siitä osasta pidän.",
+        "sv": "Dictix är ett lokalt dikteringsverktyg för kliniska anteckningar. Arbetsflödet är medvetet explicit: starta en ny transkription, spela in, stoppa, och tryck sedan Transkribera. Ingenting strömmas i väg för att bearbetas i bakgrunden, eftersom ingenting lämnar datorn över huvud taget — det finns ingen molntranskribering ens som reserv, och det är avsiktligt.\n\nNär du fortsätter en pågående diktering bearbetas ett rullande lokalt ljudfönster ungefär var femte sekund, så att en lång session förblir responsiv utan att hela inspelningen någonsin lämnas över till någon annans server.\n\nDen intressanta begränsningen är att allt man normalt löser med en större modell i ett datacenter måste lösas på en bärbar dator i stället. Det är den delen jag gillar."
+      },
+      "image": "",
+      "link": ""
+    },
     {
       "slug": "prompt-defenses",
       "title": "Evaluating Prompt Defenses on Small On-Device LLMs",
@@ -222,36 +265,36 @@
         "sv": "Hur mycket skydd kan promptbaserade försvar realistiskt ge när en språkmodell körs på enheten i stället för bakom ett API? Jag byggde en lokal utvärderingsmiljö och testade den mot jailbreak-försök."
       },
       "body": {
-        "en": "As inference moves from cloud services onto everyday devices, the defenses move with it — and most of them are prompts. That's a thin layer to be relying on, so I wanted to measure how thin.\n\nI built a local evaluation harness: a set of small models running entirely on-device, a corpus of jailbreak and misuse attempts, and a scoring pass that could tell a genuine refusal from a model that had simply been talked around. Then I ran prompt-level defenses through it and recorded where they held and where they didn't.\n\nThe honest summary is that prompt defenses are a speed bump, not a wall — useful in depth, dangerous alone. The work was done independently, from setup through analysis, and it's the reason application security is where I want to spend the next few years.",
-        "fi": "Kun päättely siirtyy pilvipalveluista arkisiin laitteisiin, myös suojaukset siirtyvät mukana — ja useimmat niistä ovat kehotteita. Se on ohut kerros luottaa, joten halusin mitata kuinka ohut.\n\nRakensin paikallisen arviointiympäristön: joukon pieniä malleja jotka ajetaan kokonaan laitteessa, kokoelman jailbreak- ja väärinkäyttöyrityksiä sekä pisteytyksen joka erottaa aidon kieltäytymisen mallista joka oli vain puhuttu ympäri. Sen jälkeen ajoin kehotetason suojaukset läpi ja kirjasin, missä ne pitivät ja missä eivät.\n\nRehellinen yhteenveto on, että kehotesuojaukset ovat hidaste eivätkä muuri — hyödyllisiä osana syvyyttä, vaarallisia yksin. Tein työn itsenäisesti alusta analyysiin asti, ja se on syy siihen miksi haluan viettää seuraavat vuodet sovellusturvallisuuden parissa.",
-        "sv": "När inferensen flyttar från molntjänster ut på vardagliga enheter följer försvaren med — och de flesta av dem är prompter. Det är ett tunt lager att luta sig mot, så jag ville mäta hur tunt.\n\nJag byggde en lokal utvärderingsmiljö: ett antal små modeller som kördes helt på enheten, en samling jailbreak- och missbruksförsök, och en bedömning som kunde skilja ett äkta avslag från en modell som helt enkelt hade blivit övertalad. Sedan körde jag promptbaserade försvar genom den och noterade var de höll och var de inte gjorde det.\n\nDen ärliga sammanfattningen är att promptförsvar är ett farthinder, inte en mur — användbara som ett lager bland flera, farliga ensamma. Arbetet gjordes självständigt, från uppsättning till analys, och det är anledningen till att applikationssäkerhet är där jag vill lägga de kommande åren."
+        "en": "As inference moves from cloud services onto everyday devices, the defenses move with it — and most of them are prompts. That's a thin layer to be relying on, so I wanted to measure how thin.\n\nI built a local evaluation harness: a set of small models running entirely on-device, a corpus of jailbreak and misuse attempts, and a scoring pass that could tell a genuine refusal from a model that had simply been talked around. Then I ran prompt-level defenses through it and recorded where they held and where they didn't.\n\nThe honest summary is that prompt defenses are a speed bump, not a wall — useful as one layer among several, dangerous alone. I did the work independently, from setup through analysis, and it's a good part of why security is the direction I'm trying to move in.",
+        "fi": "Kun päättely siirtyy pilvipalveluista arkisiin laitteisiin, myös suojaukset siirtyvät mukana — ja useimmat niistä ovat kehotteita. Se on ohut kerros luottaa, joten halusin mitata kuinka ohut.\n\nRakensin paikallisen arviointiympäristön: joukon pieniä malleja jotka ajetaan kokonaan laitteessa, kokoelman jailbreak- ja väärinkäyttöyrityksiä sekä pisteytyksen joka erottaa aidon kieltäytymisen mallista joka oli vain puhuttu ympäri. Sen jälkeen ajoin kehotetason suojaukset läpi ja kirjasin, missä ne pitivät ja missä eivät.\n\nRehellinen yhteenveto on, että kehotesuojaukset ovat hidaste eivätkä muuri — hyödyllisiä yhtenä kerroksena muiden joukossa, vaarallisia yksin. Tein työn itsenäisesti alusta analyysiin asti, ja se on iso osa syytä miksi tietoturva on se suunta johon yritän liikkua.",
+        "sv": "När inferensen flyttar från molntjänster ut på vardagliga enheter följer försvaren med — och de flesta av dem är prompter. Det är ett tunt lager att luta sig mot, så jag ville mäta hur tunt.\n\nJag byggde en lokal utvärderingsmiljö: ett antal små modeller som kördes helt på enheten, en samling jailbreak- och missbruksförsök, och en bedömning som kunde skilja ett äkta avslag från en modell som helt enkelt hade blivit övertalad. Sedan körde jag promptbaserade försvar genom den och noterade var de höll och var de inte gjorde det.\n\nDen ärliga sammanfattningen är att promptförsvar är ett farthinder, inte en mur — användbara som ett lager bland flera, farliga ensamma. Jag gjorde arbetet självständigt, från uppsättning till analys, och det är en stor del av varför säkerhet är riktningen jag försöker röra mig i."
       },
       "image": "",
       "link": "",
       "featured": true
     },
     {
-      "slug": "local-ai-lab",
-      "title": "Local AI lab",
-      "year": "2025 —",
+      "slug": "sharipe",
+      "title": "Sharipe",
+      "year": "2025",
+      "featured": true,
       "kind": {
-        "en": "Ongoing",
-        "fi": "Käynnissä",
-        "sv": "Pågående"
+        "en": "Side project",
+        "fi": "Sivuprojekti",
+        "sv": "Sidoprojekt"
       },
       "summary": {
-        "en": "An ongoing habit of running models on hardware I own, while the industry conversation stays firmly in the cloud. Quantisation, small-model behaviour, and what breaks when there's no fallback.",
-        "fi": "Jatkuva tapa ajaa malleja omalla raudalla, samalla kun alan keskustelu pysyy tiukasti pilvessä. Kvantisointia, pienten mallien käyttäytymistä ja sitä mikä hajoaa kun varasuunnitelmaa ei ole.",
-        "sv": "En pågående vana att köra modeller på hårdvara jag äger, medan branschens samtal stannar kvar i molnet. Kvantisering, hur små modeller beter sig, och vad som brister när det inte finns någon reserv."
+        "en": "Stop losing recipes, start cooking. Somewhere to save recipe links, write your own, and run a timer while you are actually at the stove.",
+        "fi": "Lopeta reseptien hukkaaminen, ala kokata. Paikka johon tallentaa reseptilinkkejä, kirjoittaa omia ja pitää ajastinta kun oikeasti seisot hellan ääressä.",
+        "sv": "Sluta tappa bort recept, börja laga mat. Ett ställe att spara receptlänkar, skriva egna och köra en timer när du faktiskt står vid spisen."
       },
       "body": {
-        "en": "A standing setup for running language models locally — partly the infrastructure my thesis needed, mostly curiosity that kept going after the thesis was done.\n\nThe appeal is that local inference is unforgiving in a useful way. There's no frontier model to paper over a bad prompt, no provider-side safety layer to catch what you missed, and no way to pretend latency and memory aren't real. You find out quickly which of your assumptions were actually the API's doing.\n\nIt's also, increasingly, where the privacy-sensitive work is going. Being fluent in it now seems like a reasonable bet.",
-        "fi": "Pysyvä ympäristö kielimallien ajamiseen paikallisesti — osin se infrastruktuuri jota diplomityöni vaati, pääosin uteliaisuutta joka jatkui työn valmistuttua.\n\nViehätys on siinä, että paikallinen päättely on hyödyllisellä tavalla anteeksiantamatonta. Ei ole huippumallia peittämässä huonoa kehotetta, ei palveluntarjoajan turvakerrosta nappaamassa sitä minkä ohitit, eikä tapaa teeskennellä ettei viive ja muisti olisi todellisia. Selviää nopeasti, mitkä oletuksistasi olivatkin rajapinnan ansiota.\n\nSe on myös yhä useammin suunta johon yksityisyyttä vaativa työ menee. Sujuvuus siinä nyt vaikuttaa järkevältä vedolta.",
-        "sv": "En stående uppsättning för att köra språkmodeller lokalt — dels den infrastruktur mitt diplomarbete krävde, mest en nyfikenhet som fortsatte efter att arbetet var klart.\n\nTjusningen är att lokal inferens är oförsonlig på ett användbart sätt. Det finns ingen toppmodell som slätar över en dålig prompt, inget säkerhetslager hos leverantören som fångar det du missade, och inget sätt att låtsas att latens och minne inte är verkliga. Man får snabbt veta vilka av ens antaganden som egentligen var API:ets förtjänst.\n\nDet är också i allt högre grad dit det integritetskänsliga arbetet är på väg. Att vara hemma i det nu framstår som en rimlig satsning."
+        "en": "Sharipe saves recipe links — Sharipes — alongside recipes you write out yourself, with a cooking timer for when you're standing at the hob.\n\nIt exists because recipes have a habit of scattering across bookmarks, screenshots and messages you sent yourself, and then not being there when you want them. Built with the Next.js App Router.",
+        "fi": "Sharipe tallentaa reseptilinkit — Sharipet — sekä itse kirjoittamasi reseptit, mukana kokkausajastin siihen hetkeen kun seisot lieden ääressä.\n\nSe on olemassa koska reseptit hajaantuvat kirjanmerkkeihin, kuvakaappauksiin ja itselle lähetettyihin viesteihin, eivätkä sitten ole siellä kun niitä tarvitsee. Rakennettu Next.js App Routerilla.",
+        "sv": "Sharipe sparar receptlänkar — Sharipes — tillsammans med recept du skriver själv, med en matlagningstimer för när du står vid spisen.\n\nDet finns eftersom recept har en vana att spridas över bokmärken, skärmdumpar och meddelanden man skickat till sig själv, och sedan inte finns där när man vill ha dem. Byggt med Next.js App Router."
       },
       "image": "",
-      "link": "",
-      "featured": true
+      "link": "https://sharipe.vercel.app"
     },
     {
       "slug": "sitzy",
@@ -263,14 +306,14 @@
         "sv": "Sidoprojekt"
       },
       "summary": {
-        "en": "An alternate frontend to a ticketing API, built because the official flow lost people tickets at exactly the wrong moment.",
-        "fi": "Vaihtoehtoinen käyttöliittymä lipunmyynnin rajapintaan, tehty koska virallinen polku hukkasi ihmisiltä liput juuri väärällä hetkellä.",
-        "sv": "Ett alternativt gränssnitt till ett biljett-API, byggt för att det officiella flödet tappade biljetter åt folk i precis fel ögonblick."
+        "en": "Essentially a bot for reserving gig tickets. Not my most ethical build — I wanted my friends to get in.",
+        "fi": "Käytännössä botti keikkalippujen varaamiseen. Ei eettisin tekeleeni — halusin kavereideni pääsevän sisään.",
+        "sv": "I praktiken en bot för att boka konsertbiljetter. Inte mitt mest etiska bygge — jag ville att mina vänner skulle komma in."
       },
       "body": {
-        "en": "A wrapper around the Kide.app API that let people reserve tickets over the web through an interface that didn't fall over under load. Built with JavaScript, Bootstrap and Firebase.\n\nThe problem was a user-experience one wearing an engineering costume: the official flow was fine until the moment it mattered, and by then everyone was on it at once. Kept private and shared only with friends and family, given what it wraps.",
-        "fi": "Kääre Kide.appin rajapinnan ympärille, joka antoi varata lippuja webissä käyttöliittymällä joka ei kaatunut kuormassa. Rakennettu JavaScriptillä, Bootstrapilla ja Firebasella.\n\nOngelma oli käyttökokemusongelma insinööripuvussa: virallinen polku toimi hyvin siihen hetkeen asti jolla oli väliä, ja silloin kaikki olivat siellä yhtä aikaa. Pidetty yksityisenä ja jaettu vain ystäville ja perheelle, ottaen huomioon mitä se kääri.",
-        "sv": "Ett omslag kring Kide.apps API som lät folk boka biljetter över webben genom ett gränssnitt som inte föll ihop under belastning. Byggt med JavaScript, Bootstrap och Firebase.\n\nProblemet var ett användarupplevelseproblem i ingenjörskostym: det officiella flödet fungerade bra ända fram till det ögonblick då det gällde, och då var alla där samtidigt. Hölls privat och delades bara med vänner och familj, med tanke på vad det omsluter."
+        "en": "Sitzy wrapped the Kide.app API and reserved tickets more reliably than the official flow, which had a habit of falling over at exactly the moment everyone needed it.\n\nI'll be straight about what it was: a bot, and not especially fair on everyone else in the queue. I built it because I wanted my friends to get tickets, and I kept it private and shared it only with them rather than putting it out into the world.\n\nTechnically it was JavaScript, Bootstrap and Firebase, and it taught me a lot about rate limits and other people's APIs. Ethically it's the project I'd think hardest about today.",
+        "fi": "Sitzy kääri Kide.appin rajapinnan ja varasi lippuja luotettavammin kuin virallinen polku, jolla oli tapana kaatua juuri sillä hetkellä kun kaikki tarvitsivat sitä.\n\nSanon suoraan mikä se oli: botti, eikä erityisen reilu muita jonossa olevia kohtaan. Rakensin sen koska halusin kavereideni saavan liput, ja pidin sen yksityisenä ja jaoin vain heille sen sijaan että olisin päästänyt sen maailmalle.\n\nTeknisesti se oli JavaScriptiä, Bootstrapia ja Firebasea, ja se opetti minulle paljon kutsurajoista ja muiden rajapinnoista. Eettisesti se on projekti jota miettisin tänään pisimpään.",
+        "sv": "Sitzy omslöt Kide.apps API och bokade biljetter mer tillförlitligt än det officiella flödet, som hade en vana att falla ihop precis när alla behövde det.\n\nJag säger rakt ut vad det var: en bot, och inte särskilt rättvis mot alla andra i kön. Jag byggde den för att jag ville att mina vänner skulle få biljetter, och jag höll den privat och delade den bara med dem i stället för att släppa ut den i världen.\n\nTekniskt var det JavaScript, Bootstrap och Firebase, och den lärde mig mycket om anropsgränser och andras API:er. Etiskt är det det projekt jag skulle tänka längst på i dag."
       },
       "image": "/img/sitzy.png",
       "link": "",
@@ -325,9 +368,9 @@
   ],
   "signals": {
     "intro": {
-      "en": "What I read, listen to, and keep an eye on. Mostly security research and people doing careful work in public.",
-      "fi": "Mitä luen, kuuntelen ja pidän silmällä. Enimmäkseen turvallisuustutkimusta ja ihmisiä jotka tekevät huolellista työtä julkisesti.",
-      "sv": "Vad jag läser, lyssnar på och håller ett öga på. Mestadels säkerhetsforskning och människor som gör noggrant arbete offentligt."
+      "en": "What I read, listen to and keep half an eye on. Mostly security research and people doing careful work in public.",
+      "fi": "Mitä luen, kuuntelen ja pidän puolittain silmällä. Enimmäkseen turvallisuustutkimusta ja ihmisiä jotka tekevät huolellista työtä julkisesti.",
+      "sv": "Vad jag läser, lyssnar på och håller ett halvt öga på. Mestadels säkerhetsforskning och människor som gör noggrant arbete offentligt."
     },
     "items": [
       {
@@ -377,13 +420,13 @@
       {
         "id": "s5",
         "category": "Local AI",
-        "label": "Ollama",
+        "label": "Hugging Face",
         "note": {
-          "en": "Where most of my local experiments start.",
-          "fi": "Täältä useimmat paikalliset kokeiluni alkavat.",
-          "sv": "Härifrån startar de flesta av mina lokala experiment."
+          "en": "Where the open models actually live.",
+          "fi": "Siellä avoimet mallit oikeasti ovat.",
+          "sv": "Där de öppna modellerna faktiskt finns."
         },
-        "url": "https://ollama.com/"
+        "url": "https://huggingface.co/models"
       },
       {
         "id": "s6",
@@ -422,9 +465,9 @@
   },
   "contact": {
     "intro": {
-      "en": "If you're hiring for application security or DevSecOps, or you just want to argue about running models locally — write to me. I answer everything that isn't a bot.",
-      "fi": "Jos rekrytoit sovellusturvallisuuteen tai DevSecOpsiin — tai haluat vain väitellä mallien ajamisesta paikallisesti — kirjoita minulle. Vastaan kaikkeen mikä ei ole botti.",
-      "sv": "Om du rekryterar inom applikationssäkerhet eller DevSecOps — eller bara vill diskutera att köra modeller lokalt — skriv till mig. Jag svarar på allt som inte är en bot."
+      "en": "If you're hiring for security or DevSecOps, doing anything interesting with AI, or you just want to argue about running models locally — write to me. I answer everything that isn't a bot.",
+      "fi": "Jos rekrytoit tietoturvaan tai DevSecOpsiin, teet jotain kiinnostavaa tekoälyllä, tai haluat vain väitellä mallien ajamisesta paikallisesti — kirjoita minulle. Vastaan kaikkeen mikä ei ole botti.",
+      "sv": "Om du rekryterar inom säkerhet eller DevSecOps, gör något intressant med AI, eller bara vill diskutera att köra modeller lokalt — skriv till mig. Jag svarar på allt som inte är en bot."
     },
     "email": "contact@lagerqvr.com"
   },
@@ -432,5 +475,18 @@
     "github": "https://github.com/lagerqvr",
     "linkedin": "https://www.linkedin.com/in/rasmus-lagerqvist/",
     "telegram": "https://t.me/lagerqvr"
+  },
+  "personal": {
+    "label": {
+      "en": "Off-screen",
+      "fi": "Ruudun ulkopuolella",
+      "sv": "Utanför skärmen"
+    },
+    "note": {
+      "en": "Away from a screen I make pizza, and I'm genuinely good at it — good enough that I have been to Italy more or less specifically to eat it. This one is burrata, mortadella and pistachio with a pesto and olive oil drizzle. It looked spectacular. You'll have to take my word for that, because everything on this site gets dithered.",
+      "fi": "Ruudun ulkopuolella teen pizzaa, ja olen siinä aidosti hyvä — niin hyvä että olen käynyt Italiassa enemmän tai vähemmän varta vasten syömässä sitä. Tässä on burrataa, mortadellaa ja pistaasia, päällä pestoa ja oliiviöljyä. Se näytti upealta. Joudut uskomaan sanaani, koska kaikki tällä sivustolla ditheröidään.",
+      "sv": "Utanför skärmen gör jag pizza, och jag är genuint bra på det — så pass att jag varit i Italien mer eller mindre just för att äta den. Den här är burrata, mortadella och pistage med pesto och olivolja. Den såg fantastisk ut. Du får ta mitt ord på det, eftersom allt på den här sidan blir ditherat."
+    },
+    "image": "/img/pizza-pixel.png"
   }
 }

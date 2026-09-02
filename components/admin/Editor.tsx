@@ -77,7 +77,8 @@ export default function Editor({ initial }: { initial: SiteContent }) {
 
       <div className="space-y-3">
         <Panel title="Profile" defaultOpen>
-          <Field label="Name" value={doc.profile.name} onChange={(v) => update((d) => { d.profile.name = v; })} />
+          <Field label="Name (used in metadata and the footer)" value={doc.profile.name} onChange={(v) => update((d) => { d.profile.name = v; })} />
+          <Field label="Handle (the wordmark)" value={doc.profile.handle} onChange={(v) => update((d) => { d.profile.handle = v; })} />
           <Field label="Role" value={doc.profile.role} onChange={(v) => update((d) => { d.profile.role = v; })} />
           <Field label="Location" value={doc.profile.location} onChange={(v) => update((d) => { d.profile.location = v; })} />
           <LocalizedField label="Status line" locale={locale} value={doc.profile.status} onChange={(v) => update((d) => { d.profile.status = v; })} />
@@ -222,6 +223,33 @@ export default function Editor({ initial }: { initial: SiteContent }) {
           >
             Add signal ⊕
           </button>
+        </Panel>
+
+        <Panel title="Off-screen note">
+          {doc.personal ? (
+            <>
+              <LocalizedField label="Label" locale={locale} value={doc.personal.label} onChange={(v) => update((d) => { if (d.personal) d.personal.label = v; })} />
+              <LocalizedField label="Note" locale={locale} value={doc.personal.note} onChange={(v) => update((d) => { if (d.personal) d.personal.note = v; })} textarea rows={5} />
+              <ImageField label="Image" value={doc.personal.image ?? ''} onChange={(v) => update((d) => { if (d.personal) d.personal.image = v; })} />
+              <button
+                type="button"
+                className="pill w-full justify-center"
+                onClick={() => update((d) => { d.personal = undefined; })}
+              >
+                Remove note
+              </button>
+            </>
+          ) : (
+            <button
+              type="button"
+              className="pill w-full justify-center"
+              onClick={() => update((d) => {
+                d.personal = { label: { ...empty }, note: { ...empty }, image: '' };
+              })}
+            >
+              Add an off-screen note ⊕
+            </button>
+          )}
         </Panel>
 
         <Panel title="Contact & links">

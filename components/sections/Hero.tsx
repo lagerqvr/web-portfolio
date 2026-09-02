@@ -9,7 +9,7 @@ export default function Hero({
 }: {
   content: SiteContent;
   locale: Locale;
-  labels: { status: string; work: string; contact: string };
+  labels: { work: string; contact: string };
 }) {
   const { profile, hero } = content;
 
@@ -30,7 +30,7 @@ export default function Hero({
       <div className="relative z-10 mx-auto flex w-full max-w-6xl grow flex-col justify-between px-5 pb-10 pt-28 md:px-10 md:pb-14 md:pt-32">
         <div className="flex items-start justify-between gap-6">
           <span className="label text-text">
-            {profile.name} <span className="label-dim">— —</span>
+            {profile.handle} <span className="label-dim">— —</span>
           </span>
           <span className="label label-dim hidden shrink-0 text-right sm:block">
             {profile.location}
@@ -56,15 +56,11 @@ export default function Hero({
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
           <span className="label label-dim flex items-center gap-2">
-            <span
-              aria-hidden="true"
-              className="inline-block h-1.5 w-1.5 shrink-0 bg-sodium"
-            />
+            <span aria-hidden="true" className="inline-block h-1.5 w-1.5 shrink-0 bg-sodium" />
             {t(profile.status, locale)}
           </span>
-          <span className="label label-dim tabular">{labels.status}</span>
         </div>
       </div>
     </header>

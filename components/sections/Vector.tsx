@@ -12,7 +12,17 @@ export default function Vector({ content, locale }: { content: SiteContent; loca
 
       <ol className="grid gap-px bg-hairline sm:grid-cols-2">
         {content.vector.modes.map((mode, i) => (
-          <Reveal as="li" key={mode.id} delay={i * 60} className="bg-ground">
+          <Reveal
+            as="li"
+            key={mode.id}
+            delay={i * 60}
+            // An odd final card spans the row rather than sitting alone.
+            className={`bg-ground ${
+              content.vector.modes.length % 2 === 1 && i === content.vector.modes.length - 1
+                ? 'sm:col-span-2'
+                : ''
+            }`}
+          >
             <div className="flex h-full flex-col gap-4 p-6 md:p-8">
               <div className="flex items-baseline justify-between gap-4">
                 <span className="label text-text">{mode.label}</span>

@@ -75,10 +75,12 @@ export const siteContentSchema = z.object({
   updatedAt: z.string(),
   profile: z.object({
     name: z.string().max(80),
+    /** Used as the wordmark and on-page identity; the legal name stays for metadata. */
+    handle: z.string().max(40),
     role: z.string().max(120),
     location: z.string().max(80),
     avatar: z.string().max(500),
-    status: localized(80),
+    status: localized(120),
   }),
   hero: z.object({
     headline: localized(400),
@@ -97,6 +99,19 @@ export const siteContentSchema = z.object({
     intro: localized(600),
     items: z.array(signalSchema).max(40),
   }),
+  /**
+   * A short off-screen note, so the site isn't only about work. Optional so a
+   * document saved before this field existed still validates — otherwise an
+   * older stored document would fail parsing and silently revert to the seed,
+   * quietly discarding real edits.
+   */
+  personal: z
+    .object({
+      label: localized(40),
+      note: localized(800),
+      image: imageRef.optional(),
+    })
+    .optional(),
   contact: z.object({
     intro: localized(600),
     email: z.string().email().max(160),

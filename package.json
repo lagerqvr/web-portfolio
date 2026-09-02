@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "avatar": "node scripts/pixelate.ts",
-    "hash-password": "node scripts/hash-password.ts"
+    "hash-password": "node scripts/hash-password.ts",
+    "assets": "node scripts/assets.ts"
   },
   "dependencies": {
     "@marsidev/react-turnstile": "^1.6.1",

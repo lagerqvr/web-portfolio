@@ -22,7 +22,7 @@ Turnstile test keys.
 | `npm run dev` | Development server |
 | `npm run build` | Production build |
 | `npm run lint` / `npm run typecheck` | ESLint (flat config) / `tsc --noEmit` |
-| `npm run avatar` | Regenerates `public/img/avatar-pixel.png` from the source photo |
+| `npm run assets` | Regenerates the favicons, the dithered avatar (plus `avatar-pixel-512.png` at the repo root for GitHub) and the dithered photographs |
 | `npm run hash-password -- '<password>'` | Prints `ADMIN_PASSWORD_HASH` and a fresh `AUTH_SECRET` |
 
 ## Environment

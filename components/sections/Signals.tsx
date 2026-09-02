@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Reveal from '@/components/ui/Reveal';
 import { t, type Locale, type SiteContent } from '@/lib/schemas';
 
@@ -58,6 +59,29 @@ export default function Signals({ content, locale }: { content: SiteContent; loc
           </Reveal>
         ))}
       </div>
+
+      {content.personal && t(content.personal.note, locale) ? (
+      <Reveal delay={120}>
+        <div className="mt-14 grid gap-6 border-t border-hairline pt-10 md:grid-cols-[8.5rem_1fr] md:gap-10">
+          <span className="label label-dim pt-1">{t(content.personal.label, locale)}</span>
+          <div className="flex max-w-3xl flex-col gap-5 sm:flex-row sm:items-start">
+            {content.personal.image ? (
+              <Image
+                src={content.personal.image}
+                alt=""
+                width={96}
+                height={96}
+                unoptimized
+                className="pixelated h-24 w-24 shrink-0 border border-hairline"
+              />
+            ) : null}
+            <p className="text-[0.9375rem] leading-relaxed text-muted">
+              {t(content.personal.note, locale)}
+            </p>
+          </div>
+        </div>
+      </Reveal>
+      ) : null}
     </div>
   );
 }

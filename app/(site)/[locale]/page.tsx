@@ -24,11 +24,7 @@ export default async function IndexPage({ params }: { params: Promise<{ locale: 
       <Hero
         content={content}
         locale={l}
-        labels={{
-          status: t('status.active'),
-          work: t('nav.work'),
-          contact: t('nav.contact'),
-        }}
+        labels={{ work: t('nav.work'), contact: t('nav.contact') }}
       />
 
       <Section id="core" label={t('sections.core')} index={1}>
