@@ -36,8 +36,8 @@
     {
       "id": "cgi",
       "kind": "work",
-      "org": "Consultancy, Finland",
-      "orgUrl": "",
+      "org": "CGI",
+      "orgUrl": "https://www.cgi.com/fi/fi",
       "role": {
         "en": "Software Engineer",
         "fi": "Ohjelmistokehittäjä",

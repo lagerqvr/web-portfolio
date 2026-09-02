@@ -29,6 +29,8 @@ export interface FieldOptions {
   thickness: number;
   /** Vertical travel of the crest, as a fraction of the image height. */
   amplitude: number;
+  /** Horizontal frequency of the crest. Higher means more peaks across the width. */
+  frequency: number;
 }
 
 function renderField(o: FieldOptions): { data: Buffer; bw: number; bh: number } {
@@ -42,10 +44,11 @@ function renderField(o: FieldOptions): { data: Buffer; bw: number; bh: number } 
     for (let x = 0; x < bw; x++) {
       const nx = x / bw;
 
+      const f = o.frequency;
       const crest =
         0.5 +
-        o.amplitude * Math.sin(nx * Math.PI * 2.2 + t * 0.32) * Math.cos(nx * Math.PI * 0.55 - t * 0.11) +
-        (o.amplitude / 5.2) * Math.sin(nx * Math.PI * 5.1 - t * 0.5);
+        o.amplitude * Math.sin(nx * Math.PI * f + t * 0.32) * Math.cos(nx * Math.PI * (f * 0.25) - t * 0.11) +
+        (o.amplitude / 3.4) * Math.sin(nx * Math.PI * (f * 2.3) - t * 0.5);
 
       const dist = Math.abs(ny - crest);
       const thickness = o.thickness + o.thickness * 0.28 * Math.sin(nx * Math.PI * 1.7 + t * 0.22);
@@ -85,14 +88,17 @@ const H = 396;
 
 // The crest sits in the upper half here on purpose: LinkedIn overlays the
 // profile photo across the lower-left corner, so that area is left quiet.
+// Chunkier cells and a more aggressive crest than the hero: the banner is seen
+// small in a feed, so it needs to read as a wave at a glance.
 const base: FieldOptions = {
   width: W,
   height: H,
-  pixelSize: 6,
+  pixelSize: 16,
   intensity: 1,
   time: 0,
-  thickness: 0.14,
-  amplitude: 0.26,
+  thickness: 0.19,
+  amplitude: 0.38,
+  frequency: 4.0,
 };
 
 /**
@@ -123,17 +129,34 @@ function markOverlay(): Buffer {
 
 await mkdir('banner', { recursive: true });
 
+// Contact sheet of candidate settings, coarsest to finest.
+const candidates: Array<[string, Partial<FieldOptions>]> = [
+  ['1', { pixelSize: 11, amplitude: 0.30, frequency: 3.0, thickness: 0.16 }],
+  ['2', { pixelSize: 13, amplitude: 0.34, frequency: 3.4, thickness: 0.17 }],
+  ['3', { pixelSize: 16, amplitude: 0.38, frequency: 4.0, thickness: 0.19 }],
+  ['4', { pixelSize: 20, amplitude: 0.40, frequency: 4.6, thickness: 0.22 }],
+];
+
+const sheet: Buffer[] = [];
+for (const [name, over] of candidates) {
+  const buf = await banner({ ...base, ...over });
+  await writeFile(`banner/candidate-${name}.png`, buf);
+  sheet.push(buf);
+}
+await sharp({ create: { width: W, height: H * sheet.length, channels: 3, background: { r: 8, g: 9, b: 10 } } })
+  .composite(sheet.map((input, i) => ({ input, top: i * H, left: 0 })))
+  .png()
+  .toFile('banner/contact-sheet.png');
+
 const plain = await banner(base);
 await writeFile('banner/linkedin-banner.png', plain);
-
 await sharp(plain).composite([{ input: markOverlay() }]).png().toFile('banner/linkedin-banner-mark.png');
 
-// A couple of alternative frames of the same wave, in case the crest reads better elsewhere.
 for (const [name, over] of [
   ['alt-1', { time: 4.2 }],
-  ['alt-2', { time: 14.5, thickness: 0.11, amplitude: 0.34 }],
+  ['alt-2', { time: 14.5 }],
 ] as Array<[string, Partial<FieldOptions>]>) {
   await writeFile(`banner/linkedin-${name}.png`, await banner({ ...base, ...over }));
 }
 
-console.log('wrote banner/linkedin-banner.png, linkedin-banner-mark.png, linkedin-alt-1.png, linkedin-alt-2.png');
+console.log('wrote banner/candidate-{1..4}.png, contact-sheet.png, linkedin-banner*.png');
