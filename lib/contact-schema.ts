@@ -9,7 +9,7 @@ export const contactSchema = z.object({
   name: z.string().trim().min(1).max(80),
   email: z.string().trim().toLowerCase().email().max(160),
   message: z.string().trim().min(10).max(4000),
-  turnstileToken: z.string().min(1).max(4000),
+  turnstileToken: z.string().min(1).max(2048),
   formToken: z.string().min(1).max(4000),
   /** Honeypot. Real users never see this field, so any value is a bot. */
   company: z.string().max(200).optional().default(''),

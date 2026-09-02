@@ -1,4 +1,5 @@
 import 'server-only';
+import { TURNSTILE_ACTION } from './turnstile-shared';
 
 /**
  * Cloudflare Turnstile verification.
@@ -15,6 +16,9 @@ const TEST_SITE_KEY = '1x00000000000000000000AA';
 const TEST_SECRET = '1x0000000000000000000000000000000AA';
 
 const VERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+
+/** Cloudflare caps tokens well below this; anything longer is not ours. */
+const MAX_TOKEN_LENGTH = 2048;
 
 export function turnstileSiteKey(): string {
   return process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || TEST_SITE_KEY;
@@ -34,11 +38,13 @@ function allowedHostnames(): string[] {
   const configured = process.env.TURNSTILE_ALLOWED_HOSTNAMES;
   const base = configured
     ? configured.split(',').map((h) => h.trim()).filter(Boolean)
-    : ['lagerqvr.com', 'www.lagerqvr.com', 'localhost'];
+    : ['lagerqvr.com', 'www.lagerqvr.com'];
 
-  // Cloudflare's test keys always report `example.com`, so local development
+  // Development additions only. `localhost` must not be an accepted origin in
+  // production, and Cloudflare's test keys always report `example.com`, which
   // would otherwise fail the pin that protects production.
-  return usingTestKeys() ? [...base, 'example.com'] : base;
+  if (process.env.NODE_ENV !== 'production') return [...base, 'localhost', 'example.com'];
+  return base;
 }
 
 export interface TurnstileResult {
@@ -55,7 +61,10 @@ export async function verifyTurnstile(token: string, ip: string): Promise<Turnst
     return { ok: false, reason: 'unconfigured' };
   }
 
-  if (!token) return { ok: false, reason: 'missing-token' };
+  if (!token || token.length > MAX_TOKEN_LENGTH) return { ok: false, reason: 'missing-token' };
+
+  const hostnames = allowedHostnames();
+  if (hostnames.length === 0) return { ok: false, reason: 'no-allowed-hostnames' };
 
   const body = new URLSearchParams({
     secret: turnstileSecret(),
@@ -63,7 +72,12 @@ export async function verifyTurnstile(token: string, ip: string): Promise<Turnst
   });
   if (ip && ip !== 'unknown') body.set('remoteip', ip);
 
-  let payload: { success?: boolean; hostname?: string; 'error-codes'?: string[] };
+  let payload: {
+    success?: boolean;
+    hostname?: string;
+    action?: string;
+    'error-codes'?: string[];
+  };
   try {
     const res = await fetch(VERIFY_URL, {
       method: 'POST',
@@ -82,11 +96,17 @@ export async function verifyTurnstile(token: string, ip: string): Promise<Turnst
     return { ok: false, reason: payload['error-codes']?.join(',') || 'rejected' };
   }
 
-  // A Turnstile token is single-use and bound to the origin it was solved on;
-  // pinning the hostname stops a token farmed elsewhere from being replayed.
+  // A Turnstile token is single-use and bound to both the origin it was solved
+  // on and the action it was issued for. Pinning both stops a token farmed
+  // elsewhere — or minted against another surface on the same site key — from
+  // being replayed here.
   const hostname = payload.hostname;
-  if (hostname && !allowedHostnames().includes(hostname)) {
+  if (hostname && !hostnames.includes(hostname)) {
     return { ok: false, reason: `hostname:${hostname}` };
+  }
+
+  if (payload.action !== undefined && payload.action !== TURNSTILE_ACTION) {
+    return { ok: false, reason: `action:${payload.action}` };
   }
 
   return { ok: true };

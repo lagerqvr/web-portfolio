@@ -58,7 +58,9 @@ See `.env.local.example`. Nothing here is optional in production:
 
 Five independent layers, because the previous version had one and it failed open:
 
-1. **Turnstile**, verified server-side, with the solving hostname pinned.
+1. **Turnstile**, verified server-side, with both the solving hostname and the
+   widget `action` pinned, and the token length capped. The widget's own domain
+   list (managed in Cloudflare) must include every host the form is served from.
 2. **Honeypot** — a hidden `company` field. Any value returns `200 OK` and drops the
    message, so a bot gets no signal to adapt to.
 3. **Timing** — a signed token issued when the form renders; under 3s or over 30m is refused.

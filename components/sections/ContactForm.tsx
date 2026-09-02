@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 import { useTranslations } from 'next-intl';
+import { TURNSTILE_ACTION } from '@/lib/turnstile-shared';
 
 type Status = 'idle' | 'sending' | 'sent' | 'error';
 
@@ -150,7 +151,7 @@ export default function ContactForm({
       <Turnstile
         ref={turnstile}
         siteKey={siteKey}
-        options={{ theme: 'dark', size: 'flexible', language: locale }}
+        options={{ theme: 'dark', size: 'flexible', language: locale, action: TURNSTILE_ACTION }}
         className="[color-scheme:dark]"
       />
 
