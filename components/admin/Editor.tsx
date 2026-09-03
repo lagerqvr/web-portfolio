@@ -9,7 +9,11 @@ import { Field, ImageField, LocaleTabs, LocalizedField, ListRow, Panel } from '.
 const empty = { en: '' };
 
 export default function Editor({ initial }: { initial: SiteContent }) {
-  const [doc, setDoc] = useState<SiteContent>(initial);
+  const [doc, setDoc] = useState<SiteContent>(() => ({
+    ...initial,
+    // Backfill identities for documents written before work entries had one.
+    work: initial.work.map((w) => (w.id ? w : { ...w, id: w.slug || crypto.randomUUID().slice(0, 8) })),
+  }));
   const [locale, setLocale] = useState<Locale>('en');
   const [dirty, setDirty] = useState(false);
   const [state, action, pending] = useActionState<ActionState, FormData>(saveSiteContent, {});
@@ -162,7 +166,7 @@ export default function Editor({ initial }: { initial: SiteContent }) {
           <div className="space-y-2">
             {doc.work.map((entry, i) => (
               <ListRow
-                key={entry.slug}
+                key={entry.id}
                 index={i}
                 total={doc.work.length}
                 title={entry.title}
@@ -188,7 +192,7 @@ export default function Editor({ initial }: { initial: SiteContent }) {
             type="button"
             className="pill w-full justify-center"
             onClick={() => update((d) => {
-              d.work.push({ slug: `project-${crypto.randomUUID().slice(0, 6)}`, title: 'New project', year: String(new Date().getFullYear()), kind: { ...empty }, summary: { ...empty }, body: { ...empty }, image: '', link: '', featured: false });
+              d.work.push({ id: crypto.randomUUID().slice(0, 8), slug: `project-${crypto.randomUUID().slice(0, 6)}`, title: 'New project', year: String(new Date().getFullYear()), kind: { ...empty }, summary: { ...empty }, body: { ...empty }, image: '', link: '', featured: false });
             })}
           >
             Add project ⊕

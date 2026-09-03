@@ -43,6 +43,13 @@ export const trajectoryEntrySchema = z.object({
 });
 
 export const workEntrySchema = z.object({
+  /**
+   * Stable identity for React keys. The slug cannot serve this purpose because
+   * it is editable — keying on it remounted the row on every keystroke, which
+   * collapsed the panel and stole focus. Optional so documents written before
+   * this field existed still parse.
+   */
+  id: z.string().max(40).optional(),
   slug,
   title: z.string().max(120),
   year: z.string().max(20),

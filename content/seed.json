@@ -205,6 +205,7 @@
   },
   "work": [
     {
+      "id": "parox",
       "slug": "parox",
       "title": "Parox",
       "year": "2025",
@@ -228,6 +229,7 @@
       "link": ""
     },
     {
+      "id": "dictix",
       "slug": "dictix",
       "title": "Dictix",
       "year": "2025",
@@ -251,6 +253,7 @@
       "link": ""
     },
     {
+      "id": "prompt-defenses",
       "slug": "prompt-defenses",
       "title": "Evaluating Prompt Defenses on Small On-Device LLMs",
       "year": "2026",
@@ -279,6 +282,7 @@
       }
     },
     {
+      "id": "sharipe",
       "slug": "sharipe",
       "title": "Sharipe",
       "year": "2025",
@@ -302,6 +306,7 @@
       "link": "https://sharipe.vercel.app"
     },
     {
+      "id": "sitzy",
       "slug": "sitzy",
       "title": "Sitzy.app",
       "year": "2023",
@@ -325,6 +330,7 @@
       "featured": false
     },
     {
+      "id": "arabia-lunch",
       "slug": "arabia-lunch",
       "title": "Arabia Lunch",
       "year": "2022",
@@ -348,6 +354,7 @@
       "featured": false
     },
     {
+      "id": "frunk",
       "slug": "frunk",
       "title": "Frunk",
       "year": "2022",
